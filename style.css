@@ -2,7 +2,6 @@
 :root {
     --primary-color: #1A1A1A; /* Noir profond */
     --secondary-color: #EAEAEA; /* Gris ultra clair parfait */
-    --accent-color: #FF5C00; /* Orange brûlé, de retour */
     --background-color: #F8F8F8; /* Gris très clair */
     --text-color: #333333; /* Texte gris foncé */
     --text-light: #FFFFFF; /* Texte blanc */
@@ -77,7 +76,7 @@ header nav {
 
 .nav-links li a:hover,
 .nav-links li a.active {
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 /* Section Héros */
@@ -122,7 +121,7 @@ header nav {
 }
 
 .highlight {
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .hero-tagline {
@@ -167,7 +166,7 @@ section {
 
 .service-item i {
     font-size: 3rem;
-    color: var(--accent-color);
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 
@@ -249,7 +248,7 @@ section {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--accent-color);
+    color: var(--primary-color);
     margin-top: auto;
 }
 
@@ -291,7 +290,7 @@ section {
 }
 
 .contact-form button {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: var(--text-light);
     border: none;
     padding: 15px 30px;
@@ -304,7 +303,7 @@ section {
 }
 
 .contact-form button:hover {
-    background-color: #e55300;
+    background-color: #333333;
 }
 
 .contact-info p {
@@ -316,7 +315,7 @@ section {
 }
 
 .contact-info i {
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-size: 1.3rem;
 }
 

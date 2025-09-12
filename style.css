@@ -55,10 +55,18 @@ header nav {
     align-items: center;
 }
 
-.logo {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 2.5rem;
+/* Style pour l'image du logo */
+.logo-img {
+    height: 40px; /* Taille fixe pour le logo */
+    width: auto; /* Largeur automatique pour maintenir les proportions */
+    display: block;
+    border-radius: 5px; /* Forme douce */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Animation */
+}
+
+.logo-img:hover {
+    transform: rotate(5deg) scale(1.05); /* Légère rotation et zoom */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Ombre douce */
 }
 
 .nav-links {
@@ -380,10 +388,14 @@ footer {
         text-align: center;
     }
 
+    .logo-link {
+        margin-bottom: 15px; /* Espace entre le logo et le menu sur mobile */
+    }
+
     .nav-links {
-        margin-top: 15px;
+        margin-top: 0; /* Pas de marge supplémentaire */
         gap: 15px;
-        justify-content: center; /* AJOUTÉ POUR CENTRER LE MENU */
+        justify-content: center; /* Centrer le menu */
     }
 
     .nav-links li a {

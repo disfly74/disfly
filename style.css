@@ -71,12 +71,13 @@ header nav {
     color: var(--text-light);
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .nav-links li a:hover,
 .nav-links li a.active {
     color: var(--secondary-color);
+    transform: translateY(-2px);
 }
 
 /* Section Héros */
@@ -118,10 +119,6 @@ header nav {
     font-size: clamp(2rem, 8vw, 5rem);
     font-weight: 800;
     margin: 0;
-}
-
-.highlight {
-    color: var(--secondary-color);
 }
 
 .hero-tagline {
@@ -267,6 +264,12 @@ section {
     background-color: var(--secondary-color);
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form-container:hover,
+.contact-info:hover {
+    transform: translateY(-10px);
 }
 
 .contact-form-container h3,

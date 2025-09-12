@@ -269,7 +269,7 @@ section {
 
 .product-price {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem; /* Taille du prix réduite */
     font-weight: 700;
     color: var(--primary-color);
     margin-top: auto;
@@ -395,19 +395,16 @@ footer {
     }
 
     .nav-links {
-        margin-top: 0; /* Pas de marge supplémentaire */
+        list-style: none;
+        display: flex;
+        flex-direction: column;
         gap: 15px;
-        justify-content: center; /* Centrer le menu */
-        width: 100%; /* Important pour que le centrage fonctionne */
-        text-align: center;
-    }
-    
-    .nav-links li {
-        width: 100%; /* Important pour que les éléments soient bien centrés */
+        align-items: center; /* Important: Centrage horizontal */
+        padding: 0;
+        width: 100%;
     }
 
     .nav-links li a {
-        display: block; /* Important pour que les liens remplissent la largeur */
         text-align: center;
     }
 

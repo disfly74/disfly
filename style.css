@@ -1,13 +1,13 @@
 /* Palette de couleurs & polices */
 :root {
     --primary-color: #1A1A1A; /* Noir profond */
-    --secondary-color: #FFD400; /* Jaune vif */
-    --accent-color: #FF5C00; /* Orange brûlé */
+    --secondary-color: #FFD400; /* Jaune vif, de retour */
+    --accent-color: #FF5C00; /* Orange brûlé, de retour */
     --background-color: #F8F8F8; /* Gris très clair */
     --text-color: #333333; /* Texte gris foncé */
     --text-light: #FFFFFF; /* Texte blanc */
     --border-radius: 6px;
-    --transition-speed: 0.8s; /* Augmentation pour des animations plus douces */
+    --transition-speed: 0.6s;
     --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -28,7 +28,7 @@ body {
     padding: 0 30px;
 }
 
-/* Animations au scroll (plus douces) */
+/* Animations au scroll */
 .hidden {
     opacity: 0;
     transform: translateY(20px);
@@ -61,6 +61,11 @@ header nav {
     font-weight: 800;
     font-size: 2.5em;
     color: var(--secondary-color);
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
 }
 
 .nav-links {
@@ -99,7 +104,7 @@ header nav {
     color: var(--secondary-color);
 }
 
-/* Section Hero - Nouvelle version */
+/* Section Hero */
 .hero {
     position: relative;
     height: 100vh;
@@ -109,6 +114,7 @@ header nav {
     text-align: center;
     color: var(--text-light);
     overflow: hidden;
+    animation: fadeInBackground 1s forwards;
 }
 
 .hero-image-container {
@@ -124,6 +130,13 @@ header nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(0.6);
+    transform: scale(1.1);
+    transition: transform 10s ease-out;
+}
+
+.hero:hover .hero-image {
+    transform: scale(1);
 }
 
 .hero-image-container::before {
@@ -133,7 +146,7 @@ header nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8));
     z-index: 2;
 }
 
@@ -141,7 +154,7 @@ header nav {
     z-index: 3;
     position: relative;
     max-width: 800px;
-    animation: fadeInScaleUp 1.5s forwards;
+    animation: slideInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 .hero-title {
@@ -167,6 +180,7 @@ header nav {
 /* Sections */
 section {
     padding: 120px 0;
+    animation: fadeIn 1s forwards;
 }
 
 .section-title, .page-title {
@@ -188,6 +202,7 @@ section {
     background-color: var(--accent-color);
     margin: 20px auto 0;
     border-radius: 3px;
+    animation: scaleInX 1s forwards;
 }
 
 /* Services */
@@ -226,7 +241,7 @@ section {
 }
 
 .service-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.02);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -234,7 +249,7 @@ section {
     font-size: 4em;
     color: var(--accent-color);
     margin-bottom: 25px;
-    transition: transform 0.5s ease-in-out;
+    animation: rotateIn 1.5s forwards;
 }
 
 .service-item:hover i {
@@ -463,10 +478,25 @@ footer {
     font-size: 0.9em;
 }
 
-/* Animations */
+/* Animations V1.7 */
 @keyframes fadeInScaleUp {
     0% { opacity: 0; transform: scale(0.9); }
     100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scaleInX {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+
+@keyframes rotateIn {
+    from { transform: rotateY(0deg); opacity: 0; }
+    to { transform: rotateY(360deg); opacity: 1; }
 }
 
 /* Responsivité */
@@ -487,7 +517,7 @@ footer {
 @media (max-width: 768px) {
     .logo { font-size: 2em; }
     .nav-links { display: none; }
-    .hero-title { font-size: 3em; }
+    .hero-title { font-size: 2.5em; }
     .section-title, .page-title { font-size: 2.5em; }
     .services-grid { gap: 30px; }
     .service-item { padding: 40px; }

@@ -261,4 +261,14 @@
                     if (entry.isIntersecting) {
                         entry.target.classList.add('show');
                     } else {
-                        entry.
+                        entry.target.classList.remove('show');
+                    }
+                });
+            });
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

@@ -55,9 +55,9 @@ header nav {
     align-items: center;
 }
 
-/* Style pour l'image du logo */
+/* Style pour l'image du logo (hauteur augmentée) */
 .logo-img {
-    height: 40px; /* Taille fixe pour le logo */
+    height: 65px; /* Nouvelle taille plus grande */
     width: auto; /* Largeur automatique pour maintenir les proportions */
     display: block;
     border-radius: 5px; /* Forme douce */
@@ -385,6 +385,7 @@ footer {
 
     header nav {
         flex-direction: column;
+        align-items: center; /* Centrage du contenu dans le header */
         text-align: center;
     }
 

@@ -1,24 +1,24 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-    // Animation au chargement de la page
-    const pageTransition = document.querySelector('.page-transition');
-    if (pageTransition) {
-        pageTransition.style.opacity = '1';
-        setTimeout(() => {
-            pageTransition.style.opacity = '0';
-            pageTransition.style.visibility = 'hidden';
-        }, 500);
-    }
-    
-    // Animation au défilement
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            }
-        });
+// Fonction pour gérer l'apparition des éléments
+function handleIntersection(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); // Arrête d'observer une fois l'élément affiché
+        }
     });
+}
 
-    const hiddenElements = document.querySelectorAll('.hidden');
-    hiddenElements.forEach((el) => observer.observe(el));
+// Options de l'observateur
+const options = {
+    root: null, // La fenêtre du navigateur
+    rootMargin: '0px',
+    threshold: 0.2 // Déclenche l'animation quand 20% de l'élément est visible
+};
+
+// Créer un nouvel observateur
+const observer = new IntersectionObserver(handleIntersection, options);
+
+// Cibler tous les éléments avec la classe 'hidden'
+document.querySelectorAll('.hidden').forEach(element => {
+    observer.observe(element);
 });

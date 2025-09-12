@@ -7,17 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <div class="page-transition"></div>
-
     <header>
         <nav class="container">
             <div class="logo">DisFly</div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="catalogue.html">Catalogue</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -27,16 +25,16 @@
 
     <section id="accueil" class="hero">
         <div class="hero-content container">
-            <h1 class="hero-title">Livraison express. <span class="highlight">Rafraîchissement immédiat.</span></h1>
-            <p class="hero-tagline">Votre partenaire en distribution de boissons en gros pour restaurants et bars.</p>
+            <h1 class="hero-title hidden">Livraison express. <br><span class="highlight">Rafraîchissement immédiat.</span></h1>
+            <p class="hero-tagline hidden">Votre partenaire en distribution de boissons en gros pour restaurants et bars.</p>
         </div>
-        <div class="hero-image-container">
+        <div class="hero-image-container hidden">
             <img src="IMG-20250906-WA0021.jpg" alt="DisFly - Livraison de boissons rapide" class="hero-image">
         </div>
     </section>
 
-    <section id="services" class="container hidden">
-        <h2 class="section-title">Nos services</h2>
+    <section id="services" class="container">
+        <h2 class="section-title hidden">Nos services</h2>
         <div class="services-grid">
             <div class="service-item hidden">
                 <i class="fas fa-truck-fast"></i>
@@ -59,7 +57,7 @@
     <footer>
         <p>© 2025 DisFly. Tous droits réservés.</p>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>

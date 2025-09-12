@@ -1,7 +1,7 @@
 /* Palette de couleurs & polices */
 :root {
     --primary-color: #1A1A1A; /* Noir profond */
-    --secondary-color: #FFD400; /* Jaune vif, de retour */
+    --secondary-color: #EAEAEA; /* Gris ultra clair parfait */
     --accent-color: #FF5C00; /* Orange brûlé, de retour */
     --background-color: #F8F8F8; /* Gris très clair */
     --text-color: #333333; /* Texte gris foncé */
@@ -467,6 +467,13 @@ section {
 .contact-form button:hover {
     background-color: #e6a700;
     transform: translateY(-3px);
+}
+
+.form-status-message {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 20px;
 }
 
 /* Pied de page */

@@ -61,12 +61,12 @@ header nav {
     width: auto; /* Largeur automatique pour maintenir les proportions */
     display: block;
     border-radius: 5px; /* Forme douce */
-    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Animation */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Nouvelle animation */
 }
 
 .logo-img:hover {
-    transform: rotate(5deg) scale(1.05); /* Légère rotation et zoom */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Ombre douce */
+    transform: scale(1.1); /* Grandit légèrement */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Ombre lumineuse */
 }
 
 .nav-links {
@@ -449,12 +449,12 @@ footer {
     .contact-form {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Centrer le formulaire */
     }
 
     .contact-form input,
     .contact-form textarea,
     .contact-form button {
-        text-align: center;
+        text-align: center; /* Centrer le texte dans les champs */
     }
 }

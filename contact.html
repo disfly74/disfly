@@ -51,7 +51,7 @@
         <div class="map-container hidden">
             <h3>Retrouvez-nous</h3>
             <iframe
-                src="https://maps.google.com/?cid=11835712176908428813&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.632395561516!2d6.5298064!3d46.0747475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c187532a2f8b5%3A0x6e26210b37d7a8e2!2sDisFly!5e0!3m2!1sfr!2sfr!4v1716905581177!5m2!1sfr!2sfr"
                 width="100%"
                 height="450"
                 style="border:0;"
@@ -66,6 +66,57 @@
         <p>© 2025 DisFly. Tous droits réservés.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.getElementById("contactForm");
+            if (form) {
+                var status = document.getElementById("formStatus");
+                async function handleSubmit(event) {
+                    event.preventDefault();
+                    var data = new FormData(event.target);
+                    fetch(event.target.action, {
+                        method: form.method,
+                        body: data,
+                        headers: {
+                            "Accept": "application/json"
+                        }
+                    }).then(response => {
+                        if (response.ok) {
+                            status.textContent = "Message envoyé avec succès !";
+                            status.style.color = "green";
+                            form.reset();
+                        } else {
+                            response.json().then(data => {
+                                if (Object.hasOwn(data, "errors")) {
+                                    status.textContent = data["errors"].map(error => error["message"]).join(", ");
+                                    status.style.color = "red";
+                                } else {
+                                    status.textContent = "Oops! Il y a eu un problème lors de l'envoi.";
+                                    status.style.color = "red";
+                                }
+                            })
+                        }
+                    }).catch(error => {
+                        status.textContent = "Oops! Il y a eu un problème lors de l'envoi.";
+                        status.style.color = "red";
+                    });
+                }
+                form.addEventListener("submit", handleSubmit);
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                });
+            });
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el));
+        });
+    </script>
 </body>
 </html>

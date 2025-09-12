@@ -1,0 +1,437 @@
+/* Styles de base et polices */
+:root {
+    --primary-color: #002244;
+    --secondary-color: #007bff;
+    --accent-color: #ffd700; /* Jaune or pour les accents */
+    --background-light: #f4f7f9;
+    --text-dark: #333;
+    --text-light: #fff;
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Page Transition */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    z-index: 9999;
+    animation: fadeOut 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* Animations de défilement (Scroll Reveal) */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styles globaux pour les sections et titres */
+section {
+    padding: 80px 0;
+}
+
+.section-title, .page-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.section-title::after, .page-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 10px auto 0;
+}
+
+/* Barre de navigation */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    position: relative;
+    transition: color var(--transition-speed);
+}
+
+header a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--accent-color);
+    transition: width var(--transition-speed);
+}
+
+header a:hover::after, header a.active::after {
+    width: 100%;
+}
+
+/* Section d'accueil (Hero) */
+.hero {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content {
+    padding: 80px 20px 40px;
+    z-index: 2;
+}
+
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5em;
+    font-weight: 800;
+    margin: 0;
+}
+
+.hero-title .highlight {
+    color: var(--accent-color);
+}
+
+.hero-tagline {
+    font-size: 1.4em;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.hero-image-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: -100px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Section des services */
+#services {
+    padding-top: 150px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.service-item {
+    background-color: var(--text-light);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-item i {
+    font-size: 3.5em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Section du catalogue */
+#catalogue-page {
+    padding-top: 50px;
+}
+
+.catalogue-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.catalogue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background-color: var(--text-light);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform var(--transition-speed);
+}
+
+.product-item:hover img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: var(--primary-color);
+    margin: 0 0 10px;
+}
+
+.product-item p {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+/* Section contact */
+#contact-page {
+    padding-top: 50px;
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.contact-info {
+    background-color: var(--text-light);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin: 15px 0;
+}
+
+.contact-info i {
+    color: var(--secondary-color);
+    margin-right: 15px;
+}
+
+.map-container {
+    background: var(--text-light);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.map-container iframe {
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
+}
+
+.map-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed);
+    font-weight: 600;
+}
+
+.map-link:hover {
+    background-color: #0056b3;
+}
+
+/* Formulaire de contact */
+.contact-form-container {
+    background-color: var(--background-light);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h3 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    transition: border-color var(--transition-speed);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Pied de page */
+footer {
+    background: var(--primary-color);
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3em;
+    }
+    .hero-tagline {
+        font-size: 1.2em;
+    }
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .services-grid, .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}

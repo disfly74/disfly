@@ -71,13 +71,29 @@ header nav {
     color: var(--text-light);
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s, transform 0.3s;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease-in-out;
 }
 
 .nav-links li a:hover,
 .nav-links li a.active {
     color: var(--secondary-color);
-    transform: translateY(-2px);
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+    width: 100%;
 }
 
 /* Section Héros */

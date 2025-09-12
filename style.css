@@ -109,9 +109,17 @@ header nav {
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero-content {
+    flex-basis: 50%;
     z-index: 2;
 }
 
@@ -138,11 +146,8 @@ header nav {
 }
 
 .hero-image-container {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50%;
+    flex-basis: 50%;
+    text-align: right;
     z-index: 1;
     animation: fadeIn 1.5s forwards;
 }
@@ -150,9 +155,9 @@ header nav {
 .hero-image {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-    opacity: 0.8;
+    object-fit: contain;
+    clip-path: none;
+    opacity: 1;
 }
 
 /* Sections */
@@ -447,57 +452,4 @@ section {
     border: none;
     border-radius: var(--border-radius);
     font-size: 1.2em;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color var(--transition-speed), transform var(--transition-speed);
-}
-
-.contact-form button:hover {
-    background-color: #e6a700;
-    transform: translateY(-3px);
-}
-
-/* Pied de page */
-footer {
-    background: var(--primary-color);
-    color: #888;
-    text-align: center;
-    padding: 40px 0;
-    font-size: 0.9em;
-}
-
-/* Animations */
-@keyframes slideInLeft {
-    0% { transform: translateX(-100px); opacity: 0; }
-    100% { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes bounceIn {
-    0% { transform: scale(0.3); opacity: 0; }
-    50% { transform: scale(1.1); opacity: 1; }
-    100% { transform: scale(1); }
-}
-
-/* Responsivité */
-@media (max-width: 1024px) {
-    .hero-title { font-size: 4em; }
-    .hero-tagline { font-size: 1.2em; }
-    .hero-image-container { display: none; }
-    .contact-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 768px) {
-    .logo { font-size: 2em; }
-    .nav-links { display: none; }
-    .hero-title { font-size: 3em; text-align: center; }
-    .hero-tagline { text-align: center; }
-    .section-title, .page-title { font-size: 2.5em; }
-    .services-grid { gap: 30px; }
-    .service-item { padding: 40px; }
-    .catalogue-grid { gap: 20px; }
-}
+    font-weight

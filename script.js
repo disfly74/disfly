@@ -3,16 +3,16 @@ function handleIntersection(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
-            observer.unobserve(entry.target); // Arrête d'observer une fois l'élément affiché
+            observer.unobserve(entry.target);
         }
     });
 }
 
 // Options de l'observateur
 const options = {
-    root: null, // La fenêtre du navigateur
+    root: null,
     rootMargin: '0px',
-    threshold: 0.2 // Déclenche l'animation quand 20% de l'élément est visible
+    threshold: 0.2
 };
 
 // Créer un nouvel observateur

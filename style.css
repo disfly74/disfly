@@ -493,7 +493,7 @@ footer {
 
 @media (max-width: 768px) {
     .logo { font-size: 2em; }
-    .nav-links { display: none; } /* On pourrait ajouter un menu hamburger ici */
+    .nav-links { display: none; }
     .hero-title { font-size: 3em; text-align: center; }
     .hero-tagline { text-align: center; }
     .section-title, .page-title { font-size: 2.5em; }

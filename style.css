@@ -201,7 +201,7 @@ section {
     margin-bottom: 10px;
 }
 
-/* Section Catalogue (MISE À JOUR DE LA MISE EN PAGE) */
+/* Section Catalogue (NOUVELLE MISE EN PAGE GRAPHIQUE) */
 .catalogue-intro {
     text-align: center;
     max-width: 800px;
@@ -215,18 +215,21 @@ section {
 }
 
 .product-item {
+    position: relative;
     background-color: var(--text-light);
     border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: var(--card-shadow);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Ombre plus douce */
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease;
+    border: 3px solid transparent; /* Bordure transparente par défaut */
 }
 
 .product-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Ombre plus marquée au survol */
+    border-color: var(--primary-color); /* Bordure qui apparaît au survol */
 }
 
 .product-image-container {
@@ -252,12 +255,13 @@ section {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Aligne les éléments verticalement */
+    justify-content: flex-start;
 }
 
+/* Styles pour le texte et les prix */
 .product-details h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 5px;
@@ -267,22 +271,15 @@ section {
 .product-format {
     font-size: 0.9rem;
     color: #777;
-    margin-bottom: 10px; /* Réduit l'espace pour un look plus compact */
-}
-
-/* Nouvelle mise en page des prix */
-.price-container {
-    display: flex;
-    justify-content: flex-end; /* Aligne le prix à droite */
-    align-items: center;
+    margin-bottom: 10px;
 }
 
 .product-price {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem; /* Taille du prix réduite */
+    font-size: 1rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-top: auto;
+    margin-top: 10px;
 }
 
 /* Section Contact */

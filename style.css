@@ -201,7 +201,7 @@ section {
     margin-bottom: 10px;
 }
 
-/* Section Catalogue (NOUVELLE MISE EN PAGE GRAPHIQUE) */
+/* Section Catalogue */
 .catalogue-intro {
     text-align: center;
     max-width: 800px;
@@ -219,17 +219,17 @@ section {
     background-color: var(--text-light);
     border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Ombre plus douce */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease;
-    border: 3px solid transparent; /* Bordure transparente par défaut */
+    border: 3px solid transparent;
 }
 
 .product-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Ombre plus marquée au survol */
-    border-color: var(--primary-color); /* Bordure qui apparaît au survol */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
 }
 
 .product-image-container {
@@ -258,28 +258,33 @@ section {
     justify-content: flex-start;
 }
 
-/* Styles pour le texte et les prix */
+/* Nouvelle mise en page pour les textes produits */
+.product-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espacement réduit pour un look plus compact */
+}
+
 .product-details h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Taille du titre encore réduite */
     font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin: 0;
     color: var(--primary-color);
 }
 
 .product-format {
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Taille du format plus petite */
     color: #777;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .product-price {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Taille du prix la plus petite */
     font-weight: 700;
     color: var(--primary-color);
-    margin-top: 10px;
+    margin-top: 15px; /* Grand espace pour le prix */
 }
 
 /* Section Contact */

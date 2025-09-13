@@ -201,7 +201,7 @@ section {
     margin-bottom: 10px;
 }
 
-/* Section Catalogue (NOUVELLE MISE EN PAGE) */
+/* Section Catalogue (MISE À JOUR DE LA MISE EN PAGE) */
 .catalogue-intro {
     text-align: center;
     max-width: 800px;
@@ -252,11 +252,12 @@ section {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Aligne les éléments verticalement */
 }
 
 .product-details h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem; /* Légèrement réduit pour l'équilibre */
+    font-size: 1.3rem;
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 5px;
@@ -266,20 +267,22 @@ section {
 .product-format {
     font-size: 0.9rem;
     color: #777;
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Réduit l'espace pour un look plus compact */
+}
+
+/* Nouvelle mise en page des prix */
+.price-container {
+    display: flex;
+    justify-content: flex-end; /* Aligne le prix à droite */
+    align-items: center;
 }
 
 .product-price {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Taille du prix réduite */
     font-weight: 700;
     color: var(--primary-color);
     margin-top: auto;
-    background-color: var(--secondary-color); /* Ajout d'un fond pour le prix */
-    padding: 8px 12px;
-    border-radius: var(--border-radius);
-    display: inline-block; /* Permet au fond de s'adapter à la taille */
-    align-self: flex-end; /* Alignement à droite en bas de la carte */
 }
 
 /* Section Contact */
@@ -448,7 +451,7 @@ footer {
     .product-details {
         padding: 15px;
     }
-    
+
     .contact-grid {
         flex-direction: column;
     }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisFly - Boissons en gros pour professionnels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo-link">
+                <img src="LogoDisFly.png" alt="DisFly Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-image-container">
+            <img src="https://raw.githubusercontent.com/disfly74/disfly/main/IMG-20250906-WA0021.jpg" alt="Boissons rafraîchissantes" class="hero-image">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Votre distributeur de boissons</h1>
+            <p class="hero-tagline">Des prix imbattables pour les professionnels</p>
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <h2 class="section-title hidden">Nos Services</h2>
+        <div class="services-grid">
+            <div class="service-item hidden">
+                <i class="fas fa-truck-fast"></i>
+                <h3>Livraison</h3>
+                <p>Nous organisons la livraison de vos commandes, adaptée à vos besoins spécifiques.</p>
+            </div>
+            <div class="service-item hidden">
+                <i class="fas fa-list-check"></i>
+                <h3>Grand Choix</h3>
+                <p>Découvrez un vaste catalogue de boissons : sodas, jus, eaux, thés glacés et bien plus.</p>
+            </div>
+            <div class="service-item hidden">
+                <i class="fas fa-tags"></i>
+                <h3>Prix Compétitifs</h3>
+                <p>Profitez de tarifs exclusifs et de promotions régulières pour maximiser votre marge.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 DisFly. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.getElementById("contactForm");
+            if (form) {
+                var status = document.getElementById("formStatus");
+                async function handleSubmit(event) {
+                    event.preventDefault();
+                    var data = new FormData(event.target);
+                    fetch(event.target.action, {
+                        method: form.method,
+                        body: data,
+                        headers: {
+                            "Accept": "application/json"
+                        }
+                    }).then(response => {
+                        if (response.ok) {
+                            status.textContent = "Message envoyé avec succès !";
+                            status.style.color = "green";
+                            form.reset();
+                        } else {
+                            response.json().then(data => {
+                                if (Object.hasOwn(data, "errors")) {
+                                    status.textContent = data["errors"].map(error => error["message"]).join(", ");
+                                    status.style.color = "red";
+                                } else {
+                                    status.textContent = "Oops! Il y a eu un problème lors de l'envoi.";
+                                    status.style.color = "red";
+                                }
+                            })
+                        }
+                    }).catch(error => {
+                        status.textContent = "Oops! Il y a eu un problème lors de l'envoi.";
+                        status.style.color = "red";
+                    });
+                }
+                form.addEventListener("submit", handleSubmit);
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                });
+            });
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

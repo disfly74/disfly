@@ -51,13 +51,13 @@ header {
 
 header nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 /* Style pour l'image du logo */
 .logo-img {
-    height: 65px;
+    height: 80px;
     width: auto;
     display: block;
     border-radius: 5px;

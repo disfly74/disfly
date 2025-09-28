@@ -3,7 +3,7 @@
     --primary-color: #111827; /* Noir profond */
     --secondary-color: #EAEAEA; /* Gris ultra clair parfait */
     --background-color: #F8F8F8; /* Gris très clair */
-    --text-color: #333333; /* Texte gris foncé */
+    --text-color: #333333; /* Texte gris foncÃ© */
     --text-light: #FFFFFF; /* Texte blanc */
     --border-radius: 6px;
     --transition-speed: 0.6s;
@@ -106,7 +106,7 @@ header nav {
     width: 100%;
 }
 
-/* Section Héros */
+/* Section HÃ©ros */
 .hero {
     position: relative;
     width: 100%;
@@ -265,12 +265,12 @@ section {
 .product-text-container {
     display: flex;
     flex-direction: column;
-    gap: 5px; /* Espacement réduit pour un look plus compact */
+    gap: 5px; /* Espacement rÃ©duit pour un look plus compact */
 }
 
 .product-details h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem; /* Taille du titre encore réduite */
+    font-size: 1rem; /* Taille du titre encore rÃ©duite */
     font-weight: 600;
     margin: 0;
     color: var(--primary-color);
@@ -390,7 +390,7 @@ footer {
     margin-top: 50px;
 }
 
-/* Media Queries pour la responsivité */
+/* Media Queries pour la responsivitÃ© */
 @media (max-width: 768px) {
     .container {
         padding: 0 15px;

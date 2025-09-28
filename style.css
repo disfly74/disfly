@@ -285,7 +285,10 @@ section {
   margin: 0;
   color: var(--primary-color);
 }
-
+.delivery-message {
+  font-weight: bold;
+  text-decoration: underline;
+}
 .product-format {
   font-size: 0.85rem; /* Taille du format plus petite */
   color: #777;

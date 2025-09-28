@@ -54,6 +54,9 @@
 
     <footer>
         <p>© 2025 DisFly. Tous droits réservés.</p>
+		<a href="mentions-legales.html" style="color:#ccc;">Mentions légales</a> |
+		<a href="politique-confidentialite.html" style="color:#ccc;">Politique de confidentialité</a>
+		</p>
     </footer>
 
     <script>
@@ -108,5 +111,28 @@
             hiddenElements.forEach((el) => observer.observe(el));
         });
     </script>
+	
+	<div id="cookieConsent"
+	  style="position:fixed; bottom:0; background:#111827; color:#fff; width:100%; padding:15px; display:flex;
+	  justify-content:center; align-items:center; z-index:10000;">
+	  <span>
+		Nous utilisons des cookies pour améliorer votre expérience. En poursuivant, vous acceptez notre
+		<a href="politique_confidentialite.html" style="color:#4aa8ff;">politique de confidentialité</a>.
+	  </span>
+	  <button id="acceptCookies"
+		style="margin-left:15px; padding:8px 15px; cursor:pointer; background:#4aa8ff; border:none; color:#fff; border-radius:4px;">
+		Accepter
+	  </button>
+	</div>
+
+	<script>
+	  if (localStorage.getItem('cookiesAccepted')) {
+		document.getElementById('cookieConsent').style.display = 'none';
+	  }
+	  document.getElementById('acceptCookies').onclick = function () {
+		localStorage.setItem('cookiesAccepted', 'true');
+		document.getElementById('cookieConsent').style.display = 'none';
+	  };
+	</script>
 </body>
 </html>

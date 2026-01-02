@@ -491,4 +491,93 @@ footer {
   header nav {
     justify-content: flex-start !important;
   }
+}/* ===== Bonne Année 2026 – DisFly ===== */
+:root{
+  --disfly-navy: #0f172a;         /* fond sombre élégant */
+  --disfly-navy-2: #0b1220;       /* variante */
+  --disfly-accent: #4aa8ff;       /* déjà utilisé sur ton site */
+  --disfly-light: #ffffff;
+  --disfly-muted: rgba(226,232,240,0.9);
+  --disfly-panel: rgba(2,6,23,0.82);
+  --disfly-ring: rgba(255,255,255,0.12);
 }
+
+/* Section container */
+.ny2026-banner{
+  padding: clamp(18px, 3vw, 28px) 16px;
+  background: linear-gradient(135deg, var(--disfly-navy), var(--disfly-navy-2) 45%, #000);
+  display: grid;
+  place-items: center;
+}
+
+/* Wrapper + halo */
+.ny2026-wrap{ position: relative; width: min(1100px, 100%); }
+.ny2026-glow{
+  position: absolute; inset: -4px;
+  border-radius: 24px;
+  filter: blur(16px);
+  opacity: .55;
+  background: linear-gradient(90deg, #2563eb, var(--disfly-accent), #22d3ee);
+}
+
+/* Cadre dégradé + panneau */
+.ny2026-frame{
+  position: relative; border-radius: 22px; padding: 2px;
+  background: linear-gradient(90deg, #2563eb, var(--disfly-accent), #22d3ee);
+}
+.ny2026-panel{
+  border-radius: 20px;
+  background: var(--disfly-panel);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  padding: clamp(22px, 4.5vw, 56px);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Titres & textes */
+.ny2026-title{
+  margin: 0 0 8px;
+  font-family: "Montserrat", "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 800; line-height: 1.1;
+  font-size: clamp(26px, 4.8vw, 48px);
+  color: var(--disfly-light);
+  letter-spacing: -0.02em;
+}
+.ny2026-year{
+  background: linear-gradient(90deg, #fcd34d, #fda4af, #7dd3fc);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+}
+.ny2026-tagline{
+  margin: 0 0 14px;
+  color: var(--disfly-muted);
+  font-size: clamp(14px, 2.2vw, 18px);
+}
+
+/* Actions */
+.ny2026-actions{
+  margin-top: 6px;
+  display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+}
+.ny2026-btn{
+  display: inline-block; text-decoration: none; cursor: pointer;
+  font-weight: 700; border-radius: 12px; padding: 10px 16px;
+  transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+.ny2026-primary{
+  background: var(--disfly-light); color: var(--disfly-navy);
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+.ny2026-primary:hover{ transform: translateY(-1px); }
+.ny2026-ghost{
+  color: var(--disfly-light); background: rgba(15,23,42,0.72);
+  outline: 1px solid var(--disfly-ring);
+}
+.ny2026-ghost:hover{ transform: translateY(-1px); }
+
+/* Responsive spacing fine-tuning */
+@media (max-width: 480px){
+  .ny2026-actions{ gap: 8px; }
+  .ny2026-btn{ padding: 9px 14px; }
+}
+

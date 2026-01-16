@@ -10,6 +10,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<link rel="icon" type="image/png" href="/LogoDisfly.png">
+    <style>
+        /* Styles spécifiques pour les bandeaux pliables */
+        .category-wrapper {
+            margin-bottom: 20px;
+        }
+        .category-header {
+            width: 100%;
+            background-color: #111827;
+            color: white;
+            padding: 18px 25px;
+            border: none;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 1.3rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+        .category-header:hover {
+            background-color: #1f2937;
+        }
+        .category-header.sub-header {
+            background-color: #374151;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        .category-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+        }
+        .category-content.active {
+            max-height: 10000px; /* Grande valeur pour laisser passer tout le contenu */
+            transition: max-height 1s ease-in-out;
+            padding-top: 20px;
+        }
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+        .active-arrow {
+            transform: rotate(180deg);
+        }
+        .subcategory-container {
+            padding-left: 20px;
+            border-left: 2px solid #374151;
+            margin-top: 10px;
+        }
+        .empty-message {
+            padding: 20px;
+            color: #6b7280;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
 
@@ -31,445 +88,377 @@
         <p class="catalogue-intro hidden">Découvrez notre vaste sélection de boissons, soigneusement choisie pour répondre aux besoins des professionnels.</p>
         <p class="delivery-message hidden">Livraison à partir de 200€ (H.T.) de commande</p>
 
-		<div class="catalogue-accordions">
-            <button class="accordion-toggle hidden" type="button" data-target="panel-soft" aria-expanded="true">
-                <span>Boissons soft</span>
-                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        <div class="category-wrapper hidden">
+            <button class="category-header" onclick="toggleCategory('softs', this)">
+                <span><i class="fas fa-glass-whiskey"></i> BOISSONS SOFTS</span>
+                <i class="fas fa-chevron-down arrow"></i>
             </button>
-            <div id="panel-soft" class="accordion-panel open">
-<div class="catalogue-grid">
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="coca-slim.png" alt="Coca Cola">
-                </div>
-                <div class="product-details">
-                    <h3>Coca Cola</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">12,70 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="coca-zero-slim.png" alt="Coca Zero">
-                </div>
-                <div class="product-details">
-                    <h3>Coca Zero</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">12,70 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="coca-cherry-slim.png" alt="Coca Cherry">
-                </div>
-                <div class="product-details">
-                    <h3>Coca Cherry</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">13,75 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="coca-vanilla.png" alt="Coca Vanille">
-                </div>
-                <div class="product-details">
-                    <h3>Coca Vanille</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">14,50 € H.T.</span>
-                </div>
-			</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="fanta-orange-slim.png" alt="Fanta Orange">
-                </div>
-                <div class="product-details">
-                    <h3>Fanta Orange </h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">13,00 € H.T.</span>
-                </div>
-			</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="fanta-fruit-du-dragon.png" alt="Fanta Fruit Du Dragon">
-                </div>
-                <div class="product-details">
-                    <h3>Fanta Fruit Du Dragon </h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">14,99 € H.T.</span>
-                </div>
-			</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="fanta-citron.png" alt="Fanta Citron">
-                </div>
-                <div class="product-details">
-                    <h3>Fanta citron</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">13,50 € H.T.</span>
-            	</div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="fanta-exotic.png" alt="Fanta Exotic">
-                </div>
-                <div class="product-details">
-                    <h3>Fanta Exotic</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">13,90 € H.T.</span>
-                	</div>
-				</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="sprite.png" alt="Sprite">
-                </div>
-                <div class="product-details">
-                    <h3>Sprite</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">12,50 € H.T.</span>
-                </div>
-			    </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="Hawai.png" alt="Hawai">
-                </div>
-                <div class="product-details">
-                    <h3>Hawai</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">17,50 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="caprisun-multi.png" alt="Caprisun">
-                </div>
-                <div class="product-details">
-                    <h3>Caprisun Multivitamine</h3>
-                    <p class="product-format">Pack de 40 x 20cl</p>
-                    <span class="product-price">13,40 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="icetea-slim.png" alt="Ice Tea">
-                </div>
-                <div class="product-details">
-                    <h3>Ice Tea</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">12,50 € H.T.</span>
-                </div>
-				 </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="icetea-PM.png" alt="Ice Tea PM">
-                </div>
-                <div class="product-details">
-                    <h3>Ice Tea Pastèque-Menthe</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">13,15 € H.T.</span>
-                </div>
-			</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="fuzetea.png" alt="Fuze Tea">
-                </div>
-                <div class="product-details">
-                    <h3>Fuze Tea</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">12,90 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="orangina-slim.png" alt="Orangina">
-                </div>
-                <div class="product-details">
-                    <h3>Orangina</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">14,30 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="schewppes-slim.png" alt="Schweppes">
-                </div>
-                <div class="product-details">
-                    <h3>Schewppes Agrum</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">14,20 € H.T.</span>
-                </div>
-			 </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="schweppes-pommes.png" alt="schweppes  pommes">
-                </div>
-                <div class="product-details">
-                    <h3>Schweppes Pommes</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">14,65 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="oasis-tropical-slim.png" alt="Oasis Tropical">
-                </div>
-                <div class="product-details">
-                    <h3>Oasis Tropical</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">14,20 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="oasis-fraise-slim.png" alt="Oasis Fraise Framboise">
-                </div>
-                <div class="product-details">
-                    <h3>Oasis Fraise Framboise</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">14,20 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="oasis-framboise-slim.png" alt="Oasis Pomme Cassis Framboise">
-                </div>
-                <div class="product-details">
-                    <h3>Oasis Pomme Cassis Framboise</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">14,20 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="oasis-pomme-slim.png" alt="Oasis Pomme Poire">
-                </div>
-                <div class="product-details">
-                    <h3>Oasis Pomme Poire</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">14,20 € H.T.</span>
-                </div>
-				 </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="DADA+CHERRY.png" alt="Dada Cherry">
-                </div>
-                <div class="product-details">
-                    <h3>Dada Cherry</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">13.20 € H.T.</span>
-                </div>
-				 </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="DADA+MELON.png" alt="Dada Melon">
-                </div>
-                <div class="product-details">
-                    <h3>Dada Melon</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">13.20 € H.T.</span>
-                </div>
-				 </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="DADA+LYCHEE.png" alt="Dada Lychee">
-                </div>
-                <div class="product-details">
-                    <h3>Dada Lychee</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">13.20 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="redbull.png" alt="Red Bull">
-                </div>
-                <div class="product-details">
-                    <h3>Red Bull </h3>
-                    <p class="product-format">Pack de 24 x 25cl</p>
-                    <span class="product-price">25,00 € H.T.</span>
-                </div>
-				</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="Redbull-pfg.png" alt="Red Bull">
-                </div>
-                <div class="product-details">
-                    <h3>Red Bull Pomme Fuji & Gingembre</h3>
-                    <p class="product-format">Pack de 24 x 25cl</p>
-                    <span class="product-price">29,90 € H.T.</span>
-                </div>
-</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="Redbull-abricot.png" alt="Red Bull">
-                </div>
-                <div class="product-details">
-                    <h3>Red Bull Abricot-Fraise</h3>
-                    <p class="product-format">Pack de 24 x 25cl</p>
-                    <span class="product-price">29,90 € H.T.</span>
-                </div>
-</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="Redbull-myrtille.png" alt="Red Bull">
-                </div>
-                <div class="product-details">
-                    <h3>Red Bull Myrtille</h3>
-                    <p class="product-format">Pack de 24 x 25cl</p>
-                    <span class="product-price">29,90 € H.T.</span>
-                </div>
-</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="Redbull-fruitdudragon.png" alt="Red Bull">
-                </div>
-                <div class="product-details">
-                    <h3>Red Bull Fruit Du Dragon</h3>
-                    <p class="product-format">Pack de 24 x 25cl</p>
-                    <span class="product-price">29,90 € H.T.</span>
-                </div>
-</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="Redbull-coco.png" alt="Red Bull">
-                </div>
-                <div class="product-details">
-                    <h3>Red Bull Coco-Açai</h3>
-                    <p class="product-format">Pack de 24 x 25cl</p>
-                    <span class="product-price">29,90 € H.T.</span>
-                </div>
-</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="redbull-junebbery.png" alt="Red Bull">
-                </div>
-                <div class="product-details">
-                    <h3>Red Bull Juneberry</h3>
-                    <p class="product-format">Pack de 24 x 25cl</p>
-                    <span class="product-price">29,90 € H.T.</span>
-                </div>
-</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="redbull-Vanille.png" alt="Red Bull">
-                </div>
-                <div class="product-details">
-                    <h3>Red Bull Mûre givrée & Vanille</h3>
-                    <p class="product-format">Pack de 24 x 25cl</p>
-                    <span class="product-price">29,90 € H.T.</span>
-                </div>
-	</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="redbull-pasteque.png" alt="Red Bull">
-                </div>
-                <div class="product-details">
-                    <h3>Red Bull Pastèque</h3>
-                    <p class="product-format">Pack de 24 x 25cl</p>
-                    <span class="product-price">29,90 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="coca-cola-50.png" alt="Coca Cola 0,5L">
-                </div>
-                <div class="product-details">
-                    <h3>Coca Cola</h3>
-                    <p class="product-format">Pack de 12 x 50cl</p>
-                    <span class="product-price">11,00 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="coca-cherry-50.png" alt="Coca Cherry 0,5L">
-                </div>
-                <div class="product-details">
-                    <h3>Cola Cherry</h3>
-                    <p class="product-format">Pack de 12 x 50cl</p>
-                    <span class="product-price">11,50 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="coca-zero-50.png" alt="Coca Zero 0,5L">
-                </div>
-                <div class="product-details">
-                    <h3>Cola Zero</h3>
-                    <p class="product-format">Pack de 12 x 50cl</p>
-                    <span class="product-price">11,00 € H.T.</span>
-                </div>
-            </div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="fanta-50.png" alt="Fanta Orange 0,5L">
-                </div>
-                <div class="product-details">
-                    <h3>Fanta Orange</h3>
-                    <p class="product-format">Pack de 12 x 50cl</p>
-                    <span class="product-price">11,00 € H.T.</span>
-                </div>
-			</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="cristaline.png" alt="Cristaline">
-                </div>
-                <div class="product-details">
-                    <h3>Cristaline</h3>
-                    <p class="product-format">Pack de 24 x 50cl</p>
-                    <span class="product-price">4,50 € H.T.</span>
-                </div>
-			</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="perrier.png" alt="Perrier">
-                </div>
-                <div class="product-details">
-                    <h3>Perrier</h3>
-                    <p class="product-format">Pack de 24 x 33cl</p>
-                    <span class="product-price">11,80 € H.T.</span>
-                </div>
-			</div>
-            <div class="product-item hidden">
-                <div class="product-image-container">
-                    <img src="sanpel.png" alt="San Pellegrino">
-                </div>
-                <div class="product-details">
-                    <h3>San pelegrino</h3>
-                    <p class="product-format">Pack de 24 x 50cl</p>
-                    <span class="product-price">12,50 € H.T.</span>
+            <div id="softs" class="category-content">
+                <div class="catalogue-grid">
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="coca-slim.png" alt="Coca Cola"></div>
+                        <div class="product-details">
+                            <h3>Coca Cola</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">12,70 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="coca-zero-slim.png" alt="Coca Zero"></div>
+                        <div class="product-details">
+                            <h3>Coca Zero</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">12,70 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="coca-cherry-slim.png" alt="Coca Cherry"></div>
+                        <div class="product-details">
+                            <h3>Coca Cherry</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">13,75 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="coca-vanilla.png" alt="Coca Vanille"></div>
+                        <div class="product-details">
+                            <h3>Coca Vanille</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">14,50 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="fanta-orange-slim.png" alt="Fanta Orange"></div>
+                        <div class="product-details">
+                            <h3>Fanta Orange </h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">13,00 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="fanta-fruit-du-dragon.png" alt="Fanta Fruit Du Dragon"></div>
+                        <div class="product-details">
+                            <h3>Fanta Fruit Du Dragon </h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">14,99 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="fanta-citron.png" alt="Fanta Citron"></div>
+                        <div class="product-details">
+                            <h3>Fanta citron</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">13,50 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="fanta-exotic.png" alt="Fanta Exotic"></div>
+                        <div class="product-details">
+                            <h3>Fanta Exotic</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">13,90 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="sprite.png" alt="Sprite"></div>
+                        <div class="product-details">
+                            <h3>Sprite</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">12,50 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="Hawai.png" alt="Hawai"></div>
+                        <div class="product-details">
+                            <h3>Hawai</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">17,50 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="caprisun-multi.png" alt="Caprisun"></div>
+                        <div class="product-details">
+                            <h3>Caprisun Multivitamine</h3>
+                            <p class="product-format">Pack de 40 x 20cl</p>
+                            <span class="product-price">13,40 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="icetea-slim.png" alt="Ice Tea"></div>
+                        <div class="product-details">
+                            <h3>Ice Tea</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">12,50 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="icetea-PM.png" alt="Ice Tea PM"></div>
+                        <div class="product-details">
+                            <h3>Ice Tea Pastèque-Menthe</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">13,15 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="fuzetea.png" alt="Fuze Tea"></div>
+                        <div class="product-details">
+                            <h3>Fuze Tea</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">12,90 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="orangina-slim.png" alt="Orangina"></div>
+                        <div class="product-details">
+                            <h3>Orangina</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">14,30 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="schewppes-slim.png" alt="Schweppes"></div>
+                        <div class="product-details">
+                            <h3>Schewppes Agrum</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">14,20 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="schweppes-pommes.png" alt="schweppes pommes"></div>
+                        <div class="product-details">
+                            <h3>Schweppes Pommes</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">14,65 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="oasis-tropical-slim.png" alt="Oasis Tropical"></div>
+                        <div class="product-details">
+                            <h3>Oasis Tropical</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">14,20 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="oasis-fraise-slim.png" alt="Oasis Fraise Framboise"></div>
+                        <div class="product-details">
+                            <h3>Oasis Fraise Framboise</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">14,20 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="oasis-framboise-slim.png" alt="Oasis Pomme Cassis Framboise"></div>
+                        <div class="product-details">
+                            <h3>Oasis Pomme Cassis Framboise</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">14,20 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="oasis-pomme-slim.png" alt="Oasis Pomme Poire"></div>
+                        <div class="product-details">
+                            <h3>Oasis Pomme Poire</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">14,20 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="DADA+CHERRY.png" alt="Dada Cherry"></div>
+                        <div class="product-details">
+                            <h3>Dada Cherry</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">13.20 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="DADA+MELON.png" alt="Dada Melon"></div>
+                        <div class="product-details">
+                            <h3>Dada Melon</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">13.20 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="DADA+LYCHEE.png" alt="Dada Lychee"></div>
+                        <div class="product-details">
+                            <h3>Dada Lychee</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">13.20 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="redbull.png" alt="Red Bull"></div>
+                        <div class="product-details">
+                            <h3>Red Bull </h3>
+                            <p class="product-format">Pack de 24 x 25cl</p>
+                            <span class="product-price">25,00 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="Redbull-pfg.png" alt="Red Bull"></div>
+                        <div class="product-details">
+                            <h3>Red Bull Pomme Fuji & Gingembre</h3>
+                            <p class="product-format">Pack de 24 x 25cl</p>
+                            <span class="product-price">29,90 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="Redbull-abricot.png" alt="Red Bull"></div>
+                        <div class="product-details">
+                            <h3>Red Bull Abricot-Fraise</h3>
+                            <p class="product-format">Pack de 24 x 25cl</p>
+                            <span class="product-price">29,90 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="Redbull-myrtille.png" alt="Red Bull"></div>
+                        <div class="product-details">
+                            <h3>Red Bull Myrtille</h3>
+                            <p class="product-format">Pack de 24 x 25cl</p>
+                            <span class="product-price">29,90 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="Redbull-fruitdudragon.png" alt="Red Bull"></div>
+                        <div class="product-details">
+                            <h3>Red Bull Fruit Du Dragon</h3>
+                            <p class="product-format">Pack de 24 x 25cl</p>
+                            <span class="product-price">29,90 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="Redbull-coco.png" alt="Red Bull"></div>
+                        <div class="product-details">
+                            <h3>Red Bull Coco-Açai</h3>
+                            <p class="product-format">Pack de 24 x 25cl</p>
+                            <span class="product-price">29,90 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="redbull-junebbery.png" alt="Red Bull"></div>
+                        <div class="product-details">
+                            <h3>Red Bull Juneberry</h3>
+                            <p class="product-format">Pack de 24 x 25cl</p>
+                            <span class="product-price">29,90 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="redbull-Vanille.png" alt="Red Bull"></div>
+                        <div class="product-details">
+                            <h3>Red Bull Mûre givrée & Vanille</h3>
+                            <p class="product-format">Pack de 24 x 25cl</p>
+                            <span class="product-price">29,90 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="redbull-pasteque.png" alt="Red Bull"></div>
+                        <div class="product-details">
+                            <h3>Red Bull Pastèque</h3>
+                            <p class="product-format">Pack de 24 x 25cl</p>
+                            <span class="product-price">29,90 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="coca-cola-50.png" alt="Coca Cola 0,5L"></div>
+                        <div class="product-details">
+                            <h3>Coca Cola</h3>
+                            <p class="product-format">Pack de 12 x 50cl</p>
+                            <span class="product-price">11,00 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="coca-cherry-50.png" alt="Coca Cherry 0,5L"></div>
+                        <div class="product-details">
+                            <h3>Cola Cherry</h3>
+                            <p class="product-format">Pack de 12 x 50cl</p>
+                            <span class="product-price">11,50 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="coca-zero-50.png" alt="Coca Zero 0,5L"></div>
+                        <div class="product-details">
+                            <h3>Cola Zero</h3>
+                            <p class="product-format">Pack de 12 x 50cl</p>
+                            <span class="product-price">11,00 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="fanta-50.png" alt="Fanta Orange 0,5L"></div>
+                        <div class="product-details">
+                            <h3>Fanta Orange</h3>
+                            <p class="product-format">Pack de 12 x 50cl</p>
+                            <span class="product-price">11,00 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="cristaline.png" alt="Cristaline"></div>
+                        <div class="product-details">
+                            <h3>Cristaline</h3>
+                            <p class="product-format">Pack de 24 x 50cl</p>
+                            <span class="product-price">4,50 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="perrier.png" alt="Perrier"></div>
+                        <div class="product-details">
+                            <h3>Perrier</h3>
+                            <p class="product-format">Pack de 24 x 33cl</p>
+                            <span class="product-price">11,80 € H.T.</span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image-container"><img src="sanpel.png" alt="San Pellegrino"></div>
+                        <div class="product-details">
+                            <h3>San pelegrino</h3>
+                            <p class="product-format">Pack de 24 x 50cl</p>
+                            <span class="product-price">12,50 € H.T.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-            </div>
 
-            <button class="accordion-toggle hidden" type="button" data-target="panel-alcool" aria-expanded="false">
-                <span>Alcool</span>
-                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        <div class="category-wrapper hidden">
+            <button class="category-header" onclick="toggleCategory('alcools', this)">
+                <span><i class="fas fa-wine-bottle"></i> ALCOOLS</span>
+                <i class="fas fa-chevron-down arrow"></i>
             </button>
-            <div id="panel-alcool" class="accordion-panel">
-                <button class="accordion-toggle accordion-toggle--sub hidden" type="button" data-target="panel-spiritueux" aria-expanded="false">
-                    <span>Spiritueux</span>
-                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                </button>
-                <div id="panel-spiritueux" class="accordion-panel accordion-panel--sub">
-                    <p class="catalogue-empty">Bientôt disponible.</p>
-                </div>
+            <div id="alcools" class="category-content">
+                <div class="subcategory-container">
+                    
+                    <div class="category-wrapper">
+                        <button class="category-header sub-header" onclick="toggleCategory('spiritueux', this)">
+                            <span>Spiritueux</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </button>
+                        <div id="spiritueux" class="category-content">
+                            <p class="empty-message">Nos spiritueux seront bientôt disponibles dans le catalogue.</p>
+                        </div>
+                    </div>
 
-                <button class="accordion-toggle accordion-toggle--sub hidden" type="button" data-target="panel-biere" aria-expanded="false">
-                    <span>Bières</span>
-                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                </button>
-                <div id="panel-biere" class="accordion-panel accordion-panel--sub">
-                    <p class="catalogue-empty">Bientôt disponible.</p>
+                    <div class="category-wrapper">
+                        <button class="category-header sub-header" onclick="toggleCategory('bieres', this)">
+                            <span>Bières</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </button>
+                        <div id="bieres" class="category-content">
+                            <p class="empty-message">Notre sélection de bières sera bientôt disponible dans le catalogue.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
+
     </section>
 
     <footer>
         <p>© 2025 DisFly. Tous droits réservés.</p>
-		<a href="mentions-legales.html" style="color:#ccc;">Mentions légales</a> |
-		<a href="politique-confidentialite.html" style="color:#ccc;">Politique de confidentialité</a>
-		</p>
+		<p>
+            <a href="mentions-legales.html" style="color:#ccc;">Mentions légales</a> |
+		    <a href="politique-confidentialite.html" style="color:#ccc;">Politique de confidentialité</a>
+        </p>
 		<p>
 		  <a href="https://www.snapchat.com/add/disfly.fr" target="_blank" rel="noopener" aria-label="Snapchat" style="color: #ccc; font-size: 24px; margin: 0 10px;"><i class="fab fa-snapchat-ghost"></i></a>
 		  <a href="https://www.tiktok.com/@disfly.fr" target="_blank" rel="noopener" aria-label="TikTok" style="color: #ccc; font-size: 24px; margin: 0 10px;"><i class="fab fa-tiktok"></i></a>
@@ -477,116 +466,9 @@
 		  <a href="https://www.facebook.com/share/17MjspEM2U/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook" style="color: #ccc; font-size: 24px;  margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
 		  <a href="https://www.instagram.com/disfly.fr" target="_blank" rel="noopener" aria-label="Instagram" style="color: #ccc; font-size: 24px;  margin: 0 10px;"><i class="fab fa-instagram"></i></a>
 		</p>
-
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var form = document.getElementById("contactForm");
-            if (form) {
-                var status = document.getElementById("formStatus");
-                async function handleSubmit(event) {
-                    event.preventDefault();
-                    var data = new FormData(event.target);
-                    fetch(event.target.action, {
-                        method: form.method,
-                        body: data,
-                        headers: {
-                            "Accept": "application/json"
-                        }
-                    }).then(response => {
-                        if (response.ok) {
-                            status.textContent = "Message envoyé avec succès !";
-                            status.style.color = "green";
-                            form.reset();
-                        } else {
-                            response.json().then(data => {
-                                if (Object.hasOwn(data, "errors")) {
-                                    status.textContent = data["errors"].map(error => error["message"]).join(", ");
-                                    status.style.color = "red";
-                                } else {
-                                    status.textContent = "Oops! Il y a eu un problème lors de l'envoi.";
-                                    status.style.color = "red";
-                                }
-                            })
-                        }
-                    }).catch(error => {
-                        status.textContent = "Oops! Il y a eu un problème lors de l'envoi.";
-                        status.style.color = "red";
-                    });
-                }
-                form.addEventListener("submit", handleSubmit);
-            }
-
-
-
-            // Catalogue: bandeaux deroulants (accordeon)
-            (function initCatalogueAccordions() {
-                const toggles = document.querySelectorAll('.accordion-toggle');
-                if (!toggles.length) return;
-
-                function setPanelState(btn, open) {
-                    const targetId = btn.getAttribute('data-target');
-                    if (!targetId) return;
-                    const panel = document.getElementById(targetId);
-                    if (!panel) return;
-
-                    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-                    panel.classList.toggle('open', open);
-
-                    if (open) {
-                        // On mesure puis on applique la hauteur pour l'animation
-                        panel.style.maxHeight = panel.scrollHeight + 'px';
-                    } else {
-                        panel.style.maxHeight = '0px';
-                    }
-                }
-
-                // Etat initial
-                toggles.forEach((btn) => {
-                    const expanded = btn.getAttribute('aria-expanded') === 'true';
-                    setPanelState(btn, expanded);
-
-                    btn.addEventListener('click', () => {
-                        const isOpen = btn.getAttribute('aria-expanded') === 'true';
-                        setPanelState(btn, !isOpen);
-
-                        // Si on ouvre un panneau parent, recalculer sa hauteur après l'animation
-                        // (utile pour les sous-bandeaux)
-                        const parentPanel = btn.closest('.accordion-panel');
-                        if (parentPanel && parentPanel.style.maxHeight && parentPanel.style.maxHeight !== '0px') {
-                            setTimeout(() => {
-                                parentPanel.style.maxHeight = parentPanel.scrollHeight + 'px';
-                            }, 360);
-                        }
-                    });
-                });
-
-                // Recalcul au redimensionnement
-                window.addEventListener('resize', () => {
-                    toggles.forEach((btn) => {
-                        if (btn.getAttribute('aria-expanded') !== 'true') return;
-                        const targetId = btn.getAttribute('data-target');
-                        const panel = targetId ? document.getElementById(targetId) : null;
-                        if (panel) panel.style.maxHeight = panel.scrollHeight + 'px';
-                    });
-                });
-            })();
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('show');
-                    } else {
-                        entry.target.classList.remove('show');
-                    }
-                });
-            });
-
-            const hiddenElements = document.querySelectorAll('.hidden');
-            hiddenElements.forEach((el) => observer.observe(el));
-        });
-    </script>
+    <script src="script.js"></script>
 	
 	<div id="cookieConsent"
 	  style="position:fixed; bottom:0; background:#111827; color:#fff; width:100%; padding:15px; display:flex;
@@ -609,6 +491,15 @@
 		localStorage.setItem('cookiesAccepted', 'true');
 		document.getElementById('cookieConsent').style.display = 'none';
 	  };
+
+      // Fonction pour les bandeaux (Placée ici ou dans script.js)
+      function toggleCategory(id, btn) {
+          const content = document.getElementById(id);
+          const arrow = btn.querySelector('.arrow');
+          
+          content.classList.toggle('active');
+          arrow.classList.toggle('active-arrow');
+      }
 	</script>	
 </body>
 </html>

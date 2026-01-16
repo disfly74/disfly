@@ -31,7 +31,13 @@
         <p class="catalogue-intro hidden">Découvrez notre vaste sélection de boissons, soigneusement choisie pour répondre aux besoins des professionnels.</p>
         <p class="delivery-message hidden">Livraison à partir de 200€ (H.T.) de commande</p>
 
-		<div class="catalogue-grid">
+		<div class="catalogue-accordions">
+            <button class="accordion-toggle hidden" type="button" data-target="panel-soft" aria-expanded="true">
+                <span>Boissons soft</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div id="panel-soft" class="accordion-panel open">
+<div class="catalogue-grid">
             <div class="product-item hidden">
                 <div class="product-image-container">
                     <img src="coca-slim.png" alt="Coca Cola">
@@ -433,6 +439,30 @@
                 </div>
             </div>
         </div>
+            </div>
+
+            <button class="accordion-toggle hidden" type="button" data-target="panel-alcool" aria-expanded="false">
+                <span>Alcool</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div id="panel-alcool" class="accordion-panel">
+                <button class="accordion-toggle accordion-toggle--sub hidden" type="button" data-target="panel-spiritueux" aria-expanded="false">
+                    <span>Spiritueux</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="panel-spiritueux" class="accordion-panel accordion-panel--sub">
+                    <p class="catalogue-empty">Bientôt disponible.</p>
+                </div>
+
+                <button class="accordion-toggle accordion-toggle--sub hidden" type="button" data-target="panel-biere" aria-expanded="false">
+                    <span>Bières</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="panel-biere" class="accordion-panel accordion-panel--sub">
+                    <p class="catalogue-empty">Bientôt disponible.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -487,6 +517,61 @@
                 }
                 form.addEventListener("submit", handleSubmit);
             }
+
+
+
+            // Catalogue: bandeaux deroulants (accordeon)
+            (function initCatalogueAccordions() {
+                const toggles = document.querySelectorAll('.accordion-toggle');
+                if (!toggles.length) return;
+
+                function setPanelState(btn, open) {
+                    const targetId = btn.getAttribute('data-target');
+                    if (!targetId) return;
+                    const panel = document.getElementById(targetId);
+                    if (!panel) return;
+
+                    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+                    panel.classList.toggle('open', open);
+
+                    if (open) {
+                        // On mesure puis on applique la hauteur pour l'animation
+                        panel.style.maxHeight = panel.scrollHeight + 'px';
+                    } else {
+                        panel.style.maxHeight = '0px';
+                    }
+                }
+
+                // Etat initial
+                toggles.forEach((btn) => {
+                    const expanded = btn.getAttribute('aria-expanded') === 'true';
+                    setPanelState(btn, expanded);
+
+                    btn.addEventListener('click', () => {
+                        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+                        setPanelState(btn, !isOpen);
+
+                        // Si on ouvre un panneau parent, recalculer sa hauteur après l'animation
+                        // (utile pour les sous-bandeaux)
+                        const parentPanel = btn.closest('.accordion-panel');
+                        if (parentPanel && parentPanel.style.maxHeight && parentPanel.style.maxHeight !== '0px') {
+                            setTimeout(() => {
+                                parentPanel.style.maxHeight = parentPanel.scrollHeight + 'px';
+                            }, 360);
+                        }
+                    });
+                });
+
+                // Recalcul au redimensionnement
+                window.addEventListener('resize', () => {
+                    toggles.forEach((btn) => {
+                        if (btn.getAttribute('aria-expanded') !== 'true') return;
+                        const targetId = btn.getAttribute('data-target');
+                        const panel = targetId ? document.getElementById(targetId) : null;
+                        if (panel) panel.style.maxHeight = panel.scrollHeight + 'px';
+                    });
+                });
+            })();
 
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {

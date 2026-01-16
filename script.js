@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         form.addEventListener("submit", handleSubmit);
     }
 
+    // Gestion de l'apparition au défilement (Scroll Reveal)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -48,3 +49,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
 });
+
+/**
+ * Fonction pour déplier/replier les catégories du catalogue
+ * @param {string} id - L'ID de l'élément à afficher/cacher
+ * @param {HTMLElement} btn - Le bouton cliqué pour animer la flèche
+ */
+function toggleCategory(id, btn) {
+    const content = document.getElementById(id);
+    const arrow = btn.querySelector('.arrow');
+    
+    // Alterne la classe active pour le contenu (déclenche l'animation max-height en CSS)
+    content.classList.toggle('active');
+    
+    // Alterne la rotation de la flèche
+    if (arrow) {
+        arrow.classList.toggle('active-arrow');
+    }
+}

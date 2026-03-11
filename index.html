@@ -1,165 +1,1252 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DisFly - Boissons en gros pour professionnels</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<link rel="icon" type="image/png" href="/LogoDisfly.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DisFly – Grossiste Boissons en Gros | Fournisseur Pro Haute-Savoie</title>
+  <meta name="description" content="DisFly, votre grossiste en boissons à Thyez (74). Sodas, eaux, Red Bull, Coca-Cola, bières – livraison dès 250€ HT. Devis gratuit pour professionnels.">
+  <meta name="keywords" content="grossiste boissons, distributeur boissons professionnels, boissons en gros Haute-Savoie, fournisseur sodas, Red Bull gros, Coca-Cola gros, bière gros, Thyez, Cluses, Annecy">
+  <meta name="author" content="DisFly">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.disfly.fr/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.disfly.fr/">
+  <meta property="og:title" content="DisFly – Grossiste Boissons en Gros pour Professionnels">
+  <meta property="og:description" content="DisFly distribue plus de 60 références de boissons pour les professionnels en Haute-Savoie. Livraison dès 250€ HT.">
+  <meta property="og:image" content="https://www.disfly.fr/LogoDisFly.png">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="DisFly">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DisFly – Grossiste Boissons en Gros">
+  <meta name="twitter:description" content="Fournisseur professionnel de boissons en Haute-Savoie. +60 références, livraison dès 250€ HT.">
+  <meta name="twitter:image" content="https://www.disfly.fr/LogoDisFly.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "DisFly",
+    "description": "Grossiste en boissons pour professionnels en Haute-Savoie. Sodas, eaux, énergisants, bières et spiritueux.",
+    "url": "https://www.disfly.fr",
+    "logo": "https://www.disfly.fr/LogoDisFly.png",
+    "telephone": "+33759599818",
+    "email": "contact@disfly.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "320 rue des sorbiers",
+      "addressLocality": "Thyez",
+      "postalCode": "74300",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 46.0761768,
+      "longitude": 6.5415329
+    },
+    "areaServed": ["Haute-Savoie","Cluses","Annecy","Bonneville","Sallanches"],
+    "priceRange": "€€",
+    "sameAs": [
+      "https://www.facebook.com/share/17MjspEM2U/?mibextid=wwXIfr",
+      "https://www.instagram.com/disfly.fr",
+      "https://www.tiktok.com/@disfly.fr",
+      "https://www.linkedin.com/in/disfly.fr"
+    ]
+  }
+  </script>
+          <link rel="icon" type="image/png" href="LogoDisfly.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+/* ===================================================
+   DisFly – Style complet amélioré
+   =================================================== */
+
+/* Fallback fonts when Google Fonts unavailable */
+
+
+:root {
+  --navy: #0d1b2a;
+  --navy-2: #1a2e42;
+  --accent: #0ea5e9;
+  --accent-dark: #0284c7;
+  --accent-glow: rgba(14,165,233,.25);
+  --white: #ffffff;
+  --off-white: #f8fafc;
+  --light: #e2e8f0;
+  --muted: #94a3b8;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --card-bg: #ffffff;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.06);
+  --shadow: 0 8px 30px rgba(0,0,0,.10);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,.15);
+  --trans: 0.3s ease;
+}
+
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  background: var(--off-white);
+  color: var(--text);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+/* On attend que le JS soit prêt avant d'activer les animations */
+.js-ready .hidden {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+.js-ready .show { opacity: 1; transform: translateY(0); }
+
+/* ===== TOPBAR ===== */
+.topbar {
+  background: var(--navy);
+  color: var(--light);
+  font-size: .82rem;
+  padding: 8px 24px;
+  font-weight: 500;
+}
+.topbar-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.topbar span { display: flex; align-items: center; gap: 6px; }
+.topbar i { color: var(--accent); }
+.topbar-sep { color: var(--muted); }
+
+/* ===== HEADER ===== */
+#main-header {
+  background: var(--navy);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  transition: all .3s ease;
+}
+#main-header.scrolled { padding: 0; box-shadow: 0 4px 30px rgba(0,0,0,.3); }
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+}
+
+.logo-img {
+  height: 64px;
+  width: auto;
+  transition: transform .3s ease, filter .3s;
+  border-radius: 8px;
+}
+.logo-img:hover { transform: scale(1.06); filter: brightness(1.1); }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.nav-links li a {
+  color: var(--light);
+  font-weight: 600;
+  font-size: .95rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background var(--trans), color var(--trans);
+  position: relative;
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: var(--accent);
+  background: rgba(14,165,233,.1);
+}
+.nav-links li a.nav-cta {
+  background: var(--accent);
+  color: var(--white);
+  padding: 9px 20px;
+  border-radius: 8px;
+  margin-left: 8px;
+  font-weight: 700;
+  transition: background var(--trans), transform var(--trans);
+}
+.nav-links li a.nav-cta:hover { background: var(--accent-dark); transform: translateY(-1px); }
+
+/* Burger menu */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+.burger span {
+  display: block;
+  width: 26px;
+  height: 2.5px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all .3s ease;
+}
+.burger.open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  overflow: hidden;
+}
+.hero-image-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(13,27,42,.85) 0%, rgba(13,27,42,.6) 60%, rgba(14,165,233,.15) 100%);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  padding: 0 20px;
+  animation: fadeUp .9s ease both;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-badge {
+  display: inline-block;
+  background: rgba(14,165,233,.2);
+  border: 1px solid rgba(14,165,233,.4);
+  color: #7dd3fc;
+  font-size: .85rem;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 100px;
+  letter-spacing: .04em;
+  margin-bottom: 20px;
+  backdrop-filter: blur(6px);
+}
+.hero-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.02em;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.hero-title em {
+  font-style: normal;
+  background: linear-gradient(90deg, #38bdf8, #7dd3fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero-tagline {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: rgba(255,255,255,.82);
+  margin-bottom: 32px;
+}
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+.hero-stats {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 18px 32px;
+  gap: 0;
+}
+.stat { text-align: center; padding: 0 24px; }
+.stat strong { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 800; color: var(--accent); }
+.stat span { font-size: .8rem; color: rgba(255,255,255,.65); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; }
+.stat-sep { width: 1px; height: 40px; background: rgba(255,255,255,.15); }
+.hero-scroll {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,.5);
+  font-size: 1.2rem;
+  animation: bounce 2s infinite;
+  z-index: 2;
+}
+@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+
+/* ===== BTN SYSTEM ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: .95rem;
+  padding: 13px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all .25s ease;
+  text-decoration: none;
+}
+.btn-primary { background: var(--accent); color: var(--white); }
+.btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 8px 20px var(--accent-glow); }
+.btn-ghost { background: transparent; color: var(--white); border-color: rgba(255,255,255,.4); }
+.btn-ghost:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.7); }
+.btn-light { background: var(--white); color: var(--navy); }
+.btn-light:hover { background: var(--light); transform: translateY(-2px); }
+.btn-ghost-light { background: transparent; color: var(--white); border-color: rgba(255,255,255,.4); }
+.btn-ghost-light:hover { background: rgba(255,255,255,.1); }
+.btn-sm { padding: 8px 18px; font-size: .88rem; }
+
+/* ===== TRUST BAR ===== */
+.trust-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--light);
+  padding: 16px 0;
+  overflow: hidden;
+}
+.trust-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.trust-label {
+  font-weight: 700;
+  font-size: .85rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+.trust-logos { display: flex; gap: 10px; flex-wrap: wrap; }
+.brand-pill {
+  background: var(--off-white);
+  border: 1px solid var(--light);
+  color: var(--text);
+  font-size: .82rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 100px;
+  transition: all var(--trans);
+}
+.brand-pill:hover { background: var(--accent); color: var(--white); border-color: var(--accent); }
+
+/* ===== SECTION COMMON ===== */
+.section-services, .section-why, .section-featured, .section-faq, .section-cta { padding: 96px 0; }
+
+.section-header { text-align: center; margin-bottom: 56px; }
+.section-label {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.section-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: -.01em;
+}
+.section-subtitle { color: var(--text-light); font-size: 1.05rem; margin-top: 10px; }
+
+/* ===== SERVICES ===== */
+.section-services { background: var(--off-white); }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+.service-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--light);
+  transition: all .3s ease;
+}
+.service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: var(--accent); }
+.service-icon {
+  width: 68px; height: 68px;
+  background: linear-gradient(135deg, var(--accent), #38bdf8);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.6rem;
+  color: var(--white);
+}
+.service-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; text-transform: uppercase; }
+.service-card p { color: var(--text-light); font-size: .95rem; }
+
+/* ===== WHY ===== */
+.section-why { background: var(--navy); color: var(--white); }
+.why-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.why-text .section-label { color: #7dd3fc; }
+.why-text h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; text-transform: uppercase; margin: 10px 0 28px; line-height: 1.1; }
+.why-list { list-style: none; margin-bottom: 36px; display: flex; flex-direction: column; gap: 14px; }
+.why-list li { display: flex; align-items: center; gap: 12px; font-size: 1rem; color: rgba(255,255,255,.85); }
+.why-list li i { color: #34d399; font-size: 1.1rem; flex-shrink: 0; }
+.why-image-wrap { position: relative; display: flex; align-items: center; justify-content: center; }
+.why-logo-box {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 24px;
+  padding: 48px;
+  backdrop-filter: blur(10px);
+}
+.why-logo { max-width: 220px; margin: 0 auto; }
+.why-badge-float {
+  position: absolute;
+  bottom: -16px;
+  right: 20px;
+  background: var(--accent);
+  color: var(--white);
+  font-weight: 700;
+  font-size: .88rem;
+  padding: 10px 20px;
+  border-radius: 100px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  box-shadow: 0 8px 24px var(--accent-glow);
+}
+
+/* ===== FEATURED PRODUCTS ===== */
+.section-featured { background: var(--white); }
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+.feat-card {
+  background: var(--off-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 2px solid var(--light);
+  transition: all .3s ease;
+  text-decoration: none;
+  color: var(--text);
+}
+.feat-card:hover { border-color: var(--accent); transform: translateY(-6px); box-shadow: var(--shadow); }
+.feat-img-wrap {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--white);
+}
+.feat-img-wrap img { max-height: 160px; object-fit: contain; transition: transform .4s ease; }
+.feat-card:hover .feat-img-wrap img { transform: scale(1.08); }
+.feat-info { padding: 16px 20px; border-top: 1px solid var(--light); }
+.feat-info h3 { font-weight: 700; font-size: 1rem; color: var(--navy); }
+.feat-info p { font-size: .84rem; color: var(--text-light); margin-top: 2px; }
+
+/* ===== FAQ ===== */
+.section-faq { background: var(--off-white); }
+.faq-list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--light);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color .3s;
+}
+.faq-item[open] { border-color: var(--accent); }
+.faq-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  color: var(--navy);
+  gap: 12px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-icon { color: var(--accent); flex-shrink: 0; transition: transform .3s; }
+.faq-item[open] .faq-icon { transform: rotate(45deg); }
+.faq-body { padding: 0 24px 20px; color: var(--text-light); font-size: .97rem; }
+.faq-body a { color: var(--accent); text-decoration: underline; }
+
+/* ===== CTA SECTION ===== */
+.section-cta {
+  background: linear-gradient(135deg, var(--accent-dark) 0%, #0369a1 100%);
+  padding: 80px 0;
+}
+.cta-box { text-align: center; color: var(--white); }
+.cta-box h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; text-transform: uppercase; margin-bottom: 12px; }
+.cta-box p { font-size: 1.1rem; color: rgba(255,255,255,.85); margin-bottom: 32px; }
+.cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--navy);
+  color: rgba(255,255,255,.75);
+  padding: 64px 0 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+}
+.footer-logo { height: 56px; margin-bottom: 16px; }
+.footer-brand p { font-size: .9rem; line-height: 1.7; }
+footer h4 { color: var(--white); font-size: .85rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 16px; }
+.footer-nav ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-nav ul li a { font-size: .9rem; transition: color var(--trans); }
+.footer-nav ul li a:hover { color: var(--accent); }
+.footer-contact p { display: flex; align-items: flex-start; gap: 10px; font-size: .9rem; margin-bottom: 10px; }
+.footer-contact i { color: var(--accent); margin-top: 3px; flex-shrink: 0; }
+.footer-contact a:hover { color: var(--accent); }
+.social-links { display: flex; gap: 12px; flex-wrap: wrap; }
+.social-links a {
+  width: 40px; height: 40px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: rgba(255,255,255,.7);
+  transition: all var(--trans);
+}
+.social-links a:hover { background: var(--accent); border-color: var(--accent); color: var(--white); transform: translateY(-2px); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding: 20px 24px;
+  text-align: center;
+  font-size: .82rem;
+  color: var(--muted);
+}
+
+/* ===== COOKIE ===== */
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--navy);
+  color: rgba(255,255,255,.85);
+  padding: 16px 24px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 10000;
+  max-width: 680px;
+  width: calc(100% - 32px);
+  box-shadow: 0 20px 50px rgba(0,0,0,.3);
+  border: 1px solid rgba(255,255,255,.1);
+  font-size: .9rem;
+}
+.cookie-banner a { color: var(--accent); text-decoration: underline; }
+.cookie-banner .btn { white-space: nowrap; }
+
+/* ===== BACK TO TOP ===== */
+.back-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 46px; height: 46px;
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  z-index: 900;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all .3s ease;
+  box-shadow: 0 6px 20px var(--accent-glow);
+}
+.back-top.visible { opacity: 1; transform: translateY(0); }
+.back-top:hover { background: var(--accent-dark); transform: translateY(-2px); }
+
+/* ===== CATALOGUE PAGE ===== */
+.page-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  text-align: center;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: -.01em;
+  margin-bottom: 12px;
+}
+.catalogue-intro { text-align: center; color: var(--text-light); max-width: 600px; margin: 0 auto 10px; }
+.delivery-message {
+  text-align: center;
+  font-weight: 700;
+  color: var(--accent-dark);
+  font-size: 1rem;
+  margin-bottom: 40px;
+  padding: 12px 20px;
+  background: rgba(14,165,233,.08);
+  border: 1px solid rgba(14,165,233,.2);
+  border-radius: 8px;
+  display: inline-block;
+  width: 100%;
+}
+#catalogue-page { padding: 64px 0 96px; }
+
+.cat-search-bar {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cat-search-bar input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px 18px;
+  border: 1px solid var(--light);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: .95rem;
+  outline: none;
+  transition: border-color var(--trans);
+}
+.cat-search-bar input:focus { border-color: var(--accent); }
+
+.category-wrapper { margin-bottom: 16px; }
+.category-header {
+  width: 100%;
+  background: var(--navy);
+  color: var(--white);
+  padding: 18px 24px;
+  border: none;
+  border-radius: var(--radius);
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background .3s;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.category-header:hover { background: var(--navy-2); }
+.category-content { max-height: 0; overflow: hidden; transition: max-height .5s cubic-bezier(0,1,0,1); }
+.category-content.active { max-height: 10000px; transition: max-height 1s ease-in-out; padding-top: 20px; }
+.arrow { transition: transform .3s ease; }
+.active-arrow { transform: rotate(180deg); }
+
+.catalogue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.product-item {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--light);
+  display: flex;
+  flex-direction: column;
+  transition: all .3s ease;
+}
+.product-item:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: var(--accent); }
+.product-image-container {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: var(--off-white);
+}
+.product-image-container img { max-height: 140px; object-fit: contain; transition: transform .4s ease; }
+.product-item:hover .product-image-container img { transform: scale(1.08); }
+.product-details { padding: 16px; flex-grow: 1; }
+.product-details h3 { font-weight: 700; font-size: .95rem; color: var(--navy); margin-bottom: 4px; }
+.product-format { font-size: .82rem; color: var(--text-light); }
+.product-price { font-weight: 700; color: var(--navy); font-size: .9rem; margin-top: 8px; }
+
+/* ===== CONTACT PAGE ===== */
+#contact-page { padding: 64px 0 96px; }
+.contact-intro { text-align: center; color: var(--text-light); max-width: 560px; margin: 0 auto 40px; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 48px; }
+.contact-form-container, .contact-info {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--light);
+}
+.contact-form-container h3, .contact-info h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 13px 16px;
+  margin-bottom: 16px;
+  border: 1px solid var(--light);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: .95rem;
+  outline: none;
+  transition: border-color var(--trans);
+  background: var(--off-white);
+}
+.contact-form input:focus, .contact-form textarea:focus { border-color: var(--accent); background: var(--white); }
+.contact-form textarea { resize: vertical; }
+.contact-form .btn { width: 100%; justify-content: center; }
+.form-status-message { margin-top: 14px; font-weight: 600; font-size: .9rem; }
+.contact-info p { display: flex; align-items: flex-start; gap: 14px; font-size: 1rem; margin-bottom: 20px; color: var(--text); }
+.contact-info i { color: var(--accent); font-size: 1.1rem; margin-top: 3px; flex-shrink: 0; }
+.map-container { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); }
+.map-container h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+.map-container iframe { width: 100%; height: 420px; border: none; display: block; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .why-content { gap: 40px; }
+}
+
+@media (max-width: 768px) {
+  .topbar-sep { display: none; }
+  .topbar-inner { gap: 12px; justify-content: center; }
+
+  .burger { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    flex-direction: column;
+    padding: 16px;
+    gap: 4px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,.3);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li a { display: block; padding: 12px 16px; border-radius: 8px; }
+  .nav-links li a.nav-cta { margin-left: 0; text-align: center; }
+
+  .hero-stats { flex-direction: column; gap: 12px; }
+  .stat-sep { width: 60px; height: 1px; }
+
+  .why-content { grid-template-columns: 1fr; }
+  .why-image-wrap { display: none; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+
+  .section-services, .section-why, .section-featured, .section-faq, .section-cta { padding: 64px 0; }
+
+  .catalogue-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+  .product-image-container { height: 130px; }
+
+  .cookie-banner { flex-direction: column; text-align: center; gap: 14px; }
+
+  .back-top { bottom: 16px; right: 16px; }
+}
+
+@media (max-width: 480px) {
+  .hero-actions { flex-direction: column; align-items: center; }
+  .hero-stats { padding: 16px; }
+  .catalogue-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ===================================================
+   FALLBACK ICONS – works without Font Awesome
+   =================================================== */
+/* When FA doesn't load, show text/emoji fallbacks */
+.fa-phone-alt::before { content: "📞"; font-family: emoji; font-style: normal; }
+.fa-phone::before { content: "📞"; font-family: emoji; font-style: normal; }
+.fa-envelope::before { content: "✉"; font-family: emoji; font-style: normal; }
+.fa-truck::before { content: "🚚"; font-family: emoji; font-style: normal; }
+.fa-truck-fast::before { content: "🚚"; font-family: emoji; font-style: normal; }
+.fa-tags::before { content: "🏷"; font-family: emoji; font-style: normal; }
+.fa-headset::before { content: "🎧"; font-family: emoji; font-style: normal; }
+.fa-boxes-stacked::before { content: "📦"; font-family: emoji; font-style: normal; }
+.fa-check-circle::before { content: "✅"; font-family: emoji; font-style: normal; }
+.fa-star::before { content: "⭐"; font-family: emoji; font-style: normal; }
+.fa-map-marker-alt::before { content: "📍"; font-family: emoji; font-style: normal; }
+.fa-clock::before { content: "🕐"; font-family: emoji; font-style: normal; }
+.fa-paper-plane::before { content: "✉"; font-family: emoji; font-style: normal; }
+.fa-arrow-up::before { content: "↑"; font-family: emoji; font-style: normal; }
+.fa-search::before { content: "🔍"; font-family: emoji; font-style: normal; }
+.fa-glass-whiskey::before { content: "🥤"; font-family: emoji; font-style: normal; }
+.fa-droplet::before { content: "💧"; font-family: emoji; font-style: normal; }
+.fa-beer-mug-empty::before { content: "🍺"; font-family: emoji; font-style: normal; }
+.fa-chevron-down::before { content: "▾"; font-family: emoji; font-style: normal; }
+.fa-plus::before { content: "+"; font-family: emoji; font-style: normal; }
+.fa-snapchat-ghost::before { content: "👻"; font-family: emoji; font-style: normal; }
+.fa-tiktok::before { content: "TK"; font-family: sans-serif; font-style: normal; font-size: .75em; font-weight: 700; }
+.fa-linkedin-in::before { content: "in"; font-family: sans-serif; font-style: normal; font-size: .75em; font-weight: 700; }
+.fa-facebook-f::before { content: "f"; font-family: sans-serif; font-style: normal; font-weight: 700; }
+.fa-instagram::before { content: "▣"; font-family: emoji; font-style: normal; }
+
+/* These only apply if Font Awesome fails to load */
+
+  </style>
 </head>
 <body>
 
-    <header>
-        <nav class="container">
-            <a href="index.html" class="logo-link">
-                <img src="LogoDisFly.png" alt="DisFly Logo" class="logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="catalogue.html">Catalogue</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-<!-- 🎉 Bandeau Bonne Année 2026 -->
-<section class="ny2026-banner">
-  <div class="ny2026-wrap">
-    <div class="ny2026-glow" aria-hidden="true"></div>
-    <div class="ny2026-frame">
-      <div class="ny2026-panel">
-        <h2 class="ny2026-title">
-        <div class="ny2026-actions">
-          <a class="ny2026-btn ny2026-primary" href="catalogue.html">Voir le catalogue</a>
-          <a class="ny2026-btn ny2026-ghost" href="contact.html">Nous contacter</a>
+<div class="topbar">
+  <div class="topbar-inner">
+    <span><i class="fas fa-phone-alt"></i> +33 7 59 59 98 18</span>
+    <span class="topbar-sep">|</span>
+    <span><i class="fas fa-envelope"></i> contact@disfly.fr</span>
+    <span class="topbar-sep">|</span>
+    <span><i class="fas fa-truck"></i> Livraison dès 250€ HT</span>
+  </div>
+</div>
+
+<header id="main-header">
+  <nav class="container nav-inner">
+    <a href="index.html" class="logo-link" aria-label="DisFly accueil">
+      <img src="LogoDisFly.png" alt="DisFly – Grossiste boissons Haute-Savoie" class="logo-img">
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Devis Gratuit</a></li>
+    </ul>
+    <button class="burger" id="burger-btn" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<section class="hero" aria-label="Accueil DisFly">
+  <div class="hero-image-container">
+    <img src="IMG-20250906-WA0021.jpg" alt="Entrepôt DisFly boissons en gros Haute-Savoie" class="hero-image" loading="eager">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <span class="hero-badge">🏭 Grossiste Professionnel – Haute-Savoie</span>
+    <h1 class="hero-title">Votre Fournisseur<br><em>de Boissons</em></h1>
+    <p class="hero-tagline">+60 références • Livraison Haute-Savoie • Prix pros imbattables</p>
+    <div class="hero-actions">
+      <a href="catalogue.html" class="btn btn-primary">Voir le Catalogue</a>
+      <a href="contact.html" class="btn btn-ghost">Demander un Devis</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>60+</strong><span>Références</span></div>
+      <div class="stat-sep"></div>
+      <div class="stat"><strong>250€</strong><span>Min. livraison HT</span></div>
+      <div class="stat-sep"></div>
+      <div class="stat"><strong>74</strong><span>Haute-Savoie</span></div>
+    </div>
+  </div>
+  <a href="#services" class="hero-scroll" aria-label="Défiler vers le bas">
+    <i class="fas fa-chevron-down"></i>
+  </a>
+</section>
+
+<div class="trust-bar">
+  <div class="container trust-inner">
+    <span class="trust-label">Nous distribuons :</span>
+    <div class="trust-logos">
+      <span class="brand-pill">Coca-Cola</span>
+      <span class="brand-pill">Red Bull</span>
+      <span class="brand-pill">Fanta</span>
+      <span class="brand-pill">Sprite</span>
+      <span class="brand-pill">Oasis</span>
+      <span class="brand-pill">Perrier</span>
+      <span class="brand-pill">Orangina</span>
+      <span class="brand-pill">Schweppes</span>
+      <span class="brand-pill">1664</span>
+      <span class="brand-pill">Efes</span>
+    </div>
+  </div>
+</div>
+
+<section id="services" class="section-services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Ce qu'on vous offre</span>
+      <h2 class="section-title hidden">Nos Services</h2>
+      <p class="section-subtitle hidden">Tout ce dont votre activité a besoin, réuni en un seul partenaire.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card hidden">
+        <div class="service-icon"><i class="fas fa-truck-fast"></i></div>
+        <h3>Livraison Adaptée</h3>
+        <p>Livraison organisée selon vos horaires et votre fréquence de commande, partout en Haute-Savoie dès 250€ HT.</p>
+      </article>
+      <article class="service-card hidden">
+        <div class="service-icon"><i class="fas fa-boxes-stacked"></i></div>
+        <h3>Grand Choix</h3>
+        <p>Plus de 60 références : sodas, jus, eaux plates et gazeuses, thés glacés, énergisants, bières et spiritueux.</p>
+      </article>
+      <article class="service-card hidden">
+        <div class="service-icon"><i class="fas fa-tags"></i></div>
+        <h3>Prix Compétitifs</h3>
+        <p>Tarifs exclusifs réservés aux professionnels, promotions régulières pour maximiser votre marge commerciale.</p>
+      </article>
+      <article class="service-card hidden">
+        <div class="service-icon"><i class="fas fa-headset"></i></div>
+        <h3>Suivi Personnalisé</h3>
+        <p>Un interlocuteur dédié pour répondre à vos questions et adapter vos commandes en toute simplicité.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section-why">
+  <div class="container">
+    <div class="why-content">
+      <div class="why-text hidden">
+        <span class="section-label">Pourquoi DisFly ?</span>
+        <h2>Le partenaire idéal<br>pour les professionnels</h2>
+        <ul class="why-list">
+          <li><i class="fas fa-check-circle"></i> Livraison fiable en Haute-Savoie</li>
+          <li><i class="fas fa-check-circle"></i> Commandes min. à 250€ HT seulement</li>
+          <li><i class="fas fa-check-circle"></i> Grandes marques + références originales</li>
+          <li><i class="fas fa-check-circle"></i> Devis gratuit et sans engagement</li>
+          <li><i class="fas fa-check-circle"></i> Réponse rapide sous 24h</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+      </div>
+      <div class="why-image-wrap hidden">
+        <div class="why-logo-box">
+          <img src="LogoDisFly.png" alt="DisFly fournisseur boissons professionnels Haute-Savoie" class="why-logo">
         </div>
+        <div class="why-badge-float"><i class="fas fa-star"></i> Spécialiste pro</div>
       </div>
     </div>
   </div>
 </section>
-<!-- Fin du bandeau Bonne Année -->
-    <section class="hero">
-        <div class="hero-image-container">
-            <img src="https://raw.githubusercontent.com/disfly74/disfly/main/IMG-20250906-WA0021.jpg" alt="Boissons rafraîchissantes" class="hero-image">
-        </div>
-        <div class="hero-content">
-            <h1 class="hero-title">Votre Fournisseur de boissons</h1>
-            <p class="hero-tagline">Des prix imbattables pour les professionnels</p>
-        </div>
-    </section>
-<section id="services" class="container">
-        <h2 class="section-title hidden">Nos Services</h2>
-        <div class="services-grid">
-            <div class="service-item hidden">
-                <i class="fas fa-truck-fast"></i>
-                <h3>Livraison</h3>
-                <p>Nous organisons la livraison de vos commandes, adaptée à vos besoins spécifiques.</p>
-            </div>
-            <div class="service-item hidden">
-                <i class="fas fa-list-check"></i>
-                <h3>Grand Choix</h3>
-                <p>Découvrez un vaste catalogue de boissons : sodas, jus, eaux, thés glacés et bien plus.</p>
-            </div>
-            <div class="service-item hidden">
-                <i class="fas fa-tags"></i>
-                <h3>Prix Compétitifs</h3>
-                <p>Profitez de tarifs exclusifs et de promotions régulières pour maximiser votre marge.</p>
-            </div>
-        </div>
-    </section>
 
-    <footer>
-        <p>© 2025 DisFly. Tous droits réservés.</p>
-		<p>
-		<a href="mentions-legales.html" style="color:#ccc;">Mentions légales</a> |
-		<a href="politique-confidentialite.html" style="color:#ccc;">Politique de confidentialité</a>
-		</p>
-		<p>
-		  <a href="https://www.snapchat.com/add/disfly.fr" target="_blank" rel="noopener" aria-label="Snapchat" style="color: #ccc; font-size: 24px; margin: 0 10px;"><i class="fab fa-snapchat-ghost"></i></a>
-		  <a href="https://www.tiktok.com/@disfly.fr" target="_blank" rel="noopener" aria-label="TikTok" style="color: #ccc; font-size: 24px; margin: 0 10px;"><i class="fab fa-tiktok"></i></a>
-		  <a href="https://www.linkedin.com/in/disfly.fr" target="_blank" rel="noopener" aria-label="LinkedIn" style="color: #ccc; font-size: 24px;  margin: 0 10px;"><i class="fab fa-linkedin-in"></i></a>
-		  <a href="https://www.facebook.com/share/17MjspEM2U/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook" style="color: #ccc; font-size: 24px;  margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
-		  <a href="https://www.instagram.com/disfly.fr" target="_blank" rel="noopener" aria-label="Instagram" style="color: #ccc; font-size: 24px;  margin: 0 10px;"><i class="fab fa-instagram"></i></a>
-		</p>
-    </footer>
+<section class="section-featured">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Nos best-sellers</span>
+      <h2 class="section-title hidden">Produits phares</h2>
+    </div>
+    <div class="featured-grid">
+      <a href="catalogue.html" class="feat-card hidden">
+        <div class="feat-img-wrap"><img src="coca-slim.png" alt="Coca-Cola pack 24x33cl grossiste" loading="lazy"></div>
+        <div class="feat-info"><h3>Coca-Cola</h3><p>Pack 24 × 33cl</p></div>
+      </a>
+      <a href="catalogue.html" class="feat-card hidden">
+        <div class="feat-img-wrap"><img src="redbull.png" alt="Red Bull pack 24x25cl grossiste" loading="lazy"></div>
+        <div class="feat-info"><h3>Red Bull</h3><p>Pack 24 × 25cl</p></div>
+      </a>
+      <a href="catalogue.html" class="feat-card hidden">
+        <div class="feat-img-wrap"><img src="fanta-orange-slim.png" alt="Fanta Orange pack 24x33cl grossiste" loading="lazy"></div>
+        <div class="feat-info"><h3>Fanta Orange</h3><p>Pack 24 × 33cl</p></div>
+      </a>
+      <a href="catalogue.html" class="feat-card hidden">
+        <div class="feat-img-wrap"><img src="perrier.png" alt="Perrier pack 24x33cl grossiste" loading="lazy"></div>
+        <div class="feat-info"><h3>Perrier</h3><p>Pack 24 × 33cl</p></div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="catalogue.html" class="btn btn-primary">Voir tout le catalogue →</a>
+    </div>
+  </div>
+</section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var form = document.getElementById("contactForm");
-            if (form) {
-                var status = document.getElementById("formStatus");
-                async function handleSubmit(event) {
-                    event.preventDefault();
-                    var data = new FormData(event.target);
-                    fetch(event.target.action, {
-                        method: form.method,
-                        body: data,
-                        headers: {
-                            "Accept": "application/json"
-                        }
-                    }).then(response => {
-                        if (response.ok) {
-                            status.textContent = "Message envoyé avec succès !";
-                            status.style.color = "green";
-                            form.reset();
-                        } else {
-                            response.json().then(data => {
-                                if (Object.hasOwn(data, "errors")) {
-                                    status.textContent = data["errors"].map(error => error["message"]).join(", ");
-                                    status.style.color = "red";
-                                } else {
-                                    status.textContent = "Oops! Il y a eu un problème lors de l'envoi.";
-                                    status.style.color = "red";
-                                }
-                            })
-                        }
-                    }).catch(error => {
-                        status.textContent = "Oops! Il y a eu un problème lors de l'envoi.";
-                        status.style.color = "red";
-                    });
-                }
-                form.addEventListener("submit", handleSubmit);
-            }
+<section class="section-faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Questions fréquentes</span>
+      <h2 class="section-title hidden">FAQ</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item hidden">
+        <summary><span>Quel est le montant minimum de commande ?</span><i class="fas fa-plus faq-icon"></i></summary>
+        <div class="faq-body"><p>La livraison est disponible à partir de <strong>250€ HT</strong> de commande. En dessous de ce seuil, un retrait sur place à Thyez (74300) peut être organisé.</p></div>
+      </details>
+      <details class="faq-item hidden">
+        <summary><span>Livrez-vous en dehors de la Haute-Savoie ?</span><i class="fas fa-plus faq-icon"></i></summary>
+        <div class="faq-body"><p>Notre zone principale est la Haute-Savoie. Pour toute demande hors département, contactez-nous directement et nous étudierons votre demande.</p></div>
+      </details>
+      <details class="faq-item hidden">
+        <summary><span>Comment passer une commande ?</span><i class="fas fa-plus faq-icon"></i></summary>
+        <div class="faq-body"><p>Envoyez-nous un message via notre <a href="contact.html">formulaire de contact</a>, par email ou par téléphone. Nous revenons vers vous sous 24h avec un devis personnalisé.</p></div>
+      </details>
+      <details class="faq-item hidden">
+        <summary><span>Proposez-vous des tarifs pour les événements ?</span><i class="fas fa-plus faq-icon"></i></summary>
+        <div class="faq-body"><p>Oui ! Nous proposons des offres spéciales pour les événements, festivals, restaurants, hôtels et comités d'entreprise. N'hésitez pas à nous contacter pour un devis sur-mesure.</p></div>
+      </details>
+      <details class="faq-item hidden">
+        <summary><span>Quelles marques distribuez-vous ?</span><i class="fas fa-plus faq-icon"></i></summary>
+        <div class="faq-body"><p>Nous distribuons plus de 60 références : Coca-Cola, Red Bull, Fanta, Sprite, Oasis, Schweppes, Perrier, San Pellegrino, Orangina, 1664, Efes, Desperados et bien d'autres.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('show');
-                    } else {
-                        entry.target.classList.remove('show');
-                    }
-                });
-            });
+<section class="section-cta">
+  <div class="container">
+    <div class="cta-box hidden">
+      <h2>Prêt à commander ?</h2>
+      <p>Contactez-nous dès maintenant pour recevoir votre devis personnalisé. Réponse garantie sous 24h.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-light">Demander un devis</a>
+        <a href="tel:+33759599818" class="btn btn-ghost-light"><i class="fas fa-phone"></i> +33 7 59 59 98 18</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-            const hiddenElements = document.querySelectorAll('.hidden');
-            hiddenElements.forEach((el) => observer.observe(el));
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="LogoDisFly.png" alt="DisFly logo" class="footer-logo">
+      <p>Votre grossiste de confiance en boissons, spécialiste des professionnels de Haute-Savoie.</p>
+    </div>
+    <div class="footer-nav">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fas fa-phone"></i> <a href="tel:+33759599818">+33 7 59 59 98 18</a></p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:contact@disfly.fr">contact@disfly.fr</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> 320 rue des sorbiers,<br>74300 Thyez</p>
+    </div>
+    <div class="footer-social">
+      <h4>Suivez-nous</h4>
+      <div class="social-links">
+        <a href="https://www.snapchat.com/add/disfly.fr" target="_blank" rel="noopener noreferrer" aria-label="Snapchat DisFly"><i class="fab fa-snapchat-ghost"></i></a>
+        <a href="https://www.tiktok.com/@disfly.fr" target="_blank" rel="noopener noreferrer" aria-label="TikTok DisFly"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.linkedin.com/in/disfly.fr" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn DisFly"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/share/17MjspEM2U/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook DisFly"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/disfly.fr" target="_blank" rel="noopener noreferrer" aria-label="Instagram DisFly"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 DisFly. Tous droits réservés. | Grossiste boissons Haute-Savoie</p>
+  </div>
+</footer>
+
+<div id="cookieConsent" class="cookie-banner" role="dialog" aria-live="polite">
+  <p>Nous utilisons des cookies pour améliorer votre expérience. En poursuivant, vous acceptez notre <a href="politique-confidentialite.html">politique de confidentialité</a>.</p>
+  <button id="acceptCookies" class="btn btn-primary btn-sm">Accepter</button>
+</div>
+
+<button id="back-to-top" class="back-top" aria-label="Retour en haut de page">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // === BURGER MENU ===
+  const burger = document.getElementById('burger-btn');
+  const navLinks = document.getElementById('nav-links');
+  if (burger && navLinks) {
+    burger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      burger.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', (e) => {
+      if (!burger.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('open');
+        burger.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // === HEADER SCROLL ===
+  const header = document.getElementById('main-header');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+  }
+
+  // === SCROLL ANIMATIONS ===
+  // Active la classe js-ready pour que le CSS d'animation se déclenche
+  document.documentElement.classList.add('js-ready');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add('show');
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+  // Petite pause pour laisser le DOM se stabiliser avant d'observer
+  setTimeout(() => {
+    document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+  }, 50);
+
+  // === BACK TO TOP ===
+  const backTop = document.getElementById('back-to-top');
+  if (backTop) {
+    window.addEventListener('scroll', () => {
+      backTop.classList.toggle('visible', window.scrollY > 400);
+    });
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  }
+
+  // === COOKIE CONSENT ===
+  const cookieBanner = document.getElementById('cookieConsent');
+  const acceptBtn = document.getElementById('acceptCookies');
+  if (cookieBanner) {
+    if (localStorage.getItem('cookiesAccepted')) cookieBanner.style.display = 'none';
+    if (acceptBtn) {
+      acceptBtn.addEventListener('click', () => {
+        localStorage.setItem('cookiesAccepted', 'true');
+        cookieBanner.style.display = 'none';
+      });
+    }
+  }
+
+  // === CATALOGUE TOGGLE ===
+  window.toggleCategory = function (id, btn) {
+    const content = document.getElementById(id);
+    const arrow = btn.querySelector('.arrow');
+    if (!content) return;
+    content.classList.toggle('active');
+    if (arrow) arrow.classList.toggle('active-arrow');
+  };
+
+  // === CATALOGUE SEARCH ===
+  const searchInput = document.getElementById('cat-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.toLowerCase().trim();
+      document.querySelectorAll('.product-item').forEach(item => {
+        const name = item.querySelector('h3')?.textContent.toLowerCase() || '';
+        const format = item.querySelector('.product-format')?.textContent.toLowerCase() || '';
+        item.style.display = (name.includes(q) || format.includes(q)) ? '' : 'none';
+      });
+      // Auto-open categories with results
+      document.querySelectorAll('.category-content').forEach(cat => {
+        const visible = [...cat.querySelectorAll('.product-item')].some(i => i.style.display !== 'none');
+        if (q.length > 0) {
+          cat.classList.toggle('active', visible);
+          const arrow = cat.previousElementSibling?.querySelector('.arrow');
+          if (arrow) arrow.classList.toggle('active-arrow', visible);
+        }
+      });
+    });
+  }
+
+  // === CONTACT FORM ===
+  const form = document.getElementById("contactForm");
+  if (form) {
+    const status = document.getElementById("formStatus");
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = "Envoi en cours...";
+      btn.disabled = true;
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(event.target),
+          headers: { "Accept": "application/json" }
         });
-    </script>
-	
-	<div id="cookieConsent"
-	  style="position:fixed; bottom:0; background:#111827; color:#fff; width:100%; padding:15px; display:flex;
-	  justify-content:center; align-items:center; z-index:10000;">
-	  <span>
-		Nous utilisons des cookies pour améliorer votre expérience. En poursuivant, vous acceptez notre
-		<a href="politique_confidentialite.html" style="color:#4aa8ff;">politique de confidentialité</a>.
-	  </span>
-	  <button id="acceptCookies"
-		style="margin-left:15px; padding:8px 15px; cursor:pointer; background:#4aa8ff; border:none; color:#fff; border-radius:4px;">
-		Accepter
-	  </button>
-	</div>
+        if (response.ok) {
+          status.textContent = "✅ Message envoyé avec succès ! Nous vous répondrons sous 24h.";
+          status.style.color = "#16a34a";
+          form.reset();
+        } else {
+          const data = await response.json();
+          status.textContent = data.errors ? data.errors.map(e => e.message).join(', ') : "Une erreur est survenue.";
+          status.style.color = "#dc2626";
+        }
+      } catch {
+        status.textContent = "Oops ! Problème lors de l'envoi. Veuillez réessayer.";
+        status.style.color = "#dc2626";
+      } finally {
+        btn.textContent = "Envoyer le Message";
+        btn.disabled = false;
+      }
+    });
+  }
 
-	<script>
-	  if (localStorage.getItem('cookiesAccepted')) {
-		document.getElementById('cookieConsent').style.display = 'none';
-	  }
-	  document.getElementById('acceptCookies').onclick = function () {
-		localStorage.setItem('cookiesAccepted', 'true');
-		document.getElementById('cookieConsent').style.display = 'none';
-	  };
-	</script>
+});
+
+</script>
 </body>
 </html>

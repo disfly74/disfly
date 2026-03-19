@@ -1,493 +1,1145 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DisFly - Catalogue</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<link rel="icon" type="image/png" href="/LogoDisfly.png">
-    <style>
-        /* Styles spécifiques pour les bandeaux pliables */
-        .category-wrapper {
-            margin-bottom: 20px;
-        }
-        .category-header {
-            width: 100%;
-            background-color: #111827;
-            color: white;
-            padding: 18px 25px;
-            border: none;
-            border-radius: 8px;
-            text-align: left;
-            font-size: 1.3rem;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background 0.3s ease;
-        }
-        .category-header:hover {
-            background-color: #1f2937;
-        }
-        .category-header.sub-header {
-            background-color: #374151;
-            font-size: 1.1rem;
-            margin-top: 10px;
-        }
-        .category-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
-        }
-        .category-content.active {
-            max-height: 10000px; /* Grande valeur pour laisser passer tout le contenu */
-            transition: max-height 1s ease-in-out;
-            padding-top: 20px;
-        }
-        .arrow {
-            transition: transform 0.3s ease;
-        }
-        .active-arrow {
-            transform: rotate(180deg);
-        }
-        .subcategory-container {
-            padding-left: 20px;
-            border-left: 2px solid #374151;
-            margin-top: 10px;
-        }
-        .empty-message {
-            padding: 20px;
-            color: #6b7280;
-            font-style: italic;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue Boissons en Gros – DisFly | Grossiste Haute-Savoie</title>
+  <meta name="description" content="Catalogue complet DisFly : Coca-Cola, Red Bull, Fanta, Sprite, Oasis, Perrier, bières... Plus de 60 références de boissons en gros pour professionnels. Livraison dès 250€ HT en Haute-Savoie.">
+  <meta name="keywords" content="catalogue boissons gros, Coca-Cola gros, Red Bull gros, Fanta gros, Sprite gros, bière gros Haute-Savoie, grossiste sodas 74">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.disfly.fr/catalogue.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.disfly.fr/catalogue.html">
+  <meta property="og:title" content="Catalogue Boissons en Gros – DisFly">
+  <meta property="og:description" content="Plus de 60 références de boissons pour professionnels. Sodas, eaux, énergisants, bières. Livraison Haute-Savoie dès 250€ HT.">
+  <meta property="og:image" content="https://www.disfly.fr/LogoDisFly.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Catalogue DisFly – Boissons en Gros",
+    "description": "Plus de 60 références de boissons pour professionnels en Haute-Savoie",
+    "url": "https://www.disfly.fr/catalogue.html"
+  }
+  </script>
+          <link rel="icon" type="image/png" href="LogoDisfly.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+/* ===================================================
+   DisFly – Style complet amélioré
+   =================================================== */
+
+/* Fallback fonts when Google Fonts unavailable */
+
+
+:root {
+  --navy: #0d1b2a;
+  --navy-2: #1a2e42;
+  --accent: #0ea5e9;
+  --accent-dark: #0284c7;
+  --accent-glow: rgba(14,165,233,.25);
+  --white: #ffffff;
+  --off-white: #f8fafc;
+  --light: #e2e8f0;
+  --muted: #94a3b8;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --card-bg: #ffffff;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.06);
+  --shadow: 0 8px 30px rgba(0,0,0,.10);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,.15);
+  --trans: 0.3s ease;
+}
+
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  background: var(--off-white);
+  color: var(--text);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+/* On attend que le JS soit prêt avant d'activer les animations */
+.js-ready .hidden {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+.js-ready .show { opacity: 1; transform: translateY(0); }
+
+/* ===== TOPBAR ===== */
+.topbar {
+  background: var(--navy);
+  color: var(--light);
+  font-size: .82rem;
+  padding: 8px 24px;
+  font-weight: 500;
+}
+.topbar-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.topbar span { display: flex; align-items: center; gap: 6px; }
+.topbar i { color: var(--accent); }
+.topbar-sep { color: var(--muted); }
+
+/* ===== HEADER ===== */
+#main-header {
+  background: var(--navy);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  transition: all .3s ease;
+}
+#main-header.scrolled { padding: 0; box-shadow: 0 4px 30px rgba(0,0,0,.3); }
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+}
+
+.logo-img {
+  height: 64px;
+  width: auto;
+  transition: transform .3s ease, filter .3s;
+  border-radius: 8px;
+}
+.logo-img:hover { transform: scale(1.06); filter: brightness(1.1); }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.nav-links li a {
+  color: var(--light);
+  font-weight: 600;
+  font-size: .95rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background var(--trans), color var(--trans);
+  position: relative;
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: var(--accent);
+  background: rgba(14,165,233,.1);
+}
+.nav-links li a.nav-cta {
+  background: var(--accent);
+  color: var(--white);
+  padding: 9px 20px;
+  border-radius: 8px;
+  margin-left: 8px;
+  font-weight: 700;
+  transition: background var(--trans), transform var(--trans);
+}
+.nav-links li a.nav-cta:hover { background: var(--accent-dark); transform: translateY(-1px); }
+
+/* Burger menu */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+.burger span {
+  display: block;
+  width: 26px;
+  height: 2.5px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all .3s ease;
+}
+.burger.open span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  overflow: hidden;
+}
+.hero-image-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(13,27,42,.85) 0%, rgba(13,27,42,.6) 60%, rgba(14,165,233,.15) 100%);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  padding: 0 20px;
+  animation: fadeUp .9s ease both;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-badge {
+  display: inline-block;
+  background: rgba(14,165,233,.2);
+  border: 1px solid rgba(14,165,233,.4);
+  color: #7dd3fc;
+  font-size: .85rem;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 100px;
+  letter-spacing: .04em;
+  margin-bottom: 20px;
+  backdrop-filter: blur(6px);
+}
+.hero-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.02em;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.hero-title em {
+  font-style: normal;
+  background: linear-gradient(90deg, #38bdf8, #7dd3fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero-tagline {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: rgba(255,255,255,.82);
+  margin-bottom: 32px;
+}
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+.hero-stats {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 18px 32px;
+  gap: 0;
+}
+.stat { text-align: center; padding: 0 24px; }
+.stat strong { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 800; color: var(--accent); }
+.stat span { font-size: .8rem; color: rgba(255,255,255,.65); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; }
+.stat-sep { width: 1px; height: 40px; background: rgba(255,255,255,.15); }
+.hero-scroll {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,.5);
+  font-size: 1.2rem;
+  animation: bounce 2s infinite;
+  z-index: 2;
+}
+@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+
+/* ===== BTN SYSTEM ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: .95rem;
+  padding: 13px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all .25s ease;
+  text-decoration: none;
+}
+.btn-primary { background: var(--accent); color: var(--white); }
+.btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 8px 20px var(--accent-glow); }
+.btn-ghost { background: transparent; color: var(--white); border-color: rgba(255,255,255,.4); }
+.btn-ghost:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.7); }
+.btn-light { background: var(--white); color: var(--navy); }
+.btn-light:hover { background: var(--light); transform: translateY(-2px); }
+.btn-ghost-light { background: transparent; color: var(--white); border-color: rgba(255,255,255,.4); }
+.btn-ghost-light:hover { background: rgba(255,255,255,.1); }
+.btn-sm { padding: 8px 18px; font-size: .88rem; }
+
+/* ===== TRUST BAR ===== */
+.trust-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--light);
+  padding: 16px 0;
+  overflow: hidden;
+}
+.trust-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.trust-label {
+  font-weight: 700;
+  font-size: .85rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+.trust-logos { display: flex; gap: 10px; flex-wrap: wrap; }
+.brand-pill {
+  background: var(--off-white);
+  border: 1px solid var(--light);
+  color: var(--text);
+  font-size: .82rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 100px;
+  transition: all var(--trans);
+}
+.brand-pill:hover { background: var(--accent); color: var(--white); border-color: var(--accent); }
+
+/* ===== SECTION COMMON ===== */
+.section-services, .section-why, .section-featured, .section-faq, .section-cta { padding: 96px 0; }
+
+.section-header { text-align: center; margin-bottom: 56px; }
+.section-label {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.section-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: -.01em;
+}
+.section-subtitle { color: var(--text-light); font-size: 1.05rem; margin-top: 10px; }
+
+/* ===== SERVICES ===== */
+.section-services { background: var(--off-white); }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+.service-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--light);
+  transition: all .3s ease;
+}
+.service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: var(--accent); }
+.service-icon {
+  width: 68px; height: 68px;
+  background: linear-gradient(135deg, var(--accent), #38bdf8);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.6rem;
+  color: var(--white);
+}
+.service-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; text-transform: uppercase; }
+.service-card p { color: var(--text-light); font-size: .95rem; }
+
+/* ===== WHY ===== */
+.section-why { background: var(--navy); color: var(--white); }
+.why-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.why-text .section-label { color: #7dd3fc; }
+.why-text h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; text-transform: uppercase; margin: 10px 0 28px; line-height: 1.1; }
+.why-list { list-style: none; margin-bottom: 36px; display: flex; flex-direction: column; gap: 14px; }
+.why-list li { display: flex; align-items: center; gap: 12px; font-size: 1rem; color: rgba(255,255,255,.85); }
+.why-list li i { color: #34d399; font-size: 1.1rem; flex-shrink: 0; }
+.why-image-wrap { position: relative; display: flex; align-items: center; justify-content: center; }
+.why-logo-box {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 24px;
+  padding: 48px;
+  backdrop-filter: blur(10px);
+}
+.why-logo { max-width: 220px; margin: 0 auto; }
+.why-badge-float {
+  position: absolute;
+  bottom: -16px;
+  right: 20px;
+  background: var(--accent);
+  color: var(--white);
+  font-weight: 700;
+  font-size: .88rem;
+  padding: 10px 20px;
+  border-radius: 100px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  box-shadow: 0 8px 24px var(--accent-glow);
+}
+
+/* ===== FEATURED PRODUCTS ===== */
+.section-featured { background: var(--white); }
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+.feat-card {
+  background: var(--off-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 2px solid var(--light);
+  transition: all .3s ease;
+  text-decoration: none;
+  color: var(--text);
+}
+.feat-card:hover { border-color: var(--accent); transform: translateY(-6px); box-shadow: var(--shadow); }
+.feat-img-wrap {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--white);
+}
+.feat-img-wrap img { max-height: 160px; object-fit: contain; transition: transform .4s ease; }
+.feat-card:hover .feat-img-wrap img { transform: scale(1.08); }
+.feat-info { padding: 16px 20px; border-top: 1px solid var(--light); }
+.feat-info h3 { font-weight: 700; font-size: 1rem; color: var(--navy); }
+.feat-info p { font-size: .84rem; color: var(--text-light); margin-top: 2px; }
+
+/* ===== FAQ ===== */
+.section-faq { background: var(--off-white); }
+.faq-list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--light);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color .3s;
+}
+.faq-item[open] { border-color: var(--accent); }
+.faq-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  color: var(--navy);
+  gap: 12px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-icon { color: var(--accent); flex-shrink: 0; transition: transform .3s; }
+.faq-item[open] .faq-icon { transform: rotate(45deg); }
+.faq-body { padding: 0 24px 20px; color: var(--text-light); font-size: .97rem; }
+.faq-body a { color: var(--accent); text-decoration: underline; }
+
+/* ===== CTA SECTION ===== */
+.section-cta {
+  background: linear-gradient(135deg, var(--accent-dark) 0%, #0369a1 100%);
+  padding: 80px 0;
+}
+.cta-box { text-align: center; color: var(--white); }
+.cta-box h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; text-transform: uppercase; margin-bottom: 12px; }
+.cta-box p { font-size: 1.1rem; color: rgba(255,255,255,.85); margin-bottom: 32px; }
+.cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--navy);
+  color: rgba(255,255,255,.75);
+  padding: 64px 0 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+}
+.footer-logo { height: 56px; margin-bottom: 16px; }
+.footer-brand p { font-size: .9rem; line-height: 1.7; }
+footer h4 { color: var(--white); font-size: .85rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 16px; }
+.footer-nav ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-nav ul li a { font-size: .9rem; transition: color var(--trans); }
+.footer-nav ul li a:hover { color: var(--accent); }
+.footer-contact p { display: flex; align-items: flex-start; gap: 10px; font-size: .9rem; margin-bottom: 10px; }
+.footer-contact i { color: var(--accent); margin-top: 3px; flex-shrink: 0; }
+.footer-contact a:hover { color: var(--accent); }
+.social-links { display: flex; gap: 12px; flex-wrap: wrap; }
+.social-links a {
+  width: 40px; height: 40px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: rgba(255,255,255,.7);
+  transition: all var(--trans);
+}
+.social-links a:hover { background: var(--accent); border-color: var(--accent); color: var(--white); transform: translateY(-2px); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding: 20px 24px;
+  text-align: center;
+  font-size: .82rem;
+  color: var(--muted);
+}
+
+/* ===== COOKIE ===== */
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--navy);
+  color: rgba(255,255,255,.85);
+  padding: 16px 24px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 10000;
+  max-width: 680px;
+  width: calc(100% - 32px);
+  box-shadow: 0 20px 50px rgba(0,0,0,.3);
+  border: 1px solid rgba(255,255,255,.1);
+  font-size: .9rem;
+}
+.cookie-banner a { color: var(--accent); text-decoration: underline; }
+.cookie-banner .btn { white-space: nowrap; }
+
+/* ===== BACK TO TOP ===== */
+.back-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 46px; height: 46px;
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  z-index: 900;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all .3s ease;
+  box-shadow: 0 6px 20px var(--accent-glow);
+}
+.back-top.visible { opacity: 1; transform: translateY(0); }
+.back-top:hover { background: var(--accent-dark); transform: translateY(-2px); }
+
+/* ===== CATALOGUE PAGE ===== */
+.page-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  text-align: center;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: -.01em;
+  margin-bottom: 12px;
+}
+.catalogue-intro { text-align: center; color: var(--text-light); max-width: 600px; margin: 0 auto 10px; }
+.delivery-message {
+  text-align: center;
+  font-weight: 700;
+  color: var(--accent-dark);
+  font-size: 1rem;
+  margin-bottom: 40px;
+  padding: 12px 20px;
+  background: rgba(14,165,233,.08);
+  border: 1px solid rgba(14,165,233,.2);
+  border-radius: 8px;
+  display: inline-block;
+  width: 100%;
+}
+#catalogue-page { padding: 64px 0 96px; }
+
+.cat-search-bar {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cat-search-bar input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px 18px;
+  border: 1px solid var(--light);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: .95rem;
+  outline: none;
+  transition: border-color var(--trans);
+}
+.cat-search-bar input:focus { border-color: var(--accent); }
+
+.category-wrapper { margin-bottom: 16px; }
+.category-header {
+  width: 100%;
+  background: var(--navy);
+  color: var(--white);
+  padding: 18px 24px;
+  border: none;
+  border-radius: var(--radius);
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background .3s;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.category-header:hover { background: var(--navy-2); }
+.category-content { max-height: 0; overflow: hidden; transition: max-height .5s cubic-bezier(0,1,0,1); }
+.category-content.active { max-height: 10000px; transition: max-height 1s ease-in-out; padding-top: 20px; }
+.arrow { transition: transform .3s ease; }
+.active-arrow { transform: rotate(180deg); }
+
+.catalogue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.product-item {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--light);
+  display: flex;
+  flex-direction: column;
+  transition: all .3s ease;
+}
+.product-item:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: var(--accent); }
+.product-image-container {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: var(--off-white);
+}
+.product-image-container img { max-height: 140px; object-fit: contain; transition: transform .4s ease; }
+.product-item:hover .product-image-container img { transform: scale(1.08); }
+.product-details { padding: 16px; flex-grow: 1; }
+.product-details h3 { font-weight: 700; font-size: .95rem; color: var(--navy); margin-bottom: 4px; }
+.product-format { font-size: .82rem; color: var(--text-light); }
+.product-price { font-weight: 700; color: var(--navy); font-size: .9rem; margin-top: 8px; }
+
+/* ===== CONTACT PAGE ===== */
+#contact-page { padding: 64px 0 96px; }
+.contact-intro { text-align: center; color: var(--text-light); max-width: 560px; margin: 0 auto 40px; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 48px; }
+.contact-form-container, .contact-info {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--light);
+}
+.contact-form-container h3, .contact-info h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 13px 16px;
+  margin-bottom: 16px;
+  border: 1px solid var(--light);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: .95rem;
+  outline: none;
+  transition: border-color var(--trans);
+  background: var(--off-white);
+}
+.contact-form input:focus, .contact-form textarea:focus { border-color: var(--accent); background: var(--white); }
+.contact-form textarea { resize: vertical; }
+.contact-form .btn { width: 100%; justify-content: center; }
+.form-status-message { margin-top: 14px; font-weight: 600; font-size: .9rem; }
+.contact-info p { display: flex; align-items: flex-start; gap: 14px; font-size: 1rem; margin-bottom: 20px; color: var(--text); }
+.contact-info i { color: var(--accent); font-size: 1.1rem; margin-top: 3px; flex-shrink: 0; }
+.map-container { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); }
+.map-container h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+.map-container iframe { width: 100%; height: 420px; border: none; display: block; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .why-content { gap: 40px; }
+}
+
+@media (max-width: 768px) {
+  .topbar-sep { display: none; }
+  .topbar-inner { gap: 12px; justify-content: center; }
+
+  .burger { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    flex-direction: column;
+    padding: 16px;
+    gap: 4px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,.3);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links li a { display: block; padding: 12px 16px; border-radius: 8px; }
+  .nav-links li a.nav-cta { margin-left: 0; text-align: center; }
+
+  .hero-stats { flex-direction: column; gap: 12px; }
+  .stat-sep { width: 60px; height: 1px; }
+
+  .why-content { grid-template-columns: 1fr; }
+  .why-image-wrap { display: none; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+
+  .section-services, .section-why, .section-featured, .section-faq, .section-cta { padding: 64px 0; }
+
+  .catalogue-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+  .product-image-container { height: 130px; }
+
+  .cookie-banner { flex-direction: column; text-align: center; gap: 14px; }
+
+  .back-top { bottom: 16px; right: 16px; }
+}
+
+@media (max-width: 480px) {
+  .hero-actions { flex-direction: column; align-items: center; }
+  .hero-stats { padding: 16px; }
+  .catalogue-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ===================================================
+   FALLBACK ICONS – works without Font Awesome
+   =================================================== */
+/* When FA doesn't load, show text/emoji fallbacks */
+.fa-phone-alt::before { content: "📞"; font-family: emoji; font-style: normal; }
+.fa-phone::before { content: "📞"; font-family: emoji; font-style: normal; }
+.fa-envelope::before { content: "✉"; font-family: emoji; font-style: normal; }
+.fa-truck::before { content: "🚚"; font-family: emoji; font-style: normal; }
+.fa-truck-fast::before { content: "🚚"; font-family: emoji; font-style: normal; }
+.fa-tags::before { content: "🏷"; font-family: emoji; font-style: normal; }
+.fa-headset::before { content: "🎧"; font-family: emoji; font-style: normal; }
+.fa-boxes-stacked::before { content: "📦"; font-family: emoji; font-style: normal; }
+.fa-check-circle::before { content: "✅"; font-family: emoji; font-style: normal; }
+.fa-star::before { content: "⭐"; font-family: emoji; font-style: normal; }
+.fa-map-marker-alt::before { content: "📍"; font-family: emoji; font-style: normal; }
+.fa-clock::before { content: "🕐"; font-family: emoji; font-style: normal; }
+.fa-paper-plane::before { content: "✉"; font-family: emoji; font-style: normal; }
+.fa-arrow-up::before { content: "↑"; font-family: emoji; font-style: normal; }
+.fa-search::before { content: "🔍"; font-family: emoji; font-style: normal; }
+.fa-glass-whiskey::before { content: "🥤"; font-family: emoji; font-style: normal; }
+.fa-droplet::before { content: "💧"; font-family: emoji; font-style: normal; }
+.fa-beer-mug-empty::before { content: "🍺"; font-family: emoji; font-style: normal; }
+.fa-chevron-down::before { content: "▾"; font-family: emoji; font-style: normal; }
+.fa-plus::before { content: "+"; font-family: emoji; font-style: normal; }
+.fa-snapchat-ghost::before { content: "👻"; font-family: emoji; font-style: normal; }
+.fa-tiktok::before { content: "TK"; font-family: sans-serif; font-style: normal; font-size: .75em; font-weight: 700; }
+.fa-linkedin-in::before { content: "in"; font-family: sans-serif; font-style: normal; font-size: .75em; font-weight: 700; }
+.fa-facebook-f::before { content: "f"; font-family: sans-serif; font-style: normal; font-weight: 700; }
+.fa-instagram::before { content: "▣"; font-family: emoji; font-style: normal; }
+
+/* These only apply if Font Awesome fails to load */
+
+  </style>
 </head>
 <body>
 
-    <header>
-        <nav class="container">
-            <a href="index.html" class="logo-link">
-                <img src="LogoDisFly.png" alt="DisFly Logo" class="logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="catalogue.html" class="active">Catalogue</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="topbar">
+  <div class="topbar-inner">
+    <span><i class="fas fa-phone-alt"></i> +33 7 59 59 98 18</span>
+    <span class="topbar-sep">|</span>
+    <span><i class="fas fa-envelope"></i> contact@disfly.fr</span>
+    <span class="topbar-sep">|</span>
+    <span><i class="fas fa-truck"></i> Livraison dès 250€ HT</span>
+  </div>
+</div>
 
-    <section id="catalogue-page" class="container">
-        <h1 class="page-title hidden">Notre Catalogue</h1>
-        <p class="catalogue-intro hidden">Découvrez notre vaste sélection de boissons, soigneusement choisie pour répondre aux besoins des professionnels.</p>
-        <p class="delivery-message hidden">Livraison à partir de 250€ (H.T.) de commande</p>
+<header id="main-header">
+  <nav class="container nav-inner">
+    <a href="index.html" class="logo-link" aria-label="DisFly accueil">
+      <img src="LogoDisFly.png" alt="DisFly – Grossiste boissons Haute-Savoie" class="logo-img">
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="catalogue.html" class="active">Catalogue</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Devis Gratuit</a></li>
+    </ul>
+    <button class="burger" id="burger-btn" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
 
-        <div class="category-wrapper hidden">
-            <button class="category-header" onclick="toggleCategory('softs', this)">
-                <span><i class="fas fa-glass-whiskey"></i> BOISSONS SOFTS</span>
-                <i class="fas fa-chevron-down arrow"></i>
-            </button>
-            <div id="softs" class="category-content">
-                <div class="catalogue-grid">
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="coca-slim.png" alt="Coca Cola"></div>
-                        <div class="product-details">
-                            <h3>Coca Cola</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="coca-zero-slim.png" alt="Coca Zero"></div>
-                        <div class="product-details">
-                            <h3>Coca Zero</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="coca-cherry-slim.png" alt="Coca Cherry"></div>
-                        <div class="product-details">
-                            <h3>Coca Cherry</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="coca-vanilla.png" alt="Coca Vanille"></div>
-                        <div class="product-details">
-                            <h3>Coca Vanille</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="fanta-orange-slim.png" alt="Fanta Orange"></div>
-                        <div class="product-details">
-                            <h3>Fanta Orange </h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="fanta-fruit-du-dragon.png" alt="Fanta Fruit Du Dragon"></div>
-                        <div class="product-details">
-                            <h3>Fanta Fruit Du Dragon </h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="fanta-citron.png" alt="Fanta Citron"></div>
-                        <div class="product-details">
-                            <h3>Fanta citron</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-						</div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="FantaCassis.png" alt="Fanta Cassis"></div>
-                        <div class="product-details">
-                            <h3>Fanta Cassis</h3>
-                            <p class="product-format">Pack de 12 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="fanta-exotic.png" alt="Fanta Exotic"></div>
-                        <div class="product-details">
-                            <h3>Fanta Exotic</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="sprite.png" alt="Sprite"></div>
-                        <div class="product-details">
-                            <h3>Sprite</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="Hawai.png" alt="Hawai"></div>
-                        <div class="product-details">
-                            <h3>Hawai</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="caprisun-multi.png" alt="Caprisun"></div>
-                        <div class="product-details">
-                            <h3>Caprisun Multivitamine</h3>
-                            <p class="product-format">Pack de 40 x 20cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="icetea-slim.png" alt="Ice Tea"></div>
-                        <div class="product-details">
-                            <h3>Ice Tea</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="icetea-PM.png" alt="Ice Tea PM"></div>
-                        <div class="product-details">
-                            <h3>Ice Tea Pastèque-Menthe</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="fuzetea.png" alt="Fuze Tea"></div>
-                        <div class="product-details">
-                            <h3>Fuze Tea</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="orangina-slim.png" alt="Orangina"></div>
-                        <div class="product-details">
-                            <h3>Orangina</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="schewppes-slim.png" alt="Schweppes"></div>
-                        <div class="product-details">
-                            <h3>Schewppes Agrum</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="schweppes-pommes.png" alt="schweppes pommes"></div>
-                        <div class="product-details">
-                            <h3>Schweppes Pommes</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="oasis-tropical-slim.png" alt="Oasis Tropical"></div>
-                        <div class="product-details">
-                            <h3>Oasis Tropical</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="oasis-fraise-slim.png" alt="Oasis Fraise Framboise"></div>
-                        <div class="product-details">
-                            <h3>Oasis Fraise Framboise</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="oasis-framboise-slim.png" alt="Oasis Pomme Cassis Framboise"></div>
-                        <div class="product-details">
-                            <h3>Oasis Pomme Cassis Framboise</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="oasis-pomme-slim.png" alt="Oasis Pomme Poire"></div>
-                        <div class="product-details">
-                            <h3>Oasis Pomme Poire</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="DADA+CHERRY.png" alt="Dada Cherry"></div>
-                        <div class="product-details">
-                            <h3>Dada Cherry</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="DADA+MELON.png" alt="Dada Melon"></div>
-                        <div class="product-details">
-                            <h3>Dada Melon</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="DADA+LYCHEE.png" alt="Dada Lychee"></div>
-                        <div class="product-details">
-                            <h3>Dada Lychee</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="redbull.png" alt="Red Bull"></div>
-                        <div class="product-details">
-                            <h3>Red Bull </h3>
-                            <p class="product-format">Pack de 24 x 25cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="Redbull-pfg.png" alt="Red Bull"></div>
-                        <div class="product-details">
-                            <h3>Red Bull Pomme Fuji & Gingembre</h3>
-                            <p class="product-format">Pack de 24 x 25cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="Redbull-abricot.png" alt="Red Bull"></div>
-                        <div class="product-details">
-                            <h3>Red Bull Abricot-Fraise</h3>
-                            <p class="product-format">Pack de 24 x 25cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="Redbull-myrtille.png" alt="Red Bull"></div>
-                        <div class="product-details">
-                            <h3>Red Bull Myrtille</h3>
-                            <p class="product-format">Pack de 24 x 25cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="Redbull-fruitdudragon.png" alt="Red Bull"></div>
-                        <div class="product-details">
-                            <h3>Red Bull Fruit Du Dragon</h3>
-                            <p class="product-format">Pack de 24 x 25cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="Redbull-coco.png" alt="Red Bull"></div>
-                        <div class="product-details">
-                            <h3>Red Bull Coco-Açai</h3>
-                            <p class="product-format">Pack de 24 x 25cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="redbull-junebbery.png" alt="Red Bull"></div>
-                        <div class="product-details">
-                            <h3>Red Bull Juneberry</h3>
-                            <p class="product-format">Pack de 24 x 25cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="redbull-Vanille.png" alt="Red Bull"></div>
-                        <div class="product-details">
-                            <h3>Red Bull Mûre givrée & Vanille</h3>
-                            <p class="product-format">Pack de 24 x 25cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="redbull-pasteque.png" alt="Red Bull"></div>
-                        <div class="product-details">
-                            <h3>Red Bull Pastèque</h3>
-                            <p class="product-format">Pack de 24 x 25cl</p>
-                            <span class="product-price"></span>
-                        </div>
-						   </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="Coca1.5.png" alt="Coca Cola"></div>
-                        <div class="product-details">
-                            <h3>Coca Cola</h3>
-                            <p class="product-format">Pack de 6 x 1.5l</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="coca-cola-50.png" alt="Coca Cola 0,5L"></div>
-                        <div class="product-details">
-                            <h3>Coca Cola</h3>
-                            <p class="product-format">Pack de 12 x 50cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="coca-cherry-50.png" alt="Coca Cherry 0,5L"></div>
-                        <div class="product-details">
-                            <h3>Cola Cherry</h3>
-                            <p class="product-format">Pack de 12 x 50cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="coca-zero-50.png" alt="Coca Zero 0,5L"></div>
-                        <div class="product-details">
-                            <h3>Cola Zero</h3>
-                            <p class="product-format">Pack de 12 x 50cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="fanta-50.png" alt="Fanta Orange 0,5L"></div>
-                        <div class="product-details">
-                            <h3>Fanta Orange</h3>
-                            <p class="product-format">Pack de 12 x 50cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="cristaline.png" alt="Cristaline"></div>
-                        <div class="product-details">
-                            <h3>Cristaline</h3>
-                            <p class="product-format">Pack de 24 x 50cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="perrier.png" alt="Perrier"></div>
-                        <div class="product-details">
-                            <h3>Perrier</h3>
-                            <p class="product-format">Pack de 24 x 33cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image-container"><img src="sanpel.png" alt="San Pellegrino"></div>
-                        <div class="product-details">
-                            <h3>San pelegrino</h3>
-                            <p class="product-format">Pack de 24 x 50cl</p>
-                            <span class="product-price"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section id="catalogue-page" class="container">
+  <h1 class="page-title hidden">Notre Catalogue</h1>
+  <p class="catalogue-intro hidden">Découvrez notre vaste sélection de boissons, soigneusement choisie pour répondre aux besoins des professionnels.</p>
+  <p class="delivery-message hidden">🚚 Livraison à partir de 250€ (H.T.) de commande — Haute-Savoie</p>
 
-                </div>
-            </div>
-        </div>
+  <div class="cat-search-bar hidden">
+    <i class="fas fa-search" style="color:var(--text-light)"></i>
+    <input type="search" id="cat-search" placeholder="Rechercher un produit (ex: Coca, Red Bull, Perrier...)" aria-label="Rechercher un produit">
+  </div>
 
-    </section>
+  <div class="category-wrapper hidden">
+    <button class="category-header" onclick="toggleCategory('softs', this)" aria-expanded="false">
+      <span><i class="fas fa-glass-whiskey" style="margin-right:10px"></i> Boissons Softs & Énergisants</span>
+      <i class="fas fa-chevron-down arrow"></i>
+    </button>
+    <div id="softs" class="category-content">
+      <div class="catalogue-grid">
+        <div class="product-item"><div class="product-image-container"><img src="coca-slim.png" alt="Coca-Cola 33cl pack 24 grossiste" loading="lazy"></div><div class="product-details"><h3>Coca-Cola</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="coca-zero-slim.png" alt="Coca-Cola Zero 33cl pack grossiste" loading="lazy"></div><div class="product-details"><h3>Coca Zero</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="coca-cherry-slim.png" alt="Coca-Cola Cherry 33cl pack grossiste" loading="lazy"></div><div class="product-details"><h3>Coca Cherry</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="coca-vanilla.png" alt="Coca-Cola Vanille 33cl pack grossiste" loading="lazy"></div><div class="product-details"><h3>Coca Vanille</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="Coca1.5.png" alt="Coca-Cola 1.5L pack 6 grossiste" loading="lazy"></div><div class="product-details"><h3>Coca-Cola</h3><p class="product-format">Pack 6 × 1,5L</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="coca-cola-50.png" alt="Coca-Cola 50cl pack 12 grossiste" loading="lazy"></div><div class="product-details"><h3>Coca-Cola</h3><p class="product-format">Pack 12 × 50cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="coca-cherry-50.png" alt="Coca-Cola Cherry 50cl pack grossiste" loading="lazy"></div><div class="product-details"><h3>Cola Cherry</h3><p class="product-format">Pack 12 × 50cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="coca-zero-50.png" alt="Coca-Cola Zero 50cl pack grossiste" loading="lazy"></div><div class="product-details"><h3>Cola Zero</h3><p class="product-format">Pack 12 × 50cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="fanta-orange-slim.png" alt="Fanta Orange 33cl pack 24 grossiste" loading="lazy"></div><div class="product-details"><h3>Fanta Orange</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="fanta-fruit-du-dragon.png" alt="Fanta Fruit du Dragon grossiste" loading="lazy"></div><div class="product-details"><h3>Fanta Fruit du Dragon</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="fanta-citron.png" alt="Fanta Citron grossiste" loading="lazy"></div><div class="product-details"><h3>Fanta Citron</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="FantaCassis.png" alt="Fanta Cassis grossiste" loading="lazy"></div><div class="product-details"><h3>Fanta Cassis</h3><p class="product-format">Pack 12 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="fanta-exotic.png" alt="Fanta Exotic grossiste" loading="lazy"></div><div class="product-details"><h3>Fanta Exotic</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="fanta-50.png" alt="Fanta Orange 50cl pack grossiste" loading="lazy"></div><div class="product-details"><h3>Fanta Orange</h3><p class="product-format">Pack 12 × 50cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="sprite.png" alt="Sprite 33cl pack grossiste" loading="lazy"></div><div class="product-details"><h3>Sprite</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="Hawai.png" alt="Hawai grossiste" loading="lazy"></div><div class="product-details"><h3>Hawai</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="caprisun-multi.png" alt="Capri-Sun Multivitamine grossiste" loading="lazy"></div><div class="product-details"><h3>Capri-Sun Multivitamine</h3><p class="product-format">Pack 40 × 20cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="icetea-slim.png" alt="Ice Tea 33cl pack grossiste" loading="lazy"></div><div class="product-details"><h3>Ice Tea</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="icetea-PM.png" alt="Ice Tea Pastèque-Menthe grossiste" loading="lazy"></div><div class="product-details"><h3>Ice Tea Pastèque-Menthe</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="fuzetea.png" alt="Fuze Tea grossiste" loading="lazy"></div><div class="product-details"><h3>Fuze Tea</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="fuzetea-slim.png" alt="Fuze Tea slim grossiste" loading="lazy"></div><div class="product-details"><h3>Fuze Tea Slim</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="orangina-slim.png" alt="Orangina 33cl pack grossiste" loading="lazy"></div><div class="product-details"><h3>Orangina</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="schewppes-slim.png" alt="Schweppes Agrum grossiste" loading="lazy"></div><div class="product-details"><h3>Schweppes Agrum</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="schweppes-pommes.png" alt="Schweppes Pomme grossiste" loading="lazy"></div><div class="product-details"><h3>Schweppes Pomme</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="oasis-tropical-slim.png" alt="Oasis Tropical grossiste" loading="lazy"></div><div class="product-details"><h3>Oasis Tropical</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="oasis-fraise-slim.png" alt="Oasis Fraise Framboise grossiste" loading="lazy"></div><div class="product-details"><h3>Oasis Fraise Framboise</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="oasis-framboise-slim.png" alt="Oasis Pomme Cassis Framboise grossiste" loading="lazy"></div><div class="product-details"><h3>Oasis Pomme Cassis Framboise</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="oasis-pomme-slim.png" alt="Oasis Pomme Poire grossiste" loading="lazy"></div><div class="product-details"><h3>Oasis Pomme Poire</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="DADA+CHERRY.png" alt="Dada Cherry grossiste" loading="lazy"></div><div class="product-details"><h3>Dada Cherry</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="DADA+MELON.png" alt="Dada Melon grossiste" loading="lazy"></div><div class="product-details"><h3>Dada Melon</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="DADA+LYCHEE.png" alt="Dada Lychee grossiste" loading="lazy"></div><div class="product-details"><h3>Dada Lychee</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="redbull.png" alt="Red Bull 25cl pack 24 grossiste" loading="lazy"></div><div class="product-details"><h3>Red Bull</h3><p class="product-format">Pack 24 × 25cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="Redbull-pfg.png" alt="Red Bull Pomme Fuji Gingembre grossiste" loading="lazy"></div><div class="product-details"><h3>Red Bull Pomme Fuji & Gingembre</h3><p class="product-format">Pack 24 × 25cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="Redbull-abricot.png" alt="Red Bull Abricot-Fraise grossiste" loading="lazy"></div><div class="product-details"><h3>Red Bull Abricot-Fraise</h3><p class="product-format">Pack 24 × 25cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="Redbull-myrtille.png" alt="Red Bull Myrtille grossiste" loading="lazy"></div><div class="product-details"><h3>Red Bull Myrtille</h3><p class="product-format">Pack 24 × 25cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="Redbull-fruitdudragon.png" alt="Red Bull Fruit du Dragon grossiste" loading="lazy"></div><div class="product-details"><h3>Red Bull Fruit du Dragon</h3><p class="product-format">Pack 24 × 25cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="Redbull-coco.png" alt="Red Bull Coco-Açaï grossiste" loading="lazy"></div><div class="product-details"><h3>Red Bull Coco-Açaï</h3><p class="product-format">Pack 24 × 25cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="redbull-junebbery.png" alt="Red Bull Juneberry grossiste" loading="lazy"></div><div class="product-details"><h3>Red Bull Juneberry</h3><p class="product-format">Pack 24 × 25cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="redbull-Vanille.png" alt="Red Bull Mûre Givrée Vanille grossiste" loading="lazy"></div><div class="product-details"><h3>Red Bull Mûre Givrée & Vanille</h3><p class="product-format">Pack 24 × 25cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="redbull-pasteque.png" alt="Red Bull Pastèque grossiste" loading="lazy"></div><div class="product-details"><h3>Red Bull Pastèque</h3><p class="product-format">Pack 24 × 25cl</p></div></div>
+      </div>
+    </div>
+  </div>
 
-    <footer>
-        <p>© 2025 DisFly. Tous droits réservés.</p>
-		<p>
-            <a href="mentions-legales.html" style="color:#ccc;">Mentions légales</a> |
-		    <a href="politique-confidentialite.html" style="color:#ccc;">Politique de confidentialité</a>
-        </p>
-		<p>
-		  <a href="https://www.snapchat.com/add/disfly.fr" target="_blank" rel="noopener" aria-label="Snapchat" style="color: #ccc; font-size: 24px; margin: 0 10px;"><i class="fab fa-snapchat-ghost"></i></a>
-		  <a href="https://www.tiktok.com/@disfly.fr" target="_blank" rel="noopener" aria-label="TikTok" style="color: #ccc; font-size: 24px; margin: 0 10px;"><i class="fab fa-tiktok"></i></a>
-		  <a href="https://www.linkedin.com/in/disfly.fr" target="_blank" rel="noopener" aria-label="LinkedIn" style="color: #ccc; font-size: 24px;  margin: 0 10px;"><i class="fab fa-linkedin-in"></i></a>
-		  <a href="https://www.facebook.com/share/17MjspEM2U/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook" style="color: #ccc; font-size: 24px;  margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
-		  <a href="https://www.instagram.com/disfly.fr" target="_blank" rel="noopener" aria-label="Instagram" style="color: #ccc; font-size: 24px;  margin: 0 10px;"><i class="fab fa-instagram"></i></a>
-		</p>
-    </footer>
+  <div class="category-wrapper hidden">
+    <button class="category-header" onclick="toggleCategory('eaux', this)" aria-expanded="false">
+      <span><i class="fas fa-droplet" style="margin-right:10px"></i> Eaux & Pétillantes</span>
+      <i class="fas fa-chevron-down arrow"></i>
+    </button>
+    <div id="eaux" class="category-content">
+      <div class="catalogue-grid">
+        <div class="product-item"><div class="product-image-container"><img src="cristaline.png" alt="Cristaline eau plate 50cl grossiste" loading="lazy"></div><div class="product-details"><h3>Cristaline</h3><p class="product-format">Pack 24 × 50cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="perrier.png" alt="Perrier eau gazeuse 33cl grossiste" loading="lazy"></div><div class="product-details"><h3>Perrier</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="sanpel.png" alt="San Pellegrino 50cl grossiste" loading="lazy"></div><div class="product-details"><h3>San Pellegrino</h3><p class="product-format">Pack 24 × 50cl</p></div></div>
+      </div>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
-	
-	<div id="cookieConsent"
-	  style="position:fixed; bottom:0; background:#111827; color:#fff; width:100%; padding:15px; display:flex;
-	  justify-content:center; align-items:center; z-index:10000;">
-	  <span>
-		Nous utilisons des cookies pour améliorer votre expérience. En poursuivant, vous acceptez notre
-		<a href="politique_confidentialite.html" style="color:#4aa8ff;">politique de confidentialité</a>.
-	  </span>
-	  <button id="acceptCookies"
-		style="margin-left:15px; padding:8px 15px; cursor:pointer; background:#4aa8ff; border:none; color:#fff; border-radius:4px;">
-		Accepter
-	  </button>
-	</div>
+  <div class="category-wrapper hidden">
+    <button class="category-header" onclick="toggleCategory('bieres', this)" aria-expanded="false">
+      <span><i class="fas fa-beer-mug-empty" style="margin-right:10px"></i> Bières & Spiritueux</span>
+      <i class="fas fa-chevron-down arrow"></i>
+    </button>
+    <div id="bieres" class="category-content">
+      <div class="catalogue-grid">
+        <div class="product-item"><div class="product-image-container"><img src="1664.png" alt="1664 bière grossiste" loading="lazy"></div><div class="product-details"><h3>1664</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="8.6Bavaria.png" alt="8.6 Bavaria bière grossiste" loading="lazy"></div><div class="product-details"><h3>8.6 Bavaria</h3><p class="product-format">Pack 24 × 50cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="Efes.png" alt="Efes bière grossiste" loading="lazy"></div><div class="product-details"><h3>Efes</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="HK.png" alt="HK bière grossiste" loading="lazy"></div><div class="product-details"><h3>HK</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="despe.png" alt="Desperados bière grossiste" loading="lazy"></div><div class="product-details"><h3>Desperados</h3><p class="product-format">Pack 24 × 33cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="TekirdagGold.png" alt="Tekirdag Gold raki grossiste" loading="lazy"></div><div class="product-details"><h3>Tekirdag Gold</h3><p class="product-format">Bouteille 70cl</p></div></div>
+        <div class="product-item"><div class="product-image-container"><img src="YeniRakiYeniSeri.png" alt="Yeni Raki grossiste" loading="lazy"></div><div class="product-details"><h3>Yeni Raki</h3><p class="product-format">Bouteille 70cl</p></div></div>
+      </div>
+    </div>
+  </div>
 
-	<script>
-	  if (localStorage.getItem('cookiesAccepted')) {
-		document.getElementById('cookieConsent').style.display = 'none';
-	  }
-	  document.getElementById('acceptCookies').onclick = function () {
-		localStorage.setItem('cookiesAccepted', 'true');
-		document.getElementById('cookieConsent').style.display = 'none';
-	  };
+  <div style="text-align:center; margin-top:48px; padding:32px; background:var(--white); border-radius:var(--radius-lg); border:1px solid var(--light);">
+    <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.8rem;font-weight:800;color:var(--navy);text-transform:uppercase;margin-bottom:10px;">Un produit manquant ?</h3>
+    <p style="color:var(--text-light);margin-bottom:20px;">Contactez-nous ! Nous pouvons sourcer de nombreuses autres références selon votre demande.</p>
+    <a href="contact.html" class="btn btn-primary">Nous contacter →</a>
+  </div>
+</section>
 
-      // Fonction pour les bandeaux (Placée ici ou dans script.js)
-      function toggleCategory(id, btn) {
-          const content = document.getElementById(id);
-          const arrow = btn.querySelector('.arrow');
-          
-          content.classList.toggle('active');
-          arrow.classList.toggle('active-arrow');
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="LogoDisFly.png" alt="DisFly logo" class="footer-logo">
+      <p>Votre grossiste de confiance en boissons, spécialiste des professionnels de Haute-Savoie.</p>
+    </div>
+    <div class="footer-nav">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fas fa-phone"></i> <a href="tel:+33759599818">+33 7 59 59 98 18</a></p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:contact@disfly.fr">contact@disfly.fr</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> 320 rue des sorbiers,<br>74300 Thyez</p>
+    </div>
+    <div class="footer-social">
+      <h4>Suivez-nous</h4>
+      <div class="social-links">
+        <a href="https://www.snapchat.com/add/disfly.fr" target="_blank" rel="noopener noreferrer" aria-label="Snapchat DisFly"><i class="fab fa-snapchat-ghost"></i></a>
+        <a href="https://www.tiktok.com/@disfly.fr" target="_blank" rel="noopener noreferrer" aria-label="TikTok DisFly"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.linkedin.com/in/disfly.fr" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn DisFly"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/share/17MjspEM2U/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook DisFly"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/disfly.fr" target="_blank" rel="noopener noreferrer" aria-label="Instagram DisFly"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 DisFly. Tous droits réservés. | Grossiste boissons Haute-Savoie</p>
+  </div>
+</footer>
+
+<div id="cookieConsent" class="cookie-banner" role="dialog" aria-live="polite">
+  <p>Nous utilisons des cookies pour améliorer votre expérience. En poursuivant, vous acceptez notre <a href="politique-confidentialite.html">politique de confidentialité</a>.</p>
+  <button id="acceptCookies" class="btn btn-primary btn-sm">Accepter</button>
+</div>
+<button id="back-to-top" class="back-top" aria-label="Retour en haut de page"><i class="fas fa-arrow-up"></i></button>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // === BURGER MENU ===
+  const burger = document.getElementById('burger-btn');
+  const navLinks = document.getElementById('nav-links');
+  if (burger && navLinks) {
+    burger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      burger.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', (e) => {
+      if (!burger.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('open');
+        burger.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
       }
-	</script>	
+    });
+  }
+
+  // === HEADER SCROLL ===
+  const header = document.getElementById('main-header');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+  }
+
+  // === SCROLL ANIMATIONS ===
+  // Active la classe js-ready pour que le CSS d'animation se déclenche
+  document.documentElement.classList.add('js-ready');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add('show');
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+  // Petite pause pour laisser le DOM se stabiliser avant d'observer
+  setTimeout(() => {
+    document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+  }, 50);
+
+  // === BACK TO TOP ===
+  const backTop = document.getElementById('back-to-top');
+  if (backTop) {
+    window.addEventListener('scroll', () => {
+      backTop.classList.toggle('visible', window.scrollY > 400);
+    });
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  }
+
+  // === COOKIE CONSENT ===
+  const cookieBanner = document.getElementById('cookieConsent');
+  const acceptBtn = document.getElementById('acceptCookies');
+  if (cookieBanner) {
+    if (localStorage.getItem('cookiesAccepted')) cookieBanner.style.display = 'none';
+    if (acceptBtn) {
+      acceptBtn.addEventListener('click', () => {
+        localStorage.setItem('cookiesAccepted', 'true');
+        cookieBanner.style.display = 'none';
+      });
+    }
+  }
+
+  // === CATALOGUE TOGGLE ===
+  window.toggleCategory = function (id, btn) {
+    const content = document.getElementById(id);
+    const arrow = btn.querySelector('.arrow');
+    if (!content) return;
+    content.classList.toggle('active');
+    if (arrow) arrow.classList.toggle('active-arrow');
+  };
+
+  // === CATALOGUE SEARCH ===
+  const searchInput = document.getElementById('cat-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.toLowerCase().trim();
+      document.querySelectorAll('.product-item').forEach(item => {
+        const name = item.querySelector('h3')?.textContent.toLowerCase() || '';
+        const format = item.querySelector('.product-format')?.textContent.toLowerCase() || '';
+        item.style.display = (name.includes(q) || format.includes(q)) ? '' : 'none';
+      });
+      // Auto-open categories with results
+      document.querySelectorAll('.category-content').forEach(cat => {
+        const visible = [...cat.querySelectorAll('.product-item')].some(i => i.style.display !== 'none');
+        if (q.length > 0) {
+          cat.classList.toggle('active', visible);
+          const arrow = cat.previousElementSibling?.querySelector('.arrow');
+          if (arrow) arrow.classList.toggle('active-arrow', visible);
+        }
+      });
+    });
+  }
+
+  // === CONTACT FORM ===
+  const form = document.getElementById("contactForm");
+  if (form) {
+    const status = document.getElementById("formStatus");
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = "Envoi en cours...";
+      btn.disabled = true;
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(event.target),
+          headers: { "Accept": "application/json" }
+        });
+        if (response.ok) {
+          status.textContent = "✅ Message envoyé avec succès ! Nous vous répondrons sous 24h.";
+          status.style.color = "#16a34a";
+          form.reset();
+        } else {
+          const data = await response.json();
+          status.textContent = data.errors ? data.errors.map(e => e.message).join(', ') : "Une erreur est survenue.";
+          status.style.color = "#dc2626";
+        }
+      } catch {
+        status.textContent = "Oops ! Problème lors de l'envoi. Veuillez réessayer.";
+        status.style.color = "#dc2626";
+      } finally {
+        btn.textContent = "Envoyer le Message";
+        btn.disabled = false;
+      }
+    });
+  }
+
+});
+
+</script>
 </body>
 </html>
+

@@ -52,3 +52,69 @@
 .product-page + footer .social-links p { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin:0; }
 .product-page + footer .social-links a { display:flex; align-items:center; justify-content:center; width:34px; height:34px; color:#ccc !important; }
 .product-page + footer .social-links i { display:inline-block; visibility:visible; opacity:1; min-width:1em; text-align:center; }
+
+@media (max-width:560px){
+  .product-page + footer .social-links a{width:40px;height:40px;}
+}
+
+
+/* ===== FOOTER ICONS V4: exact Font Awesome icons from the original site, served locally ===== */
+.product-page + footer .footer-contact p {
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+}
+.product-page + footer .footer-contact .contact-fa-icon {
+  width:14px;
+  height:16px;
+  flex:0 0 16px;
+  margin-top:3px;
+  object-fit:contain;
+  /* Same accent appearance as the original Font Awesome <i> icons. */
+  filter: invert(60%) sepia(84%) saturate(1355%) hue-rotate(156deg) brightness(94%) contrast(92%);
+}
+.product-page + footer .social-links {
+  display:flex;
+  gap:8px;
+  flex-wrap:nowrap;
+  align-items:center;
+}
+.product-page + footer .social-links p {
+  display:flex;
+  gap:8px;
+  flex-wrap:nowrap;
+  align-items:center;
+  margin:0;
+}
+.product-page + footer .social-links a {
+  width:34px;
+  height:34px;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:rgba(255,255,255,.7) !important;
+  transition:all var(--trans, .2s ease);
+}
+.product-page + footer .social-links a:hover {
+  background:var(--accent);
+  border-color:var(--accent);
+  transform:translateY(-2px);
+}
+.product-page + footer .social-fa-icon {
+  width:15px;
+  height:15px;
+  display:block;
+  object-fit:contain;
+  /* Font Awesome SVG files are black by default; this matches the base footer #ccc. */
+  filter: invert(85%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(95%) contrast(91%);
+}
+.product-page + footer .social-links a:hover .social-fa-icon {
+  filter: brightness(0) invert(1);
+}
+@media (max-width:560px){
+  .product-page + footer .social-links a { width:34px; height:34px; }
+  .product-page + footer .social-links p { gap:8px; }
+}

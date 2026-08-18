@@ -39,3 +39,16 @@
 .alcohol-note { margin-top:18px; border-left:4px solid var(--accent); background:#f5fbfe; padding:14px 16px; border-radius:10px; color:var(--text-light); font-size:.9rem; }
 @media (max-width:900px){ .product-hero-card,.product-content-grid{grid-template-columns:1fr;} .related-grid{grid-template-columns:repeat(2,1fr);} .product-visual{min-height:320px;} }
 @media (max-width:560px){ .product-page{padding-top:28px;} .product-hero-card{padding:22px; gap:28px;} .product-visual{min-height:260px; padding:24px;} .product-visual img{max-height:250px;} .product-panel{padding:22px;} .spec-row{grid-template-columns:1fr; gap:4px;} .related-grid{grid-template-columns:1fr 1fr;} .related-img{height:140px;} }
+
+
+/* ===== PRODUCT PAGE FOOTER VISIBILITY FIX ===== */
+.product-page + footer { display:block; visibility:visible; opacity:1; }
+.product-page + footer .footer-grid { position:relative; z-index:1; }
+.product-page + footer .footer-contact,
+.product-page + footer .footer-social { display:block; visibility:visible; opacity:1; }
+.product-page + footer .footer-contact p { color:rgba(255,255,255,.75); }
+.product-page + footer .footer-contact a { color:inherit; }
+.product-page + footer .social-links { display:flex; gap:8px; flex-wrap:nowrap; align-items:center; }
+.product-page + footer .social-links p { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin:0; }
+.product-page + footer .social-links a { display:flex; align-items:center; justify-content:center; width:34px; height:34px; color:#ccc !important; }
+.product-page + footer .social-links i { display:inline-block; visibility:visible; opacity:1; min-width:1em; text-align:center; }

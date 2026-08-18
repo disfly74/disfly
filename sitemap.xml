@@ -1,38 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://www.disfly.fr/</loc>
-<lastmod>2026-05-21</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-</url>
-<url>
-<loc>https://www.disfly.fr/catalogue.html</loc>
-<lastmod>2026-05-21</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://www.disfly.fr/contact.html</loc>
-<lastmod>2026-05-21</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://www.disfly.fr/mentions-legales.html</loc>
-<lastmod>2026-05-21</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.3</priority>
-</url>
-<url>
-<loc>https://www.disfly.fr/politique-confidentialite.html</loc>
-<lastmod>2026-05-21</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.3</priority>
-</url>
-<url>
-<loc>https://www.disfly.fr/conditions-generales.html</loc>
-<lastmod>2026-05-21</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.4</priority>
-</url>
+  <url><loc>https://www.disfly.fr/</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.disfly.fr/catalogue.html</loc><lastmod>2026-08-18</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.disfly.fr/contact.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.disfly.fr/mentions-legales.html</loc><lastmod>2026-08-18</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.disfly.fr/politique-confidentialite.html</loc><lastmod>2026-08-18</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.disfly.fr/conditions-generales.html</loc><lastmod>2026-08-18</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://www.disfly.fr/produit-coca-cola-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-coca-zero-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-coca-cherry-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-coca-vanille-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-coca-cola-pack-6-1-5l.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-coca-cola-pack-12-0-5cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-fanta-orange-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-fanta-fruit-du-dragon-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-fanta-citron-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-fanta-cassis-pack-12-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-fanta-exotic-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-sprite-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-pepsi-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-7up-citron-citron-vert-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-hawai-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-capri-sun-multivitamine-pack-40-20cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-fraise-pack-12-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-ice-tea-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-lipton-ice-tea-peche-pack-12-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-ice-tea-pasteque-menthe-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-ice-tea-framboise-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-fuze-tea-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-fuze-tea-peche-pack-12-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-monster-energy-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-orangina-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-orangina-pack-12-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-schweppes-agrum-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-schweppes-agrum-pack-12-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-schweppes-pomme-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-oasis-tropical-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-oasis-tropical-pack-12-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-oasis-fraise-framboise-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-oasis-pomme-cassis-framboise-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-oasis-pomme-cassis-framboise-pack-12-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-oasis-pomme-poire-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-dada-cherry-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-dada-melon-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-dada-lychee-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-red-bull-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-red-bull-peche-blanche-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-red-bull-cerise-sakura-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-red-bull-pomme-fuji-gingembre-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-red-bull-agrumes-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-red-bull-abricot-fraise-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-red-bull-myrtille-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-red-bull-fruit-du-dragon-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-red-bull-coco-acai-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-red-bull-juneberry-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-red-bull-mure-givree-vanille-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-red-bull-pasteque-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-blue-fraise-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-blue-lytchee-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-blue-peche-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-blue-pomme-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-vody-spritz-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-vody-mint-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-vody-lemon-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-vody-tropical-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-vody-energy-mix-18-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-bantu-original-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-bantu-ice-tea-peche-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-cristaline-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-perrier-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-san-pellegrino-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-sour-little-mix-sachet-12-90g.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-coeur-de-peche-sachet-12-90g.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-jelly-cola-pica-sachet-12-90g.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-dentier-sachet-12-90g.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-mur-framboises-sachet-12-90g.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-jelly-crocodiles-sachet-12-90g.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-oursons-lisses-sachet-12-90g.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-fraises-sauvages-sachet-12-90g.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-poulpes-sachet-12-90g.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-jelly-worms-sachet-12-90g.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-jelly-cherries-sachet-12-90g.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-1664-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-8-6-bavaria-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-8-6-bavaria-extreme-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-8-6-bavaria-cherry-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-heineken-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-heineken-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-desperados-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-leffe-blonde-pack-24-50cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-super-bock-pack-20-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-efes-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-desperados-pack-24-33cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-heineken-pack-24-25cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-tekirdag-gold-bouteille-70cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-yeni-raki-bouteille-70cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-yakut-bouteille-75cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-lal-bouteille-75cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.disfly.fr/produit-cankaya-bouteille-75cl.html</loc><lastmod>2026-08-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

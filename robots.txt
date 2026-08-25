@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /products-seo.json
 
 Sitemap: https://www.disfly.fr/sitemap.xml

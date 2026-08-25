@@ -1,0 +1,29 @@
+DISFLY – OPTIMISATION SEO
+Date : 25/08/2026
+
+PRINCIPALES MODIFICATIONS
+- 92 fiches produits conservées et renforcées (titles, descriptions, breadcrumbs, maillage, données Product).
+- Création de 9 pages catégories SEO : sodas, thés glacés, énergisants, prémix/RTD, eaux, confiseries, bières, spiritueux, vins.
+- Création de 16 pages marques SEO : Vody, Bantu, Red Bull, Coca-Cola, Fanta, Oasis, Heineken, etc.
+- Création de marques.html.
+- Liens directs depuis l'accueil et le catalogue vers les pages stratégiques.
+- Sitemap XML reconstruit avec images produits.
+- Robots.txt nettoyé.
+- Images WebP générées et utilisées dans les pages pour accélérer le chargement, originaux conservés.
+- Dimensions d'images ajoutées pour réduire le CLS.
+- H1 de l'accueil renforcé sur l'intention « grossiste boissons pour professionnels ».
+- Données structurées WebSite, Organization, CollectionPage, ItemList, Product et BreadcrumbList.
+- Fiche Coca-Cola 50cl corrigée (ancien texte indiquait 0.5cl).
+- « Fraise » identifié comme Cristaline Fraise d'après le visuel fourni.
+- Bantu Original renommé Bantu Gingembre Ananas d'après le visuel et la copie déjà présente.
+- 404.html noindex ajouté.
+
+APRÈS MISE EN LIGNE
+1. Remplacer les fichiers du site par le contenu de ce ZIP.
+2. Dans Google Search Console, soumettre https://www.disfly.fr/sitemap.xml.
+3. Inspecter et demander l'indexation en priorité de : /grossiste-vody.html, /grossiste-red-bull.html, /grossiste-coca-cola.html, /grossiste-premix-rtd.html, /grossiste-boissons-energisantes.html.
+4. Suivre les requêtes/pages dans Search Console pendant plusieurs semaines.
+5. Continuer à obtenir des liens externes réels (fournisseurs, partenaires, annuaires professionnels qualitatifs, presse locale/pro).
+
+IMPORTANT
+Le SEO technique et le contenu améliorent fortement la capacité de Google à comprendre le catalogue, mais aucun changement on-site ne garantit une position précise. L'autorité du domaine, les liens externes, la concurrence, l'ancienneté et le comportement des résultats jouent aussi un rôle.

@@ -11,7 +11,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Coca-Cola"
+    "brand": "Coca-Cola",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-coca-cola.html"
   },
   {
     "name": "Coca Zero",
@@ -25,7 +27,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Coca-Cola"
+    "brand": "Coca-Cola",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-coca-cola.html"
   },
   {
     "name": "Coca Cherry",
@@ -39,7 +43,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Coca-Cola"
+    "brand": "Coca-Cola",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-coca-cola.html"
   },
   {
     "name": "Coca Vanille",
@@ -53,7 +59,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Coca-Cola"
+    "brand": "Coca-Cola",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-coca-cola.html"
   },
   {
     "name": "Coca-Cola",
@@ -67,21 +75,25 @@
     "unit": "1,5L",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Coca-Cola"
+    "brand": "Coca-Cola",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-coca-cola.html"
   },
   {
     "name": "Coca-Cola",
-    "format": "Pack 12 × 0.5cl",
-    "clean_format": "Pack 12 × 0.5cl",
+    "format": "Pack 12 × 50cl",
+    "clean_format": "Pack 12 × 50cl",
     "img": "coca-0.5.png",
     "category": "Boissons Softs & Énergisants",
     "slug": "coca-cola-pack-12-0-5cl",
     "filename": "produit-coca-cola-pack-12-0-5cl.html",
     "count": "12",
-    "unit": "0.5cl",
+    "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Coca-Cola"
+    "brand": "Coca-Cola",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-coca-cola.html"
   },
   {
     "name": "Fanta Orange",
@@ -95,7 +107,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Fanta"
+    "brand": "Fanta",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-fanta.html"
   },
   {
     "name": "Fanta Fruit du Dragon",
@@ -109,7 +123,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Fanta"
+    "brand": "Fanta",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-fanta.html"
   },
   {
     "name": "Fanta Citron",
@@ -123,7 +139,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Fanta"
+    "brand": "Fanta",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-fanta.html"
   },
   {
     "name": "Fanta Cassis",
@@ -137,7 +155,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Fanta"
+    "brand": "Fanta",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-fanta.html"
   },
   {
     "name": "Fanta Exotic",
@@ -151,7 +171,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Fanta"
+    "brand": "Fanta",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-fanta.html"
   },
   {
     "name": "Sprite",
@@ -165,7 +187,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Sprite"
+    "brand": "Sprite",
+    "seo_category": "sodas",
+    "brand_hub": null
   },
   {
     "name": "Pepsi",
@@ -179,7 +203,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Pepsi"
+    "brand": "Pepsi",
+    "seo_category": "sodas",
+    "brand_hub": null
   },
   {
     "name": "7up Citron Citron Vert",
@@ -193,7 +219,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "7UP"
+    "brand": "7UP",
+    "seo_category": "sodas",
+    "brand_hub": null
   },
   {
     "name": "Hawai",
@@ -207,7 +235,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Hawai"
+    "brand": "Hawai",
+    "seo_category": "sodas",
+    "brand_hub": null
   },
   {
     "name": "Capri-Sun Multivitamine",
@@ -221,10 +251,12 @@
     "unit": "20cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Capri-Sun"
+    "brand": "Capri-Sun",
+    "seo_category": "sodas",
+    "brand_hub": null
   },
   {
-    "name": "Fraise",
+    "name": "Cristaline Fraise",
     "format": "Pack 12 × 50cl",
     "clean_format": "Pack 12 × 50cl",
     "img": "Fraise.png",
@@ -235,7 +267,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Fraise"
+    "brand": "Cristaline",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-cristaline.html"
   },
   {
     "name": "Ice Tea",
@@ -249,7 +283,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Ice"
+    "brand": "Ice",
+    "seo_category": "thes-glaces",
+    "brand_hub": null
   },
   {
     "name": "Lipton Ice Tea Pêche",
@@ -263,7 +299,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Lipton"
+    "brand": "Lipton",
+    "seo_category": "thes-glaces",
+    "brand_hub": null
   },
   {
     "name": "Ice Tea Pastèque-Menthe",
@@ -277,7 +315,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Ice"
+    "brand": "Ice",
+    "seo_category": "thes-glaces",
+    "brand_hub": null
   },
   {
     "name": "Ice Tea Framboise",
@@ -291,7 +331,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Ice"
+    "brand": "Ice",
+    "seo_category": "thes-glaces",
+    "brand_hub": null
   },
   {
     "name": "Fuze Tea",
@@ -305,7 +347,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Fuze Tea"
+    "brand": "Fuze Tea",
+    "seo_category": "thes-glaces",
+    "brand_hub": "grossiste-fuze-tea.html"
   },
   {
     "name": "Fuze Tea Pêche",
@@ -319,7 +363,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Fuze Tea"
+    "brand": "Fuze Tea",
+    "seo_category": "thes-glaces",
+    "brand_hub": "grossiste-fuze-tea.html"
   },
   {
     "name": "Monster Energy",
@@ -333,7 +379,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Monster Energy"
+    "brand": "Monster Energy",
+    "seo_category": "energisants",
+    "brand_hub": null
   },
   {
     "name": "Orangina",
@@ -347,7 +395,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Orangina"
+    "brand": "Orangina",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-orangina.html"
   },
   {
     "name": "Orangina",
@@ -361,7 +411,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Orangina"
+    "brand": "Orangina",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-orangina.html"
   },
   {
     "name": "Schweppes Agrum",
@@ -375,7 +427,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Schweppes"
+    "brand": "Schweppes",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-schweppes.html"
   },
   {
     "name": "Schweppes Agrum",
@@ -389,7 +443,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Schweppes"
+    "brand": "Schweppes",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-schweppes.html"
   },
   {
     "name": "Schweppes Pomme",
@@ -403,7 +459,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Schweppes"
+    "brand": "Schweppes",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-schweppes.html"
   },
   {
     "name": "Oasis Tropical",
@@ -417,7 +475,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Oasis"
+    "brand": "Oasis",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-oasis.html"
   },
   {
     "name": "Oasis Tropical",
@@ -431,7 +491,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Oasis"
+    "brand": "Oasis",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-oasis.html"
   },
   {
     "name": "Oasis Fraise Framboise",
@@ -445,7 +507,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Oasis"
+    "brand": "Oasis",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-oasis.html"
   },
   {
     "name": "Oasis Pomme Cassis Framboise",
@@ -459,7 +523,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Oasis"
+    "brand": "Oasis",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-oasis.html"
   },
   {
     "name": "Oasis Pomme Cassis Framboise",
@@ -473,7 +539,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Oasis"
+    "brand": "Oasis",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-oasis.html"
   },
   {
     "name": "Oasis Pomme Poire",
@@ -487,7 +555,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Oasis"
+    "brand": "Oasis",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-oasis.html"
   },
   {
     "name": "Dada Cherry",
@@ -501,7 +571,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Dada"
+    "brand": "Dada",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-dada.html"
   },
   {
     "name": "Dada Melon",
@@ -515,7 +587,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Dada"
+    "brand": "Dada",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-dada.html"
   },
   {
     "name": "Dada Lychee",
@@ -529,7 +603,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Dada"
+    "brand": "Dada",
+    "seo_category": "sodas",
+    "brand_hub": "grossiste-dada.html"
   },
   {
     "name": "Red Bull",
@@ -543,7 +619,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Red Bull"
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
   },
   {
     "name": "Red Bull Pêche Blanche",
@@ -557,7 +635,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Red Bull"
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
   },
   {
     "name": "Red Bull Cerise Sakura",
@@ -571,7 +651,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Red Bull"
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
   },
   {
     "name": "Red Bull Pomme Fuji & Gingembre",
@@ -585,7 +667,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Red Bull"
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
   },
   {
     "name": "Red Bull Agrumes",
@@ -599,7 +683,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Red Bull"
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
   },
   {
     "name": "Red Bull Abricot-Fraise",
@@ -613,7 +699,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Red Bull"
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
   },
   {
     "name": "Red Bull Myrtille",
@@ -627,7 +715,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Red Bull"
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
   },
   {
     "name": "Red Bull Fruit du Dragon",
@@ -641,7 +731,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Red Bull"
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
   },
   {
     "name": "Red Bull Coco-Açaï",
@@ -655,7 +747,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Red Bull"
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
   },
   {
     "name": "Red Bull Juneberry",
@@ -669,7 +763,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Red Bull"
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
   },
   {
     "name": "Red Bull Mûre Givrée & Vanille",
@@ -683,7 +779,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Red Bull"
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
   },
   {
     "name": "Red Bull Pastèque",
@@ -697,7 +795,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Red Bull"
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
   },
   {
     "name": "B'lue Fraise",
@@ -711,7 +811,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "B'lue"
+    "brand": "B'lue",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-blue.html"
   },
   {
     "name": "B'lue Lytchee",
@@ -725,7 +827,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "B'lue"
+    "brand": "B'lue",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-blue.html"
   },
   {
     "name": "B'lue Pêche",
@@ -739,7 +843,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "B'lue"
+    "brand": "B'lue",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-blue.html"
   },
   {
     "name": "B'lue Pomme",
@@ -753,7 +859,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "B'lue"
+    "brand": "B'lue",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-blue.html"
   },
   {
     "name": "Vody Spritz",
@@ -767,7 +875,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": "18% vol.",
-    "brand": "Cody's Vody"
+    "brand": "Cody's Vody",
+    "seo_category": "premix",
+    "brand_hub": "grossiste-vody.html"
   },
   {
     "name": "Vody Mint",
@@ -781,7 +891,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": "18% vol.",
-    "brand": "Cody's Vody"
+    "brand": "Cody's Vody",
+    "seo_category": "premix",
+    "brand_hub": "grossiste-vody.html"
   },
   {
     "name": "Vody Lemon",
@@ -795,7 +907,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": "18% vol.",
-    "brand": "Cody's Vody"
+    "brand": "Cody's Vody",
+    "seo_category": "premix",
+    "brand_hub": "grossiste-vody.html"
   },
   {
     "name": "Vody Tropical",
@@ -809,7 +923,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": "18% vol.",
-    "brand": "Cody's Vody"
+    "brand": "Cody's Vody",
+    "seo_category": "premix",
+    "brand_hub": "grossiste-vody.html"
   },
   {
     "name": "Vody Energy Mix 18%",
@@ -823,10 +939,12 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": "18% vol.",
-    "brand": "Cody's Vody"
+    "brand": "Cody's Vody",
+    "seo_category": "premix",
+    "brand_hub": "grossiste-vody.html"
   },
   {
-    "name": "Bantu Original",
+    "name": "Bantu Gingembre Ananas",
     "format": "Pack 24 × 25cl · 18% vol.",
     "clean_format": "Pack 24 × 25cl",
     "img": "bantu-G.png",
@@ -837,7 +955,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": "18% vol.",
-    "brand": "Bantu"
+    "brand": "Bantu",
+    "seo_category": "premix",
+    "brand_hub": "grossiste-bantu.html"
   },
   {
     "name": "Bantu Ice Tea Pêche",
@@ -851,7 +971,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": "18% vol.",
-    "brand": "Bantu"
+    "brand": "Bantu",
+    "seo_category": "premix",
+    "brand_hub": "grossiste-bantu.html"
   },
   {
     "name": "Cristaline",
@@ -865,7 +987,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Cristaline"
+    "brand": "Cristaline",
+    "seo_category": "eaux",
+    "brand_hub": "grossiste-cristaline.html"
   },
   {
     "name": "Perrier",
@@ -879,7 +1003,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Perrier"
+    "brand": "Perrier",
+    "seo_category": "eaux",
+    "brand_hub": null
   },
   {
     "name": "San Pellegrino",
@@ -893,10 +1019,12 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "San Pellegrino"
+    "brand": "San Pellegrino",
+    "seo_category": "eaux",
+    "brand_hub": null
   },
   {
-    "name": "Sour Little Mix",
+    "name": "Fini Sour Little Mix",
     "format": "Sachet 12 × 90g",
     "clean_format": "Sachet 12 × 90g",
     "img": "SourLittleMix.png",
@@ -907,10 +1035,12 @@
     "unit": "90g",
     "packaging": "Sachet",
     "abv": null,
-    "brand": "Sour"
+    "brand": "Fini",
+    "seo_category": "confiseries",
+    "brand_hub": "grossiste-fini.html"
   },
   {
-    "name": "Coeur De Pêche",
+    "name": "Fini Coeur De Pêche",
     "format": "Sachet 12 × 90g",
     "clean_format": "Sachet 12 × 90g",
     "img": "Coeurdepeche.png",
@@ -921,10 +1051,12 @@
     "unit": "90g",
     "packaging": "Sachet",
     "abv": null,
-    "brand": "Coeur"
+    "brand": "Fini",
+    "seo_category": "confiseries",
+    "brand_hub": "grossiste-fini.html"
   },
   {
-    "name": "Jelly Cola Pica",
+    "name": "Fini Jelly Cola Pica",
     "format": "Sachet 12 × 90g",
     "clean_format": "Sachet 12 × 90g",
     "img": "Jellycolapica.png",
@@ -935,10 +1067,12 @@
     "unit": "90g",
     "packaging": "Sachet",
     "abv": null,
-    "brand": "Jelly"
+    "brand": "Fini",
+    "seo_category": "confiseries",
+    "brand_hub": "grossiste-fini.html"
   },
   {
-    "name": "Dentier",
+    "name": "Fini Dentier",
     "format": "Sachet 12 × 90g",
     "clean_format": "Sachet 12 × 90g",
     "img": "DentierHalal.png",
@@ -949,13 +1083,15 @@
     "unit": "90g",
     "packaging": "Sachet",
     "abv": null,
-    "brand": "Dentier"
+    "brand": "Fini",
+    "seo_category": "confiseries",
+    "brand_hub": "grossiste-fini.html"
   },
   {
-    "name": "Mur Framboises",
+    "name": "Fini Mûres & Framboises",
     "format": "Sachet 12 × 90g",
     "clean_format": "Sachet 12 × 90g",
-    "img": "MûrFramboises.png",
+    "img": "mures-framboises.png",
     "category": "Confiseries",
     "slug": "mur-framboises-sachet-12-90g",
     "filename": "produit-mur-framboises-sachet-12-90g.html",
@@ -963,10 +1099,12 @@
     "unit": "90g",
     "packaging": "Sachet",
     "abv": null,
-    "brand": "Mur"
+    "brand": "Fini",
+    "seo_category": "confiseries",
+    "brand_hub": "grossiste-fini.html"
   },
   {
-    "name": "Jelly Crocodiles",
+    "name": "Fini Jelly Crocodiles",
     "format": "Sachet 12 × 90g",
     "clean_format": "Sachet 12 × 90g",
     "img": "JellyCrocodiles.png",
@@ -977,10 +1115,12 @@
     "unit": "90g",
     "packaging": "Sachet",
     "abv": null,
-    "brand": "Jelly"
+    "brand": "Fini",
+    "seo_category": "confiseries",
+    "brand_hub": "grossiste-fini.html"
   },
   {
-    "name": "Oursons Lisses",
+    "name": "Fini Oursons Lisses",
     "format": "Sachet 12 × 90g",
     "clean_format": "Sachet 12 × 90g",
     "img": "OursonsLisses.png",
@@ -991,10 +1131,12 @@
     "unit": "90g",
     "packaging": "Sachet",
     "abv": null,
-    "brand": "Oursons"
+    "brand": "Fini",
+    "seo_category": "confiseries",
+    "brand_hub": "grossiste-fini.html"
   },
   {
-    "name": "Fraises Sauvages",
+    "name": "Fini Fraises Sauvages",
     "format": "Sachet 12 × 90g",
     "clean_format": "Sachet 12 × 90g",
     "img": "FraisesSauvages.png",
@@ -1005,10 +1147,12 @@
     "unit": "90g",
     "packaging": "Sachet",
     "abv": null,
-    "brand": "Fraises"
+    "brand": "Fini",
+    "seo_category": "confiseries",
+    "brand_hub": "grossiste-fini.html"
   },
   {
-    "name": "Poulpes",
+    "name": "Fini Poulpes",
     "format": "Sachet 12 × 90g",
     "clean_format": "Sachet 12 × 90g",
     "img": "Poulpes.png",
@@ -1019,10 +1163,12 @@
     "unit": "90g",
     "packaging": "Sachet",
     "abv": null,
-    "brand": "Poulpes"
+    "brand": "Fini",
+    "seo_category": "confiseries",
+    "brand_hub": "grossiste-fini.html"
   },
   {
-    "name": "Jelly Worms",
+    "name": "Fini Jelly Worms",
     "format": "Sachet 12 × 90g",
     "clean_format": "Sachet 12 × 90g",
     "img": "JellyWorms.png",
@@ -1033,10 +1179,12 @@
     "unit": "90g",
     "packaging": "Sachet",
     "abv": null,
-    "brand": "Jelly"
+    "brand": "Fini",
+    "seo_category": "confiseries",
+    "brand_hub": "grossiste-fini.html"
   },
   {
-    "name": "Jelly Cherries",
+    "name": "Fini Jelly Cherries",
     "format": "Sachet 12 × 90g",
     "clean_format": "Sachet 12 × 90g",
     "img": "JellyCherries.png",
@@ -1047,7 +1195,9 @@
     "unit": "90g",
     "packaging": "Sachet",
     "abv": null,
-    "brand": "Jelly"
+    "brand": "Fini",
+    "seo_category": "confiseries",
+    "brand_hub": "grossiste-fini.html"
   },
   {
     "name": "1664",
@@ -1061,7 +1211,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "1664"
+    "brand": "1664",
+    "seo_category": "bieres",
+    "brand_hub": null
   },
   {
     "name": "8.6 Bavaria",
@@ -1075,7 +1227,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "8.6"
+    "brand": "8.6",
+    "seo_category": "bieres",
+    "brand_hub": "grossiste-8-6.html"
   },
   {
     "name": "8.6 Bavaria Extrème",
@@ -1089,7 +1243,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "8.6"
+    "brand": "8.6",
+    "seo_category": "bieres",
+    "brand_hub": "grossiste-8-6.html"
   },
   {
     "name": "8.6 Bavaria Cherry",
@@ -1103,7 +1259,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "8.6"
+    "brand": "8.6",
+    "seo_category": "bieres",
+    "brand_hub": "grossiste-8-6.html"
   },
   {
     "name": "Heineken",
@@ -1117,7 +1275,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Heineken"
+    "brand": "Heineken",
+    "seo_category": "bieres",
+    "brand_hub": "grossiste-heineken.html"
   },
   {
     "name": "Heineken",
@@ -1131,7 +1291,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Heineken"
+    "brand": "Heineken",
+    "seo_category": "bieres",
+    "brand_hub": "grossiste-heineken.html"
   },
   {
     "name": "Desperados",
@@ -1145,7 +1307,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Desperados"
+    "brand": "Desperados",
+    "seo_category": "bieres",
+    "brand_hub": "grossiste-desperados.html"
   },
   {
     "name": "Leffe Blonde",
@@ -1159,7 +1323,9 @@
     "unit": "50cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Leffe"
+    "brand": "Leffe",
+    "seo_category": "bieres",
+    "brand_hub": null
   },
   {
     "name": "Super Bock",
@@ -1173,7 +1339,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Super Bock"
+    "brand": "Super Bock",
+    "seo_category": "bieres",
+    "brand_hub": null
   },
   {
     "name": "Efes",
@@ -1187,7 +1355,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Efes"
+    "brand": "Efes",
+    "seo_category": "bieres",
+    "brand_hub": null
   },
   {
     "name": "Desperados",
@@ -1201,7 +1371,9 @@
     "unit": "33cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Desperados"
+    "brand": "Desperados",
+    "seo_category": "bieres",
+    "brand_hub": "grossiste-desperados.html"
   },
   {
     "name": "Heineken",
@@ -1215,7 +1387,9 @@
     "unit": "25cl",
     "packaging": "Pack",
     "abv": null,
-    "brand": "Heineken"
+    "brand": "Heineken",
+    "seo_category": "bieres",
+    "brand_hub": "grossiste-heineken.html"
   },
   {
     "name": "Tekirdag Gold",
@@ -1229,7 +1403,9 @@
     "unit": "70cl",
     "packaging": "Bouteille",
     "abv": null,
-    "brand": "Tekirdag"
+    "brand": "Tekirdag",
+    "seo_category": "spiritueux",
+    "brand_hub": null
   },
   {
     "name": "Yeni Raki",
@@ -1243,7 +1419,9 @@
     "unit": "70cl",
     "packaging": "Bouteille",
     "abv": null,
-    "brand": "Yeni Raki"
+    "brand": "Yeni Raki",
+    "seo_category": "spiritueux",
+    "brand_hub": null
   },
   {
     "name": "Yakut",
@@ -1257,7 +1435,9 @@
     "unit": "75cl",
     "packaging": "Bouteille",
     "abv": null,
-    "brand": "Yakut"
+    "brand": "Yakut",
+    "seo_category": "vins",
+    "brand_hub": null
   },
   {
     "name": "Lâl",
@@ -1271,7 +1451,9 @@
     "unit": "75cl",
     "packaging": "Bouteille",
     "abv": null,
-    "brand": "Lâl"
+    "brand": "Lâl",
+    "seo_category": "vins",
+    "brand_hub": null
   },
   {
     "name": "Çankaya",
@@ -1285,6 +1467,8 @@
     "unit": "75cl",
     "packaging": "Bouteille",
     "abv": null,
-    "brand": "Çankaya"
+    "brand": "Çankaya",
+    "seo_category": "vins",
+    "brand_hub": null
   }
 ]

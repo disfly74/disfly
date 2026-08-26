@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.disfly.fr/</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/catalogue.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/marques.html</loc>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-premix-rtd.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-eaux.html</loc>
@@ -86,7 +86,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-vody.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-bantu.html</loc>
@@ -546,15 +546,15 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-vody-spritz-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/VodySpr.webp</image:loc>
-      <image:title>Vody Spritz</image:title>
+      <image:title>Vody Sprizz 18%</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-vody-mint-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/VodyMen.webp</image:loc>
       <image:title>Vody Mint</image:title>
@@ -562,7 +562,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-vody-lemon-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Vodylem.webp</image:loc>
       <image:title>Vody Lemon</image:title>
@@ -570,7 +570,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-vody-tropical-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Vodytrop.webp</image:loc>
       <image:title>Vody Tropical</image:title>
@@ -578,7 +578,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-vody-energy-mix-18-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Vody18.webp</image:loc>
       <image:title>Vody Energy Mix 18%</image:title>

@@ -1470,5 +1470,37 @@
     "brand": "Çankaya",
     "seo_category": "vins",
     "brand_hub": null
+  },
+  {
+    "name": "Minute Maid Nectar d’Orange",
+    "format": "Pack 24 × 33cl",
+    "clean_format": "Pack 24 × 33cl",
+    "img": "MinuteMaid.webp",
+    "category": "Boissons Softs & Énergisants",
+    "slug": "minute-maid-orange-pack-24-33cl",
+    "filename": "produit-minute-maid-orange-pack-24-33cl.html",
+    "count": "24",
+    "unit": "33cl",
+    "packaging": "Pack",
+    "abv": null,
+    "brand": "Minute Maid",
+    "seo_category": "sodas",
+    "brand_hub": null
+  },
+  {
+    "name": "Gini Lemon",
+    "format": "Pack 24 × 33cl",
+    "clean_format": "Pack 24 × 33cl",
+    "img": "Gini.webp",
+    "category": "Boissons Softs & Énergisants",
+    "slug": "gini-lemon-pack-24-33cl",
+    "filename": "produit-gini-lemon-pack-24-33cl.html",
+    "count": "24",
+    "unit": "33cl",
+    "packaging": "Pack",
+    "abv": null,
+    "brand": "Gini",
+    "seo_category": "sodas",
+    "brand_hub": null
   }
 ]

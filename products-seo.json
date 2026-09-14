@@ -800,6 +800,22 @@
     "brand_hub": "grossiste-red-bull.html"
   },
   {
+    "name": "Red Bull Pistache & Fruits des Bois",
+    "format": "Pack 24 × 25cl",
+    "clean_format": "Pack 24 × 25cl",
+    "img": "redbull-pistache-fruits-des-bois.png",
+    "category": "Boissons Softs & Énergisants",
+    "slug": "red-bull-pistache-fruits-des-bois-pack-24-25cl",
+    "filename": "produit-red-bull-pistache-fruits-des-bois-pack-24-25cl.html",
+    "count": "24",
+    "unit": "25cl",
+    "packaging": "Pack",
+    "abv": null,
+    "brand": "Red Bull",
+    "seo_category": "energisants",
+    "brand_hub": "grossiste-red-bull.html"
+  },
+  {
     "name": "B'lue Fraise",
     "format": "Pack 24 × 50cl",
     "clean_format": "Pack 24 × 50cl",

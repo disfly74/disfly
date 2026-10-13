@@ -6,15 +6,15 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/catalogue.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/marques.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-sodas.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-thes-glaces.html</loc>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-spiritueux.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-vins.html</loc>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-coca-cola.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-fanta.html</loc>
@@ -869,7 +869,7 @@
     <lastmod>2026-09-14</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/redbull-pistache-fruits-des-bois.webp</image:loc>
-      <image:title>Red Bull Pistache & Fruits des Bois</image:title>
+      <image:title>Red Bull Pistache &amp; Fruits des Bois</image:title>
     </image:image>
   </url>
   <url>
@@ -883,5 +883,17 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/politique-confidentialite.html</loc>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-coca-zero-bouteille-50cl.html</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-coca-cherry-bouteille-50cl.html</loc>
+    <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-poliakov-vodka-bouteille-20cl.html</loc>
+    <lastmod>2026-10-13</lastmod>
   </url>
 </urlset>

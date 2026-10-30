@@ -6,15 +6,15 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/catalogue.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/marques.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-sodas.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-thes-glaces.html</loc>
@@ -34,11 +34,11 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-confiseries.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-bieres.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-spiritueux.html</loc>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-schweppes.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-oasis.html</loc>
@@ -110,7 +110,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-fini.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-10-30</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-coca-cola-pack-24-33cl.html</loc>
@@ -850,7 +850,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-minute-maid-orange-pack-24-33cl.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/MinuteMaid.webp</image:loc>
       <image:title>Minute Maid Nectar d’Orange</image:title>
@@ -895,5 +895,51 @@
   <url>
     <loc>https://www.disfly.fr/produit-poliakov-vodka-bouteille-20cl.html</loc>
     <lastmod>2026-10-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-fini-sour-jelly-beans-sachet-12-90g.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/fini-sour-jelly-beans.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-fini-bisous-fraise-sachet-12-90g.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/fini-bisous-fraise.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-fini-jelly-bananas-sachet-12-90g.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/fini-jelly-bananas.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-skoll-original-vodka-agrumes-canette-50cl.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/skoll-original-vodka-agrumes-50cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-minute-maid-nectar-pomme-pack-24-33cl.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/minute-maid-nectar-pomme-33cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-schweppes-indian-tonic-pack-24-33cl.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/schweppes-indian-tonic-33cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/grossiste-minute-maid.html</loc>
+    <lastmod>2026-10-30</lastmod>
   </url>
 </urlset>

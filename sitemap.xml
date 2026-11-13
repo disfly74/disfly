@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.disfly.fr/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/catalogue.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/marques.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-sodas.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-thes-glaces.html</loc>
@@ -38,11 +38,11 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-bieres.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-spiritueux.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-vins.html</loc>
@@ -941,5 +941,175 @@
   <url>
     <loc>https://www.disfly.fr/grossiste-minute-maid.html</loc>
     <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-poliakov-vodka-bouteille-70cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/poliakov-vodka-bouteille-70cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-absolut-vodka-original-bouteille-70cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/absolut-vodka-original-bouteille-70cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-powerade-ice-storm-bouteille-50cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/powerade-ice-storm-bouteille-50cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-ciroc-red-berry-vodka-bouteille-70cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/ciroc-red-berry-vodka-bouteille-70cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-leffe-blonde-bouteille-33cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/leffe-blonde-bouteille-33cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-cacolac-original-canette-25cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/cacolac-original-canette-25cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-ciroc-peach-vodka-bouteille-70cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/ciroc-peach-vodka-bouteille-70cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-captain-morgan-original-spiced-gold-bouteille-70cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/captain-morgan-original-spiced-gold-bouteille-70cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-caraibos-ananas-33cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/caraibos-ananas-33cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-jack-daniels-tennessee-honey-bouteille-70cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/jack-daniels-tennessee-honey-bouteille-70cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-caraibos-banane-33cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/caraibos-banane-33cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/grossiste-jack-daniels.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-jack-daniels-old-no-7-bouteille-70cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/jack-daniels-old-no-7-bouteille-70cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-jagermeister-liqueur-bouteille-70cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/jagermeister-liqueur-bouteille-70cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/grossiste-caraibos.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-get-27-liqueur-menthe-bouteille-70cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/get-27-liqueur-menthe-bouteille-70cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-ciroc-apple-vodka-bouteille-70cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/ciroc-apple-vodka-bouteille-70cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-saint-omer-8-0-forte-canette-50cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/saint-omer-8-0-forte-canette-50cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/grossiste-ciroc.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-caraibos-mangue-33cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/caraibos-mangue-33cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-ricard-pastis-bouteille-1l.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/ricard-pastis-bouteille-1l.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-belvedere-organic-vodka-bouteille-70cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/belvedere-organic-vodka-bouteille-70cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/grossiste-amsterdam.html</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-amsterdam-maximator-biere-canette-50cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/amsterdam-maximator-biere-canette-50cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-amsterdam-navigator-biere-canette-50cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/amsterdam-navigator-biere-canette-50cl.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-la-goudale-blonde-biere-canette-50cl.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://www.disfly.fr/la-goudale-blonde-biere-canette-50cl.webp</image:loc>
+    </image:image>
   </url>
 </urlset>

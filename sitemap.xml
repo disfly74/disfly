@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.disfly.fr/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/catalogue.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/marques.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-sodas.html</loc>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-premix-rtd.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-eaux.html</loc>
@@ -38,11 +38,11 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-bieres.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-spiritueux.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-vins.html</loc>
@@ -90,7 +90,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-bantu.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-heineken.html</loc>
@@ -114,7 +114,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-coca-cola-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/coca-slim.webp</image:loc>
       <image:title>Coca-Cola</image:title>
@@ -122,7 +122,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-coca-zero-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/coca-zero-slim.webp</image:loc>
       <image:title>Coca Zero</image:title>
@@ -130,7 +130,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-coca-cherry-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/coca-cherry-slim.webp</image:loc>
       <image:title>Coca Cherry</image:title>
@@ -138,7 +138,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-coca-vanille-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/coca-vanilla.webp</image:loc>
       <image:title>Coca Vanille</image:title>
@@ -146,7 +146,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-coca-cola-pack-6-1-5l.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Coca1.5.webp</image:loc>
       <image:title>Coca-Cola</image:title>
@@ -154,7 +154,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-coca-cola-pack-12-0-5cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/coca-0.5.webp</image:loc>
       <image:title>Coca-Cola</image:title>
@@ -162,7 +162,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-fanta-orange-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/fanta-orange-slim.webp</image:loc>
       <image:title>Fanta Orange</image:title>
@@ -170,7 +170,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-fanta-fruit-du-dragon-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/fanta-fruit-du-dragon.webp</image:loc>
       <image:title>Fanta Fruit du Dragon</image:title>
@@ -178,7 +178,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-fanta-citron-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/fanta-citron.webp</image:loc>
       <image:title>Fanta Citron</image:title>
@@ -186,7 +186,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-fanta-cassis-pack-12-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/FantaCassis.webp</image:loc>
       <image:title>Fanta Cassis</image:title>
@@ -194,7 +194,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-fanta-exotic-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/fanta-exotic.webp</image:loc>
       <image:title>Fanta Exotic</image:title>
@@ -202,7 +202,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-sprite-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/sprite.webp</image:loc>
       <image:title>Sprite</image:title>
@@ -210,7 +210,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-pepsi-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Pepsi.webp</image:loc>
       <image:title>Pepsi</image:title>
@@ -218,7 +218,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-7up-citron-citron-vert-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/7up.webp</image:loc>
       <image:title>7up Citron Citron Vert</image:title>
@@ -226,7 +226,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-hawai-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Hawai.webp</image:loc>
       <image:title>Hawai</image:title>
@@ -234,7 +234,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-capri-sun-multivitamine-pack-40-20cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/caprisun-multi.webp</image:loc>
       <image:title>Capri-Sun Multivitamine</image:title>
@@ -242,7 +242,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-fraise-pack-12-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Fraise.webp</image:loc>
       <image:title>Cristaline Fraise</image:title>
@@ -250,7 +250,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-ice-tea-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/icetea-slim.webp</image:loc>
       <image:title>Ice Tea</image:title>
@@ -258,7 +258,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-lipton-ice-tea-peche-pack-12-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/IceTea50.webp</image:loc>
       <image:title>Lipton Ice Tea Pêche</image:title>
@@ -266,7 +266,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-ice-tea-pasteque-menthe-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/icetea-PM.webp</image:loc>
       <image:title>Ice Tea Pastèque-Menthe</image:title>
@@ -274,7 +274,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-ice-tea-framboise-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/IceTea-Framboise.webp</image:loc>
       <image:title>Ice Tea Framboise</image:title>
@@ -282,7 +282,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-fuze-tea-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/fuzetea.webp</image:loc>
       <image:title>Fuze Tea</image:title>
@@ -290,7 +290,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-fuze-tea-peche-pack-12-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/fuze-tea50.webp</image:loc>
       <image:title>Fuze Tea Pêche</image:title>
@@ -298,7 +298,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-monster-energy-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Monster.webp</image:loc>
       <image:title>Monster Energy</image:title>
@@ -306,7 +306,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-orangina-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/orangina-slim.webp</image:loc>
       <image:title>Orangina</image:title>
@@ -314,7 +314,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-orangina-pack-12-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/orangina50.webp</image:loc>
       <image:title>Orangina</image:title>
@@ -322,7 +322,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-schweppes-agrum-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/schewppes-slim.webp</image:loc>
       <image:title>Schweppes Agrum</image:title>
@@ -330,7 +330,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-schweppes-agrum-pack-12-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Scwheppes50.webp</image:loc>
       <image:title>Schweppes Agrum</image:title>
@@ -338,7 +338,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-schweppes-pomme-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/schweppes-pomme.webp</image:loc>
       <image:title>Schweppes Pomme</image:title>
@@ -346,7 +346,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-oasis-tropical-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/oasis-tropical-slim.webp</image:loc>
       <image:title>Oasis Tropical</image:title>
@@ -354,7 +354,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-oasis-tropical-pack-12-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/trop50.webp</image:loc>
       <image:title>Oasis Tropical</image:title>
@@ -362,7 +362,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-oasis-fraise-framboise-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/oasis-fraise-slim.webp</image:loc>
       <image:title>Oasis Fraise Framboise</image:title>
@@ -370,7 +370,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-oasis-pomme-cassis-framboise-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/oasis-framboise-slim.webp</image:loc>
       <image:title>Oasis Pomme Cassis Framboise</image:title>
@@ -378,7 +378,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-oasis-pomme-cassis-framboise-pack-12-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/pcf50.webp</image:loc>
       <image:title>Oasis Pomme Cassis Framboise</image:title>
@@ -386,7 +386,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-oasis-pomme-poire-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/oasis-pomme-slim.webp</image:loc>
       <image:title>Oasis Pomme Poire</image:title>
@@ -394,7 +394,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-dada-cherry-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/DADA+CHERRY.webp</image:loc>
       <image:title>Dada Cherry</image:title>
@@ -402,7 +402,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-dada-melon-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/DADA+MELON.webp</image:loc>
       <image:title>Dada Melon</image:title>
@@ -410,7 +410,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-dada-lychee-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/DADA+LYCHEE.webp</image:loc>
       <image:title>Dada Lychee</image:title>
@@ -418,7 +418,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/redbull.webp</image:loc>
       <image:title>Red Bull</image:title>
@@ -426,7 +426,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-peche-blanche-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Redbull-Peche.webp</image:loc>
       <image:title>Red Bull Pêche Blanche</image:title>
@@ -434,7 +434,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-cerise-sakura-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Redbull-Cerise.webp</image:loc>
       <image:title>Red Bull Cerise Sakura</image:title>
@@ -442,7 +442,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-pomme-fuji-gingembre-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Redbull-pfg.webp</image:loc>
       <image:title>Red Bull Pomme Fuji &amp; Gingembre</image:title>
@@ -450,7 +450,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-agrumes-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Redbull-agrume.webp</image:loc>
       <image:title>Red Bull Agrumes</image:title>
@@ -458,7 +458,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-abricot-fraise-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Redbull-abricot.webp</image:loc>
       <image:title>Red Bull Abricot-Fraise</image:title>
@@ -466,7 +466,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-myrtille-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Redbull-myrtille.webp</image:loc>
       <image:title>Red Bull Myrtille</image:title>
@@ -474,7 +474,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-fruit-du-dragon-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Redbull-fruitdudragon.webp</image:loc>
       <image:title>Red Bull Fruit du Dragon</image:title>
@@ -482,7 +482,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-coco-acai-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Redbull-coco.webp</image:loc>
       <image:title>Red Bull Coco-Açaï</image:title>
@@ -490,7 +490,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-juneberry-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/redbull-junebbery.webp</image:loc>
       <image:title>Red Bull Juneberry</image:title>
@@ -498,7 +498,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-mure-givree-vanille-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/redbull-Vanille.webp</image:loc>
       <image:title>Red Bull Mûre Givrée &amp; Vanille</image:title>
@@ -506,7 +506,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-pasteque-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/redbull-pasteque.webp</image:loc>
       <image:title>Red Bull Pastèque</image:title>
@@ -514,7 +514,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-blue-fraise-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/blue_fraise.webp</image:loc>
       <image:title>B'lue Fraise</image:title>
@@ -522,7 +522,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-blue-lytchee-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/blue_lychee.webp</image:loc>
       <image:title>B'lue Lytchee</image:title>
@@ -530,7 +530,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-blue-peche-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/blue_peche.webp</image:loc>
       <image:title>B'lue Pêche</image:title>
@@ -538,7 +538,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-blue-pomme-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Blue-Pomme.webp</image:loc>
       <image:title>B'lue Pomme</image:title>
@@ -546,7 +546,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-vody-spritz-pack-24-25cl.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/VodySpr.webp</image:loc>
       <image:title>Vody Sprizz 18%</image:title>
@@ -554,7 +554,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-vody-mint-pack-24-25cl.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/VodyMen.webp</image:loc>
       <image:title>Vody Mint</image:title>
@@ -562,7 +562,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-vody-lemon-pack-24-25cl.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Vodylem.webp</image:loc>
       <image:title>Vody Lemon</image:title>
@@ -570,7 +570,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-vody-tropical-pack-24-25cl.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Vodytrop.webp</image:loc>
       <image:title>Vody Tropical</image:title>
@@ -578,7 +578,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-vody-energy-mix-18-pack-24-25cl.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Vody18.webp</image:loc>
       <image:title>Vody Energy Mix 18%</image:title>
@@ -586,7 +586,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-bantu-original-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/bantu-G.webp</image:loc>
       <image:title>Bantu Gingembre Ananas</image:title>
@@ -594,7 +594,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-bantu-ice-tea-peche-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/bantu-Ice.webp</image:loc>
       <image:title>Bantu Ice Tea Pêche</image:title>
@@ -602,7 +602,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-cristaline-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/cristaline.webp</image:loc>
       <image:title>Cristaline</image:title>
@@ -610,7 +610,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-perrier-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/perrier.webp</image:loc>
       <image:title>Perrier</image:title>
@@ -618,7 +618,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-san-pellegrino-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/sanpel.webp</image:loc>
       <image:title>San Pellegrino</image:title>
@@ -626,7 +626,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-sour-little-mix-sachet-12-90g.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/SourLittleMix.webp</image:loc>
       <image:title>Fini Sour Little Mix</image:title>
@@ -634,7 +634,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-coeur-de-peche-sachet-12-90g.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Coeurdepeche.webp</image:loc>
       <image:title>Fini Coeur De Pêche</image:title>
@@ -642,7 +642,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-jelly-cola-pica-sachet-12-90g.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Jellycolapica.webp</image:loc>
       <image:title>Fini Jelly Cola Pica</image:title>
@@ -650,7 +650,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-dentier-sachet-12-90g.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/DentierHalal.webp</image:loc>
       <image:title>Fini Dentier</image:title>
@@ -658,7 +658,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-mur-framboises-sachet-12-90g.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/mures-framboises.webp</image:loc>
       <image:title>Fini Mûres &amp; Framboises</image:title>
@@ -666,7 +666,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-jelly-crocodiles-sachet-12-90g.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/JellyCrocodiles.webp</image:loc>
       <image:title>Fini Jelly Crocodiles</image:title>
@@ -674,7 +674,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-oursons-lisses-sachet-12-90g.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/OursonsLisses.webp</image:loc>
       <image:title>Fini Oursons Lisses</image:title>
@@ -682,7 +682,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-fraises-sauvages-sachet-12-90g.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/FraisesSauvages.webp</image:loc>
       <image:title>Fini Fraises Sauvages</image:title>
@@ -690,7 +690,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-poulpes-sachet-12-90g.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Poulpes.webp</image:loc>
       <image:title>Fini Poulpes</image:title>
@@ -698,7 +698,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-jelly-worms-sachet-12-90g.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/JellyWorms.webp</image:loc>
       <image:title>Fini Jelly Worms</image:title>
@@ -706,7 +706,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-jelly-cherries-sachet-12-90g.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/JellyCherries.webp</image:loc>
       <image:title>Fini Jelly Cherries</image:title>
@@ -714,7 +714,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-1664-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/1664.webp</image:loc>
       <image:title>1664</image:title>
@@ -722,7 +722,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-8-6-bavaria-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/8.6Bavaria.webp</image:loc>
       <image:title>8.6 Bavaria</image:title>
@@ -730,7 +730,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-8-6-bavaria-extreme-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/8.6-ex.webp</image:loc>
       <image:title>8.6 Bavaria Extrème</image:title>
@@ -738,7 +738,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-8-6-bavaria-cherry-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/8.6-cherry.webp</image:loc>
       <image:title>8.6 Bavaria Cherry</image:title>
@@ -746,7 +746,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-heineken-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/HK.webp</image:loc>
       <image:title>Heineken</image:title>
@@ -754,7 +754,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-heineken-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/hk-33cl.webp</image:loc>
       <image:title>Heineken</image:title>
@@ -762,7 +762,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-desperados-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/despe.webp</image:loc>
       <image:title>Desperados</image:title>
@@ -770,7 +770,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-leffe-blonde-pack-24-50cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Leffe.webp</image:loc>
       <image:title>Leffe Blonde</image:title>
@@ -778,7 +778,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-super-bock-pack-20-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/SB25.webp</image:loc>
       <image:title>Super Bock</image:title>
@@ -786,7 +786,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-efes-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Efes.webp</image:loc>
       <image:title>Efes</image:title>
@@ -794,7 +794,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-desperados-pack-24-33cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/despe-verre.webp</image:loc>
       <image:title>Desperados</image:title>
@@ -802,7 +802,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-heineken-pack-24-25cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/HK-verre.webp</image:loc>
       <image:title>Heineken</image:title>
@@ -810,7 +810,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-tekirdag-gold-bouteille-70cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/TekirdagGold.webp</image:loc>
       <image:title>Tekirdag Gold</image:title>
@@ -818,7 +818,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-yeni-raki-bouteille-70cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/YeniRakiYeniSeri.webp</image:loc>
       <image:title>Yeni Raki</image:title>
@@ -826,7 +826,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-yakut-bouteille-75cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Yakut.webp</image:loc>
       <image:title>Yakut</image:title>
@@ -834,7 +834,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-lal-bouteille-75cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Rose.webp</image:loc>
       <image:title>Lâl</image:title>
@@ -842,7 +842,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-cankaya-bouteille-75cl.html</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Blanc.webp</image:loc>
       <image:title>Çankaya</image:title>
@@ -850,7 +850,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-minute-maid-orange-pack-24-33cl.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/MinuteMaid.webp</image:loc>
       <image:title>Minute Maid Nectar d’Orange</image:title>
@@ -858,7 +858,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-gini-lemon-pack-24-33cl.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/Gini.webp</image:loc>
       <image:title>Gini Lemon</image:title>
@@ -866,7 +866,7 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-red-bull-pistache-fruits-des-bois-pack-24-25cl.html</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/redbull-pistache-fruits-des-bois.webp</image:loc>
       <image:title>Red Bull Pistache &amp; Fruits des Bois</image:title>
@@ -886,54 +886,54 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-coca-zero-bouteille-50cl.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-coca-cherry-bouteille-50cl.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-poliakov-vodka-bouteille-20cl.html</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-fini-sour-jelly-beans-sachet-12-90g.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/fini-sour-jelly-beans.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-fini-bisous-fraise-sachet-12-90g.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/fini-bisous-fraise.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-fini-jelly-bananas-sachet-12-90g.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/fini-jelly-bananas.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-skoll-original-vodka-agrumes-canette-50cl.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/skoll-original-vodka-agrumes-50cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-minute-maid-nectar-pomme-pack-24-33cl.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/minute-maid-nectar-pomme-33cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-schweppes-indian-tonic-pack-24-33cl.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/schweppes-indian-tonic-33cl.webp</image:loc>
     </image:image>
@@ -944,145 +944,131 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-poliakov-vodka-bouteille-70cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/poliakov-vodka-bouteille-70cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-absolut-vodka-original-bouteille-70cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/absolut-vodka-original-bouteille-70cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-powerade-ice-storm-bouteille-50cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/powerade-ice-storm-bouteille-50cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-ciroc-red-berry-vodka-bouteille-70cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/ciroc-red-berry-vodka-bouteille-70cl.webp</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://www.disfly.fr/produit-leffe-blonde-bouteille-33cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
-    <image:image>
-      <image:loc>https://www.disfly.fr/leffe-blonde-bouteille-33cl.webp</image:loc>
-    </image:image>
-  </url>
-  <url>
     <loc>https://www.disfly.fr/produit-cacolac-original-canette-25cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/cacolac-original-canette-25cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-ciroc-peach-vodka-bouteille-70cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/ciroc-peach-vodka-bouteille-70cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-captain-morgan-original-spiced-gold-bouteille-70cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/captain-morgan-original-spiced-gold-bouteille-70cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-caraibos-ananas-33cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/caraibos-ananas-33cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-jack-daniels-tennessee-honey-bouteille-70cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/jack-daniels-tennessee-honey-bouteille-70cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-caraibos-banane-33cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/caraibos-banane-33cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-jack-daniels.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-jack-daniels-old-no-7-bouteille-70cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/jack-daniels-old-no-7-bouteille-70cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-jagermeister-liqueur-bouteille-70cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/jagermeister-liqueur-bouteille-70cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-caraibos.html</loc>
-    <lastmod>2026-11-13</lastmod>
-  </url>
-  <url>
-    <loc>https://www.disfly.fr/produit-get-27-liqueur-menthe-bouteille-70cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
-    <image:image>
-      <image:loc>https://www.disfly.fr/get-27-liqueur-menthe-bouteille-70cl.webp</image:loc>
-    </image:image>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-ciroc-apple-vodka-bouteille-70cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/ciroc-apple-vodka-bouteille-70cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-saint-omer-8-0-forte-canette-50cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/saint-omer-8-0-forte-canette-50cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/grossiste-ciroc.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-caraibos-mangue-33cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/caraibos-mangue-33cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-ricard-pastis-bouteille-1l.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/ricard-pastis-bouteille-1l.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-belvedere-organic-vodka-bouteille-70cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/belvedere-organic-vodka-bouteille-70cl.webp</image:loc>
     </image:image>
@@ -1093,23 +1079,87 @@
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-amsterdam-maximator-biere-canette-50cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/amsterdam-maximator-biere-canette-50cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-amsterdam-navigator-biere-canette-50cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/amsterdam-navigator-biere-canette-50cl.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://www.disfly.fr/produit-la-goudale-blonde-biere-canette-50cl.html</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <image:image>
       <image:loc>https://www.disfly.fr/la-goudale-blonde-biere-canette-50cl.webp</image:loc>
     </image:image>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/grossiste-buzzballz.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/grossiste-poliakov.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/grossiste-absolut.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-leffe-blonde-bouteille-25cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-get-27-liqueur-menthe-bouteille-75cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-corona-extra-bouteille-35-5cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-bantu-vodka-fruits-rouges-canette-25cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-buzzballz-strawberry-rita-cocktail-20cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-buzzballz-tequila-rita-cocktail-20cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-buzzballz-chili-mango-cocktail-20cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-grey-goose-vodka-bouteille-5cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-absolut-vodka-original-bouteille-5cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-jack-daniels-tennessee-honey-bouteille-5cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-poliakov-vodka-bouteille-35cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-chivas-regal-12-ans-bouteille-5cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.disfly.fr/produit-jack-daniels-old-no-7-bouteille-5cl.html</loc>
+    <lastmod>2026-11-23</lastmod>
   </url>
 </urlset>
